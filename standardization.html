@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Milk Standardization Calculator | Dairy Sphere</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#020b18;color:#eaf6ff;font-family:Inter,Segoe UI,Arial,sans-serif}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 50% 0%,rgba(18,121,190,.14),transparent 38%),linear-gradient(180deg,#020914,#03172a 60%,#020b17)}
+.top{max-width:1200px;margin:auto;padding:22px 22px 8px}.back{color:#39b4ff;text-decoration:none;font-size:13px}.title{margin:12px 0 5px;font-size:34px}.sub{color:#9eb5c7;margin:0 0 20px;line-height:1.6}
+.card{max-width:1200px;margin:0 auto 25px;padding:22px;background:rgba(5,24,44,.9);border:1px solid rgba(62,160,220,.22);border-radius:20px;box-shadow:0 18px 50px rgba(0,0,0,.2)}
+.controls{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.field label{display:block;font-size:11px;color:#9db6c8;margin-bottom:7px}.field input,.field select{width:100%;background:#031528;color:#eef8ff;border:1px solid #1a4b6d;border-radius:9px;padding:11px 12px;font-size:14px;outline:none}.field input:focus,.field select:focus{border-color:#27a9ff}
+.mode{margin:18px 0;padding:14px;border:1px solid rgba(52,164,226,.18);border-radius:13px;background:rgba(1,15,29,.6)}.mode-title{font-weight:700;font-size:13px;margin-bottom:9px}.mode label{font-size:12px;color:#bdd0de;margin-right:18px}
+.actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}.btn{border:1px solid #218fd0;background:#0b3655;color:#eaf8ff;padding:10px 14px;border-radius:9px;cursor:pointer;font-weight:700}.btn.primary{background:#119be9;border-color:#119be9}.btn.danger{background:#301522;border-color:#663047;color:#ffb8c8}
+.table-wrap{overflow-x:auto}.hint{font-size:12px;color:#8fa8bb;margin:8px 0 14px}.error{display:none;color:#ffb5c3;background:rgba(130,25,52,.15);border:1px solid rgba(255,100,130,.2);padding:10px 12px;border-radius:9px;margin:12px 0}
+table{width:100%;border-collapse:separate;border-spacing:0;min-width:900px}th,td{border-bottom:1px solid rgba(91,153,190,.13);padding:10px 8px;text-align:left;font-size:12px}th{color:#79cfff;font-size:10px;letter-spacing:.08em;text-transform:uppercase;background:#041a2e}th:first-child{border-radius:9px 0 0 0}th:last-child{border-radius:0 9px 0 0}td input,td select{width:100%;min-width:85px;background:#021325;color:#eaf6ff;border:1px solid #16435f;border-radius:7px;padding:8px}.calc{color:#75d2ff;font-weight:700}.totals td{font-weight:800;color:#f3fbff;background:#061d31}.totals td:first-child{color:#58c6ff}.result{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric{padding:15px;border:1px solid rgba(51,160,220,.2);border-radius:12px;background:#041a2d}.metric small{display:block;color:#8fa9ba;font-size:10px;text-transform:uppercase;letter-spacing:.08em}.metric strong{display:block;margin-top:7px;font-size:20px;color:#65caff}
+.note{margin-top:16px;color:#91aabd;font-size:11px;line-height:1.6}
+@media(max-width:760px){.controls,.result{grid-template-columns:1fr}.top{padding-left:15px;padding-right:15px}.card{margin-left:12px;margin-right:12px;padding:16px}.title{font-size:28px}}
+</style>
+</head>
+<body>
+<header class="top"><a class="back" href="calculators.html">← Dairy Calculators</a><h1 class="title">Milk Standardization Calculator</h1><p class="sub">Set a target or enter component quantities. The calculator automatically balances the selected components and shows total quantity, kg fat and kg SNF.</p></header>
+
+<section class="card">
+<div class="controls">
+ <div class="field"><label>Target Quantity (kg)</label><input id="targetQty" type="number" min="0" step="0.01" value="2000"></div>
+ <div class="field"><label>Target Fat (%)</label><input id="targetFat" type="number" min="0" step="0.01" value="4.5"></div>
+ <div class="field"><label>Target SNF (%)</label><input id="targetSnf" type="number" min="0" step="0.01" value="8.5"></div>
+</div>
+<div class="mode">
+ <div class="mode-title">Automatic balancing</div>
+ <label><input type="radio" name="solve" value="mass" checked> Mass only</label>
+ <label><input type="radio" name="solve" value="massfat"> Mass + Fat</label>
+ <label><input type="radio" name="solve" value="masssnf"> Mass + SNF</label>
+ <label><input type="radio" name="solve" value="fatsnf"> Fat + SNF</label>
+ <label><input type="radio" name="solve" value="all"> Mass + Fat + SNF</label>
+</div>
+<div class="actions"><button class="btn primary" id="add">+ Add Ingredient</button><button class="btn" id="reset">Reset</button></div>
+<div class="error" id="error"></div>
+</section>
+
+<section class="card">
+<div class="hint">Set an ingredient to <b>Auto</b> when its quantity should be calculated. Fixed quantities are included in the balance. You can use 1, 2 or 3 Auto ingredients depending on the selected balance.</div>
+<div class="table-wrap">
+<table>
+<thead><tr><th>Ingredient</th><th>Fat %</th><th>SNF %</th><th>Quantity (kg)</th><th>Mode</th><th>KG Fat</th><th>KG SNF</th><th></th></tr></thead>
+<tbody id="rows"></tbody>
+<tfoot><tr class="totals"><td colspan="3">TOTAL</td><td id="totQty">0.00</td><td></td><td id="totFatKg">0.00</td><td id="totSnfKg">0.00</td><td></td></tr></tfoot>
+</table>
+</div>
+<div class="result">
+ <div class="metric"><small>Actual Quantity</small><strong id="actualQty">0.00 kg</strong></div>
+ <div class="metric"><small>Actual Fat</small><strong id="actualFat">0.00 %</strong></div>
+ <div class="metric"><small>Actual SNF</small><strong id="actualSnf">0.00 %</strong></div>
+</div>
+<p class="note">When you change a fixed ingredient quantity or its composition, the calculated mixture changes immediately. The actual quantity, fat and SNF shown below the table are always recalculated from the current rows. When you edit the target, Auto quantities are recalculated according to the selected balance.</p>
+</section>
+
+<script>
+const rowsEl=document.getElementById('rows'), err=document.getElementById('error');
+let data=[
+ {name:'Cream',fat:40,snf:5,qty:0,mode:'Auto'},
+ {name:'SMP',fat:1.5,snf:96,qty:0,mode:'Auto'},
+ {name:'Water',fat:0,snf:0,qty:0,mode:'Fixed'}
+];
+
+const $=id=>document.getElementById(id);
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function render(){
+ rowsEl.innerHTML=data.map((r,i)=>`<tr>
+<td><input class="name" data-i="${i}" value="${esc(r.name)}"></td>
+<td><input class="fat" data-i="${i}" type="number" min="0" step="0.01" value="${r.fat}"></td>
+<td><input class="snf" data-i="${i}" type="number" min="0" step="0.01" value="${r.snf}"></td>
+<td><input class="qty" data-i="${i}" type="number" min="0" step="0.01" value="${Number(r.qty||0).toFixed(2)}"></td>
+<td><select class="mode" data-i="${i}"><option ${r.mode==='Fixed'?'selected':''}>Fixed</option><option ${r.mode==='Auto'?'selected':''}>Auto</option></select></td>
+<td class="kgfat" data-i="${i}">0.00</td><td class="kgsnf" data-i="${i}">0.00</td>
+<td><button class="btn danger del" data-i="${i}" type="button">×</button></td></tr>`).join('');
+ attach();
+ calc();
+}
+function attach(){
+ document.querySelectorAll('.name').forEach(e=>e.oninput=()=>{data[e.dataset.i].name=e.value;});
+ document.querySelectorAll('.fat,.snf').forEach(e=>e.oninput=()=>{let r=data[e.dataset.i];r[e.className]=Number(e.value)||0; solve();});
+ document.querySelectorAll('.qty').forEach(e=>e.oninput=()=>{data[e.dataset.i].qty=Number(e.value)||0; solve(false);});
+ document.querySelectorAll('.mode').forEach(e=>e.onchange=()=>{data[e.dataset.i].mode=e.value; solve();});
+ document.querySelectorAll('.del').forEach(e=>e.onclick=()=>{if(data.length>1){data.splice(Number(e.dataset.i),1);render();}});
+}
+function targets(){return {q:Number($('targetQty').value)||0,f:Number($('targetFat').value)||0,s:Number($('targetSnf').value)||0};}
+function selected(){return document.querySelector('input[name=solve]:checked').value;}
+function solve(reRender=true){
+ const t=targets(), mode=selected(), autos=data.map((r,i)=>r.mode==='Auto'?i:-1).filter(i=>i>=0);
+ err.style.display='none'; err.textContent='';
+ // Use linear equations for the requested balances.
+ let eq=[];
+ if(mode==='mass'||mode==='massfat'||mode==='masssnf'||mode==='all') eq.push([data.map(()=>1),t.q]);
+ if(mode==='massfat'||mode==='all') eq.push([data.map(r=>r.fat/100),t.q*t.f/100]);
+ if(mode==='masssnf'||mode==='all') eq.push([data.map(r=>r.snf/100),t.q*t.s/100]);
+ if(mode==='fatsnf') eq=[[data.map(r=>r.fat/100),t.q*t.f/100],[data.map(r=>r.snf/100),t.q*t.s/100]];
+ const needed=eq.length;
+ if(autos.length<needed){showError(`Selected balance needs ${needed} Auto ingredient${needed>1?'s':''}. You currently have ${autos.length}.`);calc();return;}
+ if(needed>0){
+   const vars=autos.slice(0,needed);
+   const fixed=data.map((r,i)=>r.mode==='Fixed'?i:-1).filter(i=>i>=0);
+   const A=eq.map(([coef])=>vars.map(i=>coef[i]));
+   const b=eq.map(([coef,rhs])=>rhs-fixed.reduce((sum,j)=>sum+coef[j]*(data[j].qty||0),0));
+   const x=gauss(A,b);
+   if(!x || x.some(v=>!Number.isFinite(v)||v<-1e-7)){showError('No feasible non-negative solution for the selected inputs. Try different ingredients, fixed quantities, or balance mode.');calc();return;}
+   vars.forEach((i,k)=>data[i].qty=Math.max(0,x[k]));
+ }
+ if(reRender) renderValues(); else calc();
+}
+function gauss(A,b){
+ const n=b.length; let M=A.map((r,i)=>r.slice().concat([b[i]]));
+ for(let c=0;c<n;c++){
+  let p=c;for(let r=c+1;r<n;r++)if(Math.abs(M[r][c])>Math.abs(M[p][c]))p=r;
+  if(Math.abs(M[p][c])<1e-10)return null;[M[c],M[p]]=[M[p],M[c]];
+  for(let r=c+1;r<n;r++){let q=M[r][c]/M[c][c];for(let j=c;j<=n;j++)M[r][j]-=q*M[c][j];}
+ }
+ let x=Array(n).fill(0);for(let i=n-1;i>=0;i--){let s=M[i][n];for(let j=i+1;j<n;j++)s-=M[i][j]*x[j];x[i]=s/M[i][i];}return x;
+}
+function renderValues(){render();}
+function calc(){
+ let q=0,f=0,s=0;
+ data.forEach((r,i)=>{q+=Number(r.qty)||0;f+=(Number(r.qty)||0)*(Number(r.fat)||0)/100;s+=(Number(r.qty)||0)*(Number(r.snf)||0)/100;
+  const a=document.querySelector(`.kgfat[data-i="${i}"]`),b=document.querySelector(`.kgsnf[data-i="${i}"]`);if(a)a.textContent=(r.qty*r.fat/100).toFixed(2);if(b)b.textContent=(r.qty*r.snf/100).toFixed(2);});
+ $('totQty').textContent=q.toFixed(2);$('totFatKg').textContent=f.toFixed(2);$('totSnfKg').textContent=s.toFixed(2);
+ $('actualQty').textContent=q.toFixed(2)+' kg';$('actualFat').textContent=(q?f/q*100:0).toFixed(2)+' %';$('actualSnf').textContent=(q?s/q*100:0).toFixed(2)+' %';
+}
+function showError(s){err.textContent=s;err.style.display='block';}
+$('add').onclick=()=>{data.push({name:'New Ingredient',fat:0,snf:0,qty:0,mode:'Fixed'});render();};
+$('reset').onclick=()=>{data=[{name:'Cream',fat:40,snf:5,qty:0,mode:'Auto'},{name:'SMP',fat:1.5,snf:96,qty:0,mode:'Auto'},{name:'Water',fat:0,snf:0,qty:0,mode:'Fixed'}];$('targetQty').value=2000;$('targetFat').value=4.5;$('targetSnf').value=8.5;render();};
+['targetQty','targetFat','targetSnf'].forEach(id=>$(id).oninput=()=>solve());
+document.querySelectorAll('input[name=solve]').forEach(e=>e.onchange=()=>solve());
+render();
+</script>
+</body></html>
