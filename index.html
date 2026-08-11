@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dairy Sphere — Your World of Dairy Technology</title>
+<link rel="stylesheet" href="space-pages.css">
+<style>
+.home{max-width:1200px;margin:auto}.hero{min-height:700px;display:grid;grid-template-columns:.85fr 1.15fr;align-items:center;padding:35px 30px 45px;gap:15px}.copy small{color:#35b5ff;letter-spacing:1.6px;font-weight:800}.copy h1{font-size:68px;line-height:.98;margin:14px 0}.copy h1 span{color:#149bf2}.copy h2{font-size:22px;margin:0 0 14px}.copy p{color:#a6bacb;line-height:1.7;max-width:490px}.cta{display:inline-block;margin-top:18px;background:#149bf2;border-radius:9px;padding:13px 19px;font-weight:700;box-shadow:0 0 24px rgba(20,155,242,.24)}@keyframes earthSpin{from{transform:rotateY(0deg)}to{transform:rotateY(360deg)}}.explore{text-align:center;padding:30px}.explore h2{font-size:32px}.explore h2 span{color:#159df2}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:24px}.home-card{padding:30px 20px;border:1px solid rgba(57,158,219,.22);border-radius:18px;background:rgba(5,24,44,.8);min-height:210px;display:flex;flex-direction:column;align-items:center;text-align:center}.home-card h3{margin:16px 0 8px}.home-card p{font-size:13px;line-height:1.6;color:#9fb4c5}.home-card b{margin-top:auto;color:#2caaff;font-size:12px}.founder-desk{margin:25px auto 60px;max-width:350px;padding:17px;border:1px solid rgba(51,160,222,.25);border-radius:12px;text-align:center;background:rgba(4,22,40,.86)}.founder-desk small{color:#35b5ff;letter-spacing:1.3px}.founder-desk a{display:block;margin-top:8px;font-weight:700;font-size:18px}.founder-desk a:hover{color:#25a7f7}
+@media(max-width:850px){.hero{grid-template-columns:1fr;text-align:center;padding-top:28px}.copy p{margin-left:auto;margin-right:auto}.planet{width:min(500px,78vw)}.cards{grid-template-columns:1fr 1fr}}@media(max-width:560px){.copy h1{font-size:48px}.hero{min-height:0}.cards{grid-template-columns:1fr}.explore{padding-left:18px;padding-right:18px}}
+
+.planet-wrap{display:grid;place-items:center;perspective:1200px}
+.earth-stage{width:min(590px,48vw);aspect-ratio:1;display:grid;place-items:center;position:relative}
+.earth-globe{width:100%;height:100%;position:relative;border-radius:50%;overflow:hidden;isolation:isolate;background:#03162b;
+box-shadow:inset -38px -18px 65px rgba(0,0,0,.52),inset 22px 12px 35px rgba(255,255,255,.20),0 0 28px rgba(19,157,244,.34),0 0 75px rgba(19,157,244,.13);
+animation:earthBreath 7s ease-in-out infinite}
+.earth-globe img{width:118%;height:118%;position:absolute;left:-9%;top:-9%;object-fit:cover;border-radius:50%;
+animation:earthTexture 18s ease-in-out infinite alternate;filter:saturate(1.05) contrast(1.03)}
+.earth-globe:before{content:"";position:absolute;inset:0;border-radius:50%;z-index:2;
+background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.22),transparent 22%),radial-gradient(circle at 72% 72%,rgba(0,0,0,.44),transparent 58%);pointer-events:none}
+.earth-highlight{position:absolute;z-index:3;width:58%;height:20%;left:11%;top:8%;border-radius:50%;background:rgba(255,255,255,.10);
+filter:blur(18px);transform:rotate(-18deg);animation:highlightMove 9s ease-in-out infinite alternate;pointer-events:none}
+@keyframes earthTexture{0%{transform:translateX(-3%) scale(1.01)}50%{transform:translateX(2%) scale(1.025)}100%{transform:translateX(-1%) scale(1.01)}}
+@keyframes earthBreath{0%,100%{transform:scale(1)}50%{transform:scale(1.018)}}
+@keyframes highlightMove{from{transform:translate(-3px,-2px) rotate(-18deg);opacity:.42}to{transform:translate(24px,12px) rotate(-14deg);opacity:.72}}
+.earth-globe:hover{animation-play-state:paused}
+@media(max-width:850px){.earth-stage{width:min(500px,78vw)}}
+
+/* Advanced Dairy Sphere space ambience */
+.space-stars{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:transparent}
+.space-stars i{position:absolute;top:-12vh;width:2px;height:2px;border-radius:50%;background:#dff4ff;opacity:.75;
+box-shadow:0 0 7px rgba(92,190,255,.7);animation:fallStar linear infinite}
+.space-stars i:nth-child(3n){width:1px;height:1px;opacity:.5}
+.space-stars i:nth-child(5n){width:3px;height:3px;opacity:.85;box-shadow:0 0 11px rgba(71,177,255,.9)}
+@keyframes fallStar{0%{transform:translate3d(0,-12vh,0);opacity:0}
+8%{opacity:.8}85%{opacity:.72}100%{transform:translate3d(var(--drift),112vh,0);opacity:0}}
+.space-vignette{position:fixed;inset:0;z-index:-2;pointer-events:none;
+background:radial-gradient(circle at 50% 18%,rgba(10,79,128,.18),transparent 34%),
+radial-gradient(circle at 80% 70%,rgba(0,102,174,.08),transparent 28%),
+linear-gradient(180deg,#010914 0%,#021426 55%,#020b17 100%)}
+
+/* Advanced space UI accents */
+.home{position:relative}
+.hero:before{content:"";position:absolute;width:420px;height:420px;right:12%;top:115px;border-radius:50%;
+background:radial-gradient(circle,rgba(16,131,220,.10),transparent 68%);filter:blur(12px);pointer-events:none}
+.home-card{backdrop-filter:blur(8px);box-shadow:inset 0 1px rgba(255,255,255,.025),0 14px 35px rgba(0,0,0,.16)}
+.founder-desk{backdrop-filter:blur(8px)}
+
+/* Dairy Sphere feature-card icons — larger and more visible */
+.feature-icon{
+  width:96px;height:96px;display:grid;place-items:center;margin:0 auto 6px;
+  border:1px solid rgba(40,169,244,.20);border-radius:24px;
+  background:radial-gradient(circle,rgba(18,151,239,.16),rgba(4,22,40,.10) 68%);
+  box-shadow:0 0 28px rgba(20,151,239,.10),inset 0 0 20px rgba(38,166,235,.05);
+}
+.feature-icon svg{
+  width:68px;height:68px;fill:none;stroke:#29aaff;stroke-width:2.4;
+  stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 8px rgba(29,166,255,.35));
+}
+.home-card h3{font-size:18px;margin:13px 0 8px}
+@media(max-width:560px){
+ .feature-icon{width:84px;height:84px;border-radius:21px}
+ .feature-icon svg{width:60px;height:60px}
+}
+</style></head><body><div class="space-vignette" aria-hidden="true"></div>
+<div class="space-stars" aria-hidden="true">
+<i style="left:4%;--drift:18px;animation-duration:9s;animation-delay:-2s"></i>
+<i style="left:10%;--drift:-12px;animation-duration:13s;animation-delay:-7s"></i>
+<i style="left:17%;--drift:24px;animation-duration:11s;animation-delay:-5s"></i>
+<i style="left:24%;--drift:-20px;animation-duration:15s;animation-delay:-10s"></i>
+<i style="left:31%;--drift:13px;animation-duration:10s;animation-delay:-4s"></i>
+<i style="left:38%;--drift:-26px;animation-duration:16s;animation-delay:-12s"></i>
+<i style="left:45%;--drift:17px;animation-duration:12s;animation-delay:-6s"></i>
+<i style="left:52%;--drift:-15px;animation-duration:14s;animation-delay:-8s"></i>
+<i style="left:59%;--drift:22px;animation-duration:10s;animation-delay:-3s"></i>
+<i style="left:66%;--drift:-18px;animation-duration:17s;animation-delay:-13s"></i>
+<i style="left:73%;--drift:12px;animation-duration:11s;animation-delay:-7s"></i>
+<i style="left:80%;--drift:-23px;animation-duration:15s;animation-delay:-9s"></i>
+<i style="left:87%;--drift:19px;animation-duration:12s;animation-delay:-5s"></i>
+<i style="left:94%;--drift:-14px;animation-duration:16s;animation-delay:-11s"></i>
+</div>
+<header class="nav"><a class="brand" href="index.html"><img src="dairy-sphere-earth.png" alt=""><span>Dairy <b>Sphere</b></span></a>
+<nav><a class="active" href="index.html">Home</a><a href="library.html">Library</a><a href="lab.html">Virtual Lab</a><a href="equipment.html">Equipment Atlas</a><a href="blogs.html">Blogs</a><a href="founder.html">Founder</a></nav>
+<a class="contact" href="mailto:Dairysphere@gmail.com">Contact ↗</a></header>
+<main class="home">
+<section class="hero"><div class="copy"><small>LEARN • PROCESS • INNOVATE</small><h1>Dairy <span>Sphere</span></h1><h2>Your World of Dairy Technology</h2><p>A focused educational platform for Dairy Technology students and professionals — connecting concepts, practical learning, equipment and innovation.</p><a class="cta" href="#explore">Explore Now →</a></div>
+<div class="planet-wrap">
+  <div class="earth-stage">
+    <div class="earth-globe">
+      <img src="dairy-sphere-earth.png" alt="Dairy Sphere Earth with milk splash">
+      <span class="earth-highlight"></span>
+    </div>
+  </div>
+</div></section>
+<section class="explore" id="explore"><h2>Explore <span>Dairy Sphere</span></h2><p>Learn • Process • Apply</p><div class="cards">
+<a class="home-card" href="library.html"><div class="feature-icon library-icon" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M18 19h35a7 7 0 0 1 7 7v35H25a7 7 0 0 1-7-7z"/><path d="M25 19v42"/><path d="M32 28h20M32 38h20M32 48h14"/></svg></div><h3>Library</h3><p>Access notes, research papers, standards & study material.</p><b>Browse Library →</b></a>
+<a class="home-card" href="lab.html"><div class="feature-icon lab-icon" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M31 12h18M36 12v20L19 60a7 7 0 0 0 6 10h30a7 7 0 0 0 6-10L44 32V12"/><path d="M26 53h28"/><path d="M32 45c6 4 10-3 16 1"/></svg></div><h3>Virtual Lab</h3><p>Lab tests, procedures, calculators & practical learning.</p><b>Start Lab →</b></a>
+<a class="home-card" href="equipment.html"><div class="feature-icon equipment-icon" aria-hidden="true"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="12"/><path d="M40 12v9M40 59v9M12 40h9M59 40h9M20 20l7 7M53 53l7 7M60 20l-7 7M27 53l-7 7"/><path d="M40 24l4 4 6-1 4 6-3 5 3 5-4 6-6-1-4 4-6-4-6 1-4-6 3-5-3-5 4-6 6 1z"/></svg></div><h3>Equipment Atlas</h3><p>Explore machines with detailed images & working principles.</p><b>Explore Atlas →</b></a>
+<a class="home-card" href="blogs.html"><div class="feature-icon blog-icon" aria-hidden="true"><svg viewBox="0 0 80 80"><path d="M18 14h38v52H18z"/><path d="M27 27h20M27 37h20M27 47h14"/><path d="M54 53l9-9 6 6-9 9-8 3z"/></svg></div><h3>Blogs</h3><p>Articles, case studies & industry updates from the dairy world.</p><b>Read Blogs →</b></a>
+</div>
+<div class="founder-desk"><small>FOUNDER DESK</small><a href="founder.html">Ayush Kumar</a></div>
+</section></main>
+<footer>© 2026 Dairy Sphere • Educational platform for Dairy Technology • Learn • Process • Innovate</footer>
+</body></html>
