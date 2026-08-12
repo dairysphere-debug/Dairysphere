@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ICAR-AIEEA-PG Previous Year | Dairy Sphere</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.pyq-space{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:
+radial-gradient(circle at 18% 18%,rgba(20,120,255,.08),transparent 28%),
+radial-gradient(circle at 80% 62%,rgba(0,180,255,.06),transparent 30%),#020d1d}
+.pyq-space .star{position:absolute;width:2px;height:2px;border-radius:50%;background:#dff7ff;
+box-shadow:0 0 7px rgba(150,220,255,.7);animation:slowFall linear infinite}
+.pyq-space .star.small{width:1px;height:1px;opacity:.65}
+.pyq-space .star.bright{width:3px;height:3px;box-shadow:0 0 12px rgba(190,235,255,.95)}
+.pyq-space .meteor{position:absolute;width:95px;height:2px;border-radius:999px;
+background:linear-gradient(90deg,transparent,rgba(220,248,255,.95));
+box-shadow:0 0 8px rgba(120,210,255,.8);opacity:0;transform:rotate(28deg);
+animation:slowMeteor 16s linear infinite}
+@keyframes slowFall{
+0%{transform:translate3d(0,-12vh,0);opacity:0}
+12%{opacity:.85}50%{opacity:.65}88%{opacity:.55}
+100%{transform:translate3d(2vw,112vh,0);opacity:0}}
+@keyframes slowMeteor{
+0%,68%{transform:translate3d(115vw,-12vh,0) rotate(28deg);opacity:0}
+72%{opacity:.65}
+86%{transform:translate3d(15vw,105vh,0) rotate(28deg);opacity:0}
+100%{opacity:0}}
+.question{box-sizing:border-box;max-width:100%;min-width:0;overflow:hidden;overflow-wrap:anywhere}
+.qtext,.option,.continuation,.explanation{box-sizing:border-box;max-width:100%;min-width:0;overflow-wrap:anywhere;word-break:normal}
+.explanation{display:block;margin-top:10px;padding:14px 16px;color:#b8cad8;line-height:1.75;
+background:rgba(255,255,255,.035);border:1px solid rgba(116,215,255,.08);border-radius:12px;
+overflow:hidden}
+.explanation b{display:block;color:#dceefa;margin-bottom:6px}
+.answer{box-sizing:border-box;max-width:100%;min-width:0;overflow-wrap:anywhere;overflow:hidden}
+</style>
+
+<style>
+.year-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.library-card{min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;text-decoration:none;color:inherit;border:1px solid rgba(116,215,255,.16);border-radius:25px;background:linear-gradient(145deg,rgba(9,34,62,.92),rgba(3,16,34,.94));padding:28px;transition:.25s}
+.library-card:hover{transform:translateY(-6px);border-color:rgba(116,215,255,.55)}
+.library-icon{width:105px;height:105px;border-radius:50%;display:grid;place-items:center;font-size:45px;background:radial-gradient(circle at 32% 25%,#a6ecff,#1a9ee9 43%,#06265a);box-shadow:0 0 35px rgba(30,173,255,.25);margin-bottom:18px}
+.library-card h2{margin:0 0 8px}.library-card p{color:#9fb6c9;line-height:1.6;margin:0;max-width:260px}.library-open{margin-top:17px;color:#74d7ff;font-weight:800}
+@media(max-width:800px){.year-grid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.year-grid{grid-template-columns:1fr}}
+</style>
+<style id="pyq-professional-layout">
+/* Dairy Sphere — professional PYQ cards */
+.pyq-space{
+  background:
+    radial-gradient(circle at 18% 12%,rgba(20,120,255,.055),transparent 25%),
+    radial-gradient(circle at 82% 72%,rgba(0,185,255,.045),transparent 28%),
+    #020d1d!important;
+}
+.pyq-space .star{opacity:.35!important}
+.pyq-space .star.bright{opacity:.55!important}
+.pyq-space .meteor{display:none!important}
+
+.pyq-content{max-width:980px;margin:0 auto}
+.question{
+  position:relative;
+  display:grid;
+  grid-template-columns:56px minmax(0,1fr);
+  column-gap:18px;
+  padding:24px 26px 22px;
+  margin:0 0 18px;
+  border:1px solid rgba(111,210,255,.18);
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(5,28,51,.95),rgba(2,17,34,.97));
+  box-shadow:0 12px 34px rgba(0,0,0,.18);
+  box-sizing:border-box;
+  overflow:hidden;
+}
+.qnum{
+  grid-column:1;grid-row:1 / span 6;
+  width:48px;height:48px;display:grid;place-items:center;
+  border-radius:50%;
+  background:linear-gradient(145deg,#1296ee,#0755a9);
+  color:#fff;font-weight:800;font-size:14px;
+  box-shadow:0 0 18px rgba(18,143,233,.22);
+}
+.qtext{
+  grid-column:2;
+  margin:1px 0 14px;
+  color:#f1f7fb;
+  font-size:18px;
+  line-height:1.52;
+  font-weight:750;
+  letter-spacing:.05px;
+  overflow-wrap:anywhere;
+}
+.option{
+  grid-column:2;
+  position:relative;
+  min-height:38px;
+  display:flex;
+  align-items:center;
+  padding:7px 10px 7px 46px;
+  margin:2px 0;
+  color:#cbd8e2;
+  font-size:15.5px;
+  line-height:1.45;
+  border-radius:9px;
+  background:rgba(255,255,255,.018);
+  overflow-wrap:anywhere;
+  box-sizing:border-box;
+}
+.option::before{
+  content:"";
+  position:absolute;
+  left:10px;top:50%;transform:translateY(-50%);
+  width:28px;height:28px;
+  display:grid;place-items:center;
+  border-radius:6px;
+  background:rgba(18,130,222,.22);
+  border:1px solid rgba(56,171,255,.25);
+  color:#dff5ff;
+  font-weight:800;
+  font-size:13px;
+}
+.option:nth-of-type(2)::before{content:"A"}
+.option:nth-of-type(3)::before{content:"B"}
+.option:nth-of-type(4)::before{content:"C"}
+.option:nth-of-type(5)::before{content:"D"}
+
+.answer{
+  grid-column:2;
+  margin-top:14px;
+  padding:12px 15px;
+  border-left:3px solid #20b8ff;
+  border-radius:8px;
+  background:linear-gradient(90deg,rgba(0,128,255,.20),rgba(0,128,255,.07));
+  color:#80ddff;
+  font-size:15px;
+  line-height:1.5;
+  font-weight:800;
+  box-sizing:border-box;
+  overflow-wrap:anywhere;
+}
+.explanation{
+  grid-column:2;
+  margin-top:10px!important;
+  padding:15px 17px!important;
+  border:1px solid rgba(112,193,239,.10)!important;
+  border-radius:12px!important;
+  background:rgba(7,30,53,.80)!important;
+  color:#bacbd8!important;
+  font-size:15px;
+  line-height:1.7!important;
+  box-sizing:border-box;
+  overflow:hidden;
+  overflow-wrap:anywhere;
+}
+.explanation b{
+  display:block;
+  margin-bottom:6px;
+  color:#e5f2fb!important;
+  font-size:15px;
+}
+@media(max-width:650px){
+  .question{
+    grid-template-columns:42px minmax(0,1fr);
+    column-gap:12px;
+    padding:17px 13px 17px;
+    margin-bottom:14px;
+    border-radius:15px;
+  }
+  .qnum{width:37px;height:37px;font-size:11px}
+  .qtext{font-size:15.5px;line-height:1.5;margin-bottom:10px}
+  .option{font-size:14px;min-height:35px;padding:6px 7px 6px 40px}
+  .option::before{left:7px;width:26px;height:26px;font-size:12px}
+  .answer,.explanation{font-size:13.5px}
+  .explanation{padding:12px 13px!important;line-height:1.65!important}
+}
+</style>
+
+</head>
+<body>
+<div class="pyq-space" aria-hidden="true"><i class="star bright" style="left:4%;top:8%;animation-duration:13s;animation-delay:0s"></i><i class="star" style="left:12%;top:28%;animation-duration:18s;animation-delay:4s"></i><i class="star" style="left:21%;top:14%;animation-duration:11s;animation-delay:2s"></i><i class="star small" style="left:29%;top:45%;animation-duration:20s;animation-delay:7s"></i><i class="star" style="left:38%;top:22%;animation-duration:15s;animation-delay:1s"></i><i class="star" style="left:47%;top:62%;animation-duration:24s;animation-delay:10s"></i><i class="star small" style="left:56%;top:10%;animation-duration:17s;animation-delay:5s"></i><i class="star bright" style="left:65%;top:34%;animation-duration:22s;animation-delay:3s"></i><i class="star" style="left:74%;top:18%;animation-duration:14s;animation-delay:8s"></i><i class="star small" style="left:83%;top:55%;animation-duration:25s;animation-delay:6s"></i><i class="star" style="left:92%;top:25%;animation-duration:19s;animation-delay:12s"></i><i class="star" style="left:97%;top:72%;animation-duration:23s;animation-delay:9s"></i><i class="star small" style="left:8%;top:78%;animation-duration:21s;animation-delay:11s"></i><i class="star" style="left:18%;top:92%;animation-duration:16s;animation-delay:13s"></i><i class="star bright" style="left:33%;top:81%;animation-duration:27s;animation-delay:4s"></i><i class="star small" style="left:44%;top:94%;animation-duration:18s;animation-delay:14s"></i><i class="star" style="left:59%;top:76%;animation-duration:20s;animation-delay:9s"></i><i class="star" style="left:69%;top:90%;animation-duration:28s;animation-delay:15s"></i><i class="star small" style="left:79%;top:84%;animation-duration:17s;animation-delay:6s"></i><i class="star" style="left:89%;top:96%;animation-duration:25s;animation-delay:16s"></i></div>
+<header class="topbar"><div class="container nav">
+<a class="brand" href="index.html"><img src="dairy-sphere-earth.png" alt="Dairy Sphere logo"><div><strong>Dairy Sphere</strong><span>LEARN • PROCESS • INNOVATE</span></div></a>
+<nav class="navlinks"><a href="index.html">Home</a><a class="active" href="library.html">Library</a><a href="lab.html">Virtual Lab</a><a href="equipment.html">Equipment Atlas</a><a href="founder.html">Founder</a></nav>
+<a class="btn" href="founder.html#contact">Contact ↗</a>
+</div></header>
+<main class="fade"><section class="page-hero"><div class="container">
+<a class="btn secondary" href="library.html">← Back to Library</a>
+<span class="eyebrow">PREVIOUS YEAR QUESTIONS</span><h1>ICAR-AIEEA-PG Previous Year</h1>
+<p>Select a year. Questions, answers and explanations are presented directly as webpage text.</p>
+</div></section>
+<section class="container section"><div class="year-grid"><a class="library-card" href="pyq-2019.html"><div class="library-icon">📚</div><h2>2019</h2><p>Dairy Technology Previous Year Questions with answers and explanations.</p><span class="library-open">Open 2019 →</span></a><a class="library-card" href="pyq-2020.html"><div class="library-icon">📚</div><h2>2020</h2><p>Dairy Technology Previous Year Questions with answers and explanations.</p><span class="library-open">Open 2020 →</span></a><a class="library-card" href="pyq-2021.html"><div class="library-icon">📚</div><h2>2021</h2><p>Dairy Technology Previous Year Questions with answers and explanations.</p><span class="library-open">Open 2021 →</span></a><a class="library-card" href="pyq-2022.html"><div class="library-icon">📚</div><h2>2022</h2><p>Dairy Technology Previous Year Questions with answers and explanations.</p><span class="library-open">Open 2022 →</span></a><a class="library-card" href="pyq-2023.html"><div class="library-icon">📚</div><h2>2023</h2><p>Dairy Technology Previous Year Questions with answers and explanations.</p><span class="library-open">Open 2023 →</span></a><a class="library-card" href="pyq-2024.html"><div class="library-icon">📚</div><h2>2024</h2><p>Dairy Technology Previous Year Questions with answers and explanations.</p><span class="library-open">Open 2024 →</span></a></div></section></main>
+<footer><div class="container footer-row"><div><img class="small-logo" src="dairy-sphere-earth.png" alt="Dairy Sphere"><div>© 2026 Dairy Sphere • Educational platform for Dairy Technology.</div></div><div>Learn • Process • Innovate</div></div></footer>
+<script src="script.js"></script></body></html>
