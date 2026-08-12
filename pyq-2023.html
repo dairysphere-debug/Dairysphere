@@ -1,0 +1,1389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2023 PYQ | Dairy Sphere</title>
+<meta name="description" content="Dairy Technology 2023 previous year questions with answers and explanations.">
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.pyq-space{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:
+radial-gradient(circle at 18% 18%,rgba(20,120,255,.08),transparent 28%),
+radial-gradient(circle at 80% 62%,rgba(0,180,255,.06),transparent 30%),#020d1d}
+.pyq-space .star{position:absolute;width:2px;height:2px;border-radius:50%;background:#dff7ff;
+box-shadow:0 0 7px rgba(150,220,255,.7);animation:slowFall linear infinite}
+.pyq-space .star.small{width:1px;height:1px;opacity:.65}
+.pyq-space .star.bright{width:3px;height:3px;box-shadow:0 0 12px rgba(190,235,255,.95)}
+.pyq-space .meteor{position:absolute;width:95px;height:2px;border-radius:999px;
+background:linear-gradient(90deg,transparent,rgba(220,248,255,.95));
+box-shadow:0 0 8px rgba(120,210,255,.8);opacity:0;transform:rotate(28deg);
+animation:slowMeteor 16s linear infinite}
+@keyframes slowFall{
+0%{transform:translate3d(0,-12vh,0);opacity:0}
+12%{opacity:.85}50%{opacity:.65}88%{opacity:.55}
+100%{transform:translate3d(2vw,112vh,0);opacity:0}}
+@keyframes slowMeteor{
+0%,68%{transform:translate3d(115vw,-12vh,0) rotate(28deg);opacity:0}
+72%{opacity:.65}
+86%{transform:translate3d(15vw,105vh,0) rotate(28deg);opacity:0}
+100%{opacity:0}}
+.question{box-sizing:border-box;max-width:100%;min-width:0;overflow:hidden;overflow-wrap:anywhere}
+.qtext,.option,.continuation,.explanation{box-sizing:border-box;max-width:100%;min-width:0;overflow-wrap:anywhere;word-break:normal}
+.explanation{display:block;margin-top:10px;padding:14px 16px;color:#b8cad8;line-height:1.75;
+background:rgba(255,255,255,.035);border:1px solid rgba(116,215,255,.08);border-radius:12px;
+overflow:hidden}
+.explanation b{display:block;color:#dceefa;margin-bottom:6px}
+.answer{box-sizing:border-box;max-width:100%;min-width:0;overflow-wrap:anywhere;overflow:hidden}
+</style>
+
+
+<style id="pyq-professional-layout">
+/* Dairy Sphere — professional PYQ cards */
+.pyq-space{
+  background:
+    radial-gradient(circle at 18% 12%,rgba(20,120,255,.055),transparent 25%),
+    radial-gradient(circle at 82% 72%,rgba(0,185,255,.045),transparent 28%),
+    #020d1d!important;
+}
+.pyq-space .star{opacity:.35!important}
+.pyq-space .star.bright{opacity:.55!important}
+.pyq-space .meteor{display:none!important}
+
+.pyq-content{max-width:980px;margin:0 auto}
+.question{
+  position:relative;
+  display:grid;
+  grid-template-columns:56px minmax(0,1fr);
+  column-gap:18px;
+  padding:24px 26px 22px;
+  margin:0 0 18px;
+  border:1px solid rgba(111,210,255,.18);
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(5,28,51,.95),rgba(2,17,34,.97));
+  box-shadow:0 12px 34px rgba(0,0,0,.18);
+  box-sizing:border-box;
+  overflow:hidden;
+}
+.qnum{
+  grid-column:1;grid-row:1 / span 6;
+  width:48px;height:48px;display:grid;place-items:center;
+  border-radius:50%;
+  background:linear-gradient(145deg,#1296ee,#0755a9);
+  color:#fff;font-weight:800;font-size:14px;
+  box-shadow:0 0 18px rgba(18,143,233,.22);
+}
+.qtext{
+  grid-column:2;
+  margin:1px 0 14px;
+  color:#f1f7fb;
+  font-size:18px;
+  line-height:1.52;
+  font-weight:750;
+  letter-spacing:.05px;
+  overflow-wrap:anywhere;
+}
+.option{
+  grid-column:2;
+  position:relative;
+  min-height:38px;
+  display:flex;
+  align-items:center;
+  padding:7px 10px 7px 46px;
+  margin:2px 0;
+  color:#cbd8e2;
+  font-size:15.5px;
+  line-height:1.45;
+  border-radius:9px;
+  background:rgba(255,255,255,.018);
+  overflow-wrap:anywhere;
+  box-sizing:border-box;
+}
+.option::before{
+  content:"";
+  position:absolute;
+  left:10px;top:50%;transform:translateY(-50%);
+  width:28px;height:28px;
+  display:grid;place-items:center;
+  border-radius:6px;
+  background:rgba(18,130,222,.22);
+  border:1px solid rgba(56,171,255,.25);
+  color:#dff5ff;
+  font-weight:800;
+  font-size:13px;
+}
+.option:nth-of-type(2)::before{content:"A"}
+.option:nth-of-type(3)::before{content:"B"}
+.option:nth-of-type(4)::before{content:"C"}
+.option:nth-of-type(5)::before{content:"D"}
+
+.answer{
+  grid-column:2;
+  margin-top:14px;
+  padding:12px 15px;
+  border-left:3px solid #20b8ff;
+  border-radius:8px;
+  background:linear-gradient(90deg,rgba(0,128,255,.20),rgba(0,128,255,.07));
+  color:#80ddff;
+  font-size:15px;
+  line-height:1.5;
+  font-weight:800;
+  box-sizing:border-box;
+  overflow-wrap:anywhere;
+}
+.explanation{
+  grid-column:2;
+  margin-top:10px!important;
+  padding:15px 17px!important;
+  border:1px solid rgba(112,193,239,.10)!important;
+  border-radius:12px!important;
+  background:rgba(7,30,53,.80)!important;
+  color:#bacbd8!important;
+  font-size:15px;
+  line-height:1.7!important;
+  box-sizing:border-box;
+  overflow:hidden;
+  overflow-wrap:anywhere;
+}
+.explanation b{
+  display:block;
+  margin-bottom:6px;
+  color:#e5f2fb!important;
+  font-size:15px;
+}
+@media(max-width:650px){
+  .question{
+    grid-template-columns:42px minmax(0,1fr);
+    column-gap:12px;
+    padding:17px 13px 17px;
+    margin-bottom:14px;
+    border-radius:15px;
+  }
+  .qnum{width:37px;height:37px;font-size:11px}
+  .qtext{font-size:15.5px;line-height:1.5;margin-bottom:10px}
+  .option{font-size:14px;min-height:35px;padding:6px 7px 6px 40px}
+  .option::before{left:7px;width:26px;height:26px;font-size:12px}
+  .answer,.explanation{font-size:13.5px}
+  .explanation{padding:12px 13px!important;line-height:1.65!important}
+}
+</style>
+
+</head>
+<body>
+<div class="pyq-space" aria-hidden="true"><i class="star bright" style="left:4%;top:8%;animation-duration:13s;animation-delay:0s"></i><i class="star" style="left:12%;top:28%;animation-duration:18s;animation-delay:4s"></i><i class="star" style="left:21%;top:14%;animation-duration:11s;animation-delay:2s"></i><i class="star small" style="left:29%;top:45%;animation-duration:20s;animation-delay:7s"></i><i class="star" style="left:38%;top:22%;animation-duration:15s;animation-delay:1s"></i><i class="star" style="left:47%;top:62%;animation-duration:24s;animation-delay:10s"></i><i class="star small" style="left:56%;top:10%;animation-duration:17s;animation-delay:5s"></i><i class="star bright" style="left:65%;top:34%;animation-duration:22s;animation-delay:3s"></i><i class="star" style="left:74%;top:18%;animation-duration:14s;animation-delay:8s"></i><i class="star small" style="left:83%;top:55%;animation-duration:25s;animation-delay:6s"></i><i class="star" style="left:92%;top:25%;animation-duration:19s;animation-delay:12s"></i><i class="star" style="left:97%;top:72%;animation-duration:23s;animation-delay:9s"></i><i class="star small" style="left:8%;top:78%;animation-duration:21s;animation-delay:11s"></i><i class="star" style="left:18%;top:92%;animation-duration:16s;animation-delay:13s"></i><i class="star bright" style="left:33%;top:81%;animation-duration:27s;animation-delay:4s"></i><i class="star small" style="left:44%;top:94%;animation-duration:18s;animation-delay:14s"></i><i class="star" style="left:59%;top:76%;animation-duration:20s;animation-delay:9s"></i><i class="star" style="left:69%;top:90%;animation-duration:28s;animation-delay:15s"></i><i class="star small" style="left:79%;top:84%;animation-duration:17s;animation-delay:6s"></i><i class="star" style="left:89%;top:96%;animation-duration:25s;animation-delay:16s"></i></div>
+<header class="topbar"><div class="container nav">
+<a class="brand" href="index.html"><img src="dairy-sphere-earth.png" alt="Dairy Sphere logo"><div><strong>Dairy Sphere</strong><span>LEARN • PROCESS • INNOVATE</span></div></a>
+<nav class="navlinks"><a href="index.html">Home</a><a class="active" href="library.html">Library</a><a href="lab.html">Virtual Lab</a><a href="equipment.html">Equipment Atlas</a><a href="founder.html">Founder</a></nav>
+<a class="btn" href="founder.html#contact">Contact ↗</a>
+</div></header>
+<main class="fade">
+<section class="page-hero"><div class="container">
+<a class="btn secondary" href="pyq.html">← All Years</a>
+<span class="eyebrow">PREVIOUS YEAR QUESTIONS • 2023</span>
+<h1>2023 Dairy Technology PYQ</h1>
+<p>120 questions • Answers and explanations in webpage text format.</p>
+</div></section>
+<section class="container section"><div class="pyq-content"><article class="question">
+<div class="qnum">Q1</div>
+<div class="qtext">Which type of ghee has more number of larger grains under given granulation conditions?</div>
+<div class="option">(1) Cow milk ghee</div>
+<div class="option">(2) Buffalo milk ghee</div>
+<div class="option">(3) Mixed ghee</div>
+<div class="option">(4) Recombined milk ghee</div>
+<div class="answer">Answer: (2) Buffalo milk ghee</div>
+<div class="explanation"><b>Explanation</b><div>Buffalo milk fat has a higher proportion of high-melting triglycerides (like palmitic and stearic acids) compared to cow milk fat, which naturally leads to the formation of more numerous and larger grains during cooling.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q2</div>
+<div class="qtext">Sterilisation temperature/time of milk is</div>
+<div class="option">(1) 100-108°C/8-10 min</div>
+<div class="option">(2) 121°C/20-25 min</div>
+<div class="option">(3) 110-118°C for 15-25 min</div>
+<div class="option">(4) 120-130°C no hold</div>
+<div class="answer">Answer: (3) 110-118°C for 15-25 min</div>
+<div class="explanation"><b>Explanation</b><div>Standard in-bottle sterilization of milk requires heating to 110-118°C and holding for 15-25 minutes to ensure the destruction of all bacterial spores while minimizing browning.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q3</div>
+<div class="qtext">Phosphatase test is negative in</div>
+<div class="option">(1) Pasteurised milk</div>
+<div class="option">(2) Chilled milk</div>
+<div class="option">(3) Thermised milk</div>
+<div class="option">(4) Irradiated milk</div>
+<div class="answer">Answer: (1) Pasteurised milk</div>
+<div class="explanation"><b>Explanation</b><div>The alkaline phosphatase enzyme is naturally present in raw milk and is completely deactivated at temperatures just slightly higher than those required to kill Mycobacterium tuberculosis, making it the perfect indicator for successful pasteurization.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q4</div>
+<div class="qtext">Moisture content of khoa varieties vary as follows in decreasing order</div>
+<div class="option">(1) Danedar, Pindi, Dhap</div>
+<div class="option">(2) Dhap, Danedar, Pindi</div>
+<div class="option">(3) Dhap, Pindi, Danedar</div>
+<div class="option">(4) Pindi, Danedar, Dhap</div>
+<div class="answer">Answer: (2) Dhap, Danedar, Pindi</div>
+<div class="explanation"><b>Explanation</b><div>Dhap khoa has the highest moisture content (37-44%) suitable for gulab jamun, followed by Danedar (35-40%) for kalakand, and Pindi has the lowest (31-33%) for burfi/peda.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q5</div>
+<div class="qtext">Sweet sensing taste buds are mainly situated at</div>
+<div class="option">(1) Tip of tongue</div>
+<div class="option">(2) Back of tongue</div>
+<div class="option">(3) Sides of tongue</div>
+<div class="option">(4) Middle of tongue</div>
+<div class="answer">Answer: (1) Tip of tongue</div>
+<div class="explanation"><b>Explanation</b><div>According to traditional sensory physiology maps, sweet receptors are most concentrated and highly responsive at the very tip of the human tongue.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q6</div>
+<div class="qtext">In electrodialysis membranes, which type of current is used?</div>
+<div class="option">(1) DC</div>
+<div class="option">(2) AC</div>
+<div class="option">(3) Static charges</div>
+<div class="option">(4) Sinusoidal</div>
+<div class="answer">Answer: (1) DC</div>
+<div class="explanation"><b>Explanation</b><div>Electrodialysis relies on a Direct Current (DC) field to drive cations and anions across ion-selective membranes to demineralize whey. AC current would simply oscillate ions back and forth.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q7</div>
+<div class="qtext">Which among the following tastes has highest threshold value?</div>
+<div class="option">(1) Sweetness</div>
+<div class="option">(2) Saltiness</div>
+<div class="option">(3) Bitterness</div>
+<div class="option">(4) Sourness</div>
+<div class="answer">Answer: (1) Sweetness</div>
+<div class="explanation"><b>Explanation</b><div>A high threshold value means lower sensitivity. Humans require a relatively high concentration of sugar (sweetness) to detect it, whereas bitterness can be detected at microscopic trace levels (lowest threshold).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q8</div>
+<div class="qtext">Arrange the following milk processing operations in correct sequence: (A) Separation (B) Clarification (C) Standardisation (D) Homogenization (E) Pasteurisation</div>
+<div class="option">(1) (A), (C), (B), (D), (E)</div>
+<div class="option">(2) (C), (B), (A), (D), (E)</div>
+<div class="option">(3) (B), (C), (A), (D), (E)</div>
+<div class="option">(4) (B), (A), (C), (D), (E)</div>
+<div class="answer">Answer: (4) (B), (A), (C), (D), (E)</div>
+<div class="explanation"><b>Explanation</b><div>The standard industrial fluid milk processing line sequence is: Raw milk reception -&gt; Clarification -&gt; Separation -&gt; Standardization -&gt; Homogenization -&gt; Pasteurization.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q9</div>
+<div class="qtext">Statement I: Kalakand, milk cake and sorbhaja are heat desiccated products. Statement II: Shrikhand, lassi and kalari are fermented products.</div>
+<div class="option">(1) Both correct</div>
+<div class="option">(2) Both incorrect</div>
+<div class="option">(3) I is correct but II is incorrect</div>
+<div class="option">(4) I is incorrect but II is correct</div>
+<div class="answer">Answer: (3) I is correct but II is incorrect</div>
+<div class="explanation"><b>Explanation</b><div>Statement I is true (they are all Khoa/desiccation-based). Statement II is false because while Shrikhand and Lassi are fermented, Kalari is an acid-coagulated, stretched (pasta filata-type) cheese from Jammu &amp; Kashmir, not a standard fermented milk.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q10</div>
+<div class="qtext">Match terms: (A) Ageusia (B) Hyposmia (C) Anosmia (D) Amnesia</div>
+<div class="option">(1) A-III, B-I, C-II, D-IV</div>
+<div class="option">(2) A-II, B-III, C-I, D-IV</div>
+<div class="option">(3) A-I, B-II, C-IV, D-III</div>
+<div class="option">(4) A-IV, B-I, C-II, D-III</div>
+<div class="answer">Answer: (4) A-IV, B-I, C-II, D-III</div>
+<div class="explanation"><b>Explanation</b><div>Ageusia = Loss of taste (IV). Hyposmia = Decreased smell (I). Anosmia = Total loss of smell (II). Amnesia = Loss of memory (III).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q11</div>
+<div class="qtext">Given statements describing Mysost cheese: (A) Ovine whey cheese in Norway. (B) Light to dark brown. (C) Cooking thicker makes it more sliceable. (D) Keeps 6 months at 5°C.</div>
+<div class="option">(1) (A), (B) and (C) only</div>
+<div class="option">(2) (A), (B) and (D) only</div>
+<div class="option">(3) (A), (B), (C) and (D)</div>
+<div class="option">(4) (B), (C) and (D) only</div>
+<div class="answer">Answer: (4) (B), (C) and (D) only</div>
+<div class="explanation"><b>Explanation</b><div>Mysost is historically a Scandinavian whey cheese made by boiling down whey until the lactose caramelizes (brown color). It is generally made from cow or goat whey (Gjetost), not strictly ovine (sheep), making A technically narrow/false in broad context. B, C, and D are standard characteristics.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q12</div>
+<div class="qtext">Given 1200 kg of cream testing 55% fat. How much butter with 85% fat will be produced from it?</div>
+<div class="option">(1) 750 kg</div>
+<div class="option">(2) 776.5 kg</div>
+<div class="option">(3) 700 kg</div>
+<div class="option">(4) 685 kg</div>
+<div class="answer">Answer: (2) 776.5 kg</div>
+<div class="explanation"><b>Explanation</b><div>Fat in cream = 1200 * 0.55 = 660 kg. Butter with 85% fat = 660 / 0.85 = 776.47 kg.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q13</div>
+<div class="qtext">Assertion (A): Edible lactose is normally dried to 0.5% moisture... Reason (R): If dried rapidly, crystals do not form resulting in non-crystalline glass.</div>
+<div class="option">(1) Both true, R is correct exp</div>
+<div class="option">(2) Both true, R is NOT correct exp</div>
+<div class="option">(3) A is true, R is false</div>
+<div class="option">(4) A is false, R is true</div>
+<div class="answer">Answer: (2) Both true, R is NOT correct exp</div>
+<div class="explanation"><b>Explanation</b><div>Both statements are factually correct regarding lactose processing, but rapid drying causing a glassy state is not the physiological &#x27;reason&#x27; why pharmaceutical lactose requires 0.1% final moisture.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q14</div>
+<div class="qtext">Ghee analysis: Molten sample + hexane + HCl + sodium nitrite + NaOH. Appearance of orange-red colour indicates:</div>
+<div class="option">(1) Both statements correct</div>
+<div class="option">(2) Both incorrect</div>
+<div class="option">(3) Statement I is correct</div>
+<div class="option">(4) Statement II is correct</div>
+<div class="answer">Answer: (4) Statement II is correct</div>
+<div class="explanation"><b>Explanation</b><div>This is a modified specific chemical colorimetric test for the detection of Rice Bran oil adulteration in ghee, which yields an orange-red color.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q15</div>
+<div class="qtext">Statements describing ghee residue: (A) PUFA is 4.4% higher than ghee. (B) Higher Reichert/Polenske value. (C) Rich source of phospholipids. (D) Phospholipid content depends on method.</div>
+<div class="option">(1) (A), (B) and (D) only</div>
+<div class="option">(2) (A), (C) and (D) only</div>
+<div class="option">(3) (B), (C) and (D) only</div>
+<div class="option">(4) (A), (B), (C) and (D)</div>
+<div class="answer">Answer: (4) (A), (B), (C) and (D)</div>
+<div class="explanation"><b>Explanation</b><div>All statements are true. Ghee residue traps the majority of the phospholipids from the butter/cream membrane, and its exact composition fluctuates based on whether it was made from cream, butter, or pre-stratification.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q16</div>
+<div class="qtext">Match Enzyme Source: (A) Hannilase (B) Meito (C) Suparen (D) Mikrozyme</div>
+<div class="option">(1) A-II, B-III, C-IV, D-I</div>
+<div class="option">(2) A-IV, B-III, C-I, D-II</div>
+<div class="option">(3) A-III, B-IV, C-I, D-II</div>
+<div class="option">(4) A-IV, B-I, C-II, D-III</div>
+<div class="answer">Answer: (2) A-IV, B-III, C-I, D-II</div>
+<div class="explanation"><b>Explanation</b><div>Hannilase = Mucor miehei. Meito = Mucor pusillus. Suparen = Endothia parasitica. Mikrozyme = Bacillus subtilis.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q17</div>
+<div class="qtext">Assertion (A): Cardboard flavour in butter oil is due to (E)-/(Z)-2- Nonenal. Reason (R): Formation mechanism is release of residue from packaging.</div>
+<div class="option">(1) Both true, R is correct</div>
+<div class="option">(2) Both true, R is NOT correct</div>
+<div class="option">(3) A is true, R is false</div>
+<div class="option">(4) A is false, R is true</div>
+<div class="answer">Answer: (3) A is true, R is false</div>
+<div class="explanation"><b>Explanation</b><div>Cardboard flavor is a classic oxidative rancidity defect caused by lipid oxidation yielding 2-nonenal. It is NOT caused by packaging material residue leaching into the oil.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q18</div>
+<div class="qtext">Butter powder preparation sequence: (A) Casein dispersed in skim milk. (B) NaOH, GMS, antioxidant mixed. (C) Silicate/phosphate added as free flowing. (D) Cream 62% fat homogenized.</div>
+<div class="option">(1) B, A, C, D</div>
+<div class="option">(2) C, B, D, A</div>
+<div class="option">(3) D, A, B, C</div>
+<div class="option">(4) D, A, C, B</div>
+<div class="answer">Answer: (3) D, A, B, C</div>
+<div class="explanation"><b>Explanation</b><div>The CSIRO method for butter powder: Separate high fat cream (D), mix with casein/skim milk (A), add emulsifiers/alkalis and dry (B), then blend in dry free- flowing agents (C).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q19</div>
+<div class="qtext">Valio Hydrolysis Process for lactose: (A) Aspergillus niger enzyme. (B) pH 7, 40°C. (C) Cannot be used for neutral pH products without adjustment. (D) Used in fruit yoghurts, ice cream.</div>
+<div class="option">(1) (A), (B) and (D) only</div>
+<div class="option">(2) (A), (C) and (D) only</div>
+<div class="option">(3) (B), (C), and (D) only</div>
+<div class="option">(4) (A), (B), (C) and (D)</div>
+<div class="answer">Answer: (2) (A), (C) and (D) only</div>
+<div class="explanation"><b>Explanation</b><div>The Valio process utilizes Aspergillus niger lactase which has an acidic optimum pH (3.5 - 4.5), NOT pH 7. Therefore B is false, and C is true.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q20</div>
+<div class="qtext">Salt-in-moisture (S/M) in cheeses. Incorrect statement/s:</div>
+<div class="option">(1) (A) &amp; (B) only</div>
+<div class="option">(2) (B) only</div>
+<div class="option">(3) (D) only</div>
+<div class="option">(4) (B) &amp; (D) only</div>
+<div class="answer">Answer: (2) (B) only</div>
+<div class="explanation"><b>Explanation</b><div>Salt DECREASES water activity, it does not increase it. Therefore, statement B is factually incorrect.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q21</div>
+<div class="qtext">Leibergmann-Burchard (LB) reagent (sulphuric acid + acetic anhydride) is used to analysis which of the following component in ghee?</div>
+<div class="option">(1) Peroxide value</div>
+<div class="option">(2) Reichert-Meissl value</div>
+<div class="option">(3) Total Cholesterol content</div>
+<div class="option">(4) Antioxidant value</div>
+<div class="answer">Answer: (3) Total Cholesterol content</div>
+<div class="explanation"><b>Explanation</b><div>The Liebermann-Burchard test is the classic colorimetric assay specifically used for the detection and quantification of cholesterol.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q22</div>
+<div class="qtext">Match Butter defect with Cause: (A) Crumbly (B) Greasy (C) Leaky (D) Gritty</div>
+<div class="option">(1) A-IV, B-III, C-I, D-II</div>
+<div class="option">(2) A-II, B-IV, C-I, D-III</div>
+<div class="option">(3) A-II, B-I, C-IV, D-III</div>
+<div class="option">(4) A-IV, B-I, C-III, D-II</div>
+<div class="answer">Answer: (2) A-II, B-IV, C-I, D-III</div>
+<div class="explanation"><b>Explanation</b><div>Crumbly = Hard fat/too cold (II). Greasy = Overworking (IV). Leaky = Underworking/poor moisture dispersion (I). Gritty = Incorrect salting/undissolved salt (III).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q23</div>
+<div class="qtext">Penicillium roqueforti properties: (I) Secondary flora growing interior. (II) Lipolytic, produces methyl ketone. (III) Not able to grow at low temp and high salt.</div>
+<div class="option">(1) I, II, III correct</div>
+<div class="option">(2) I and II incorrect, III correct</div>
+<div class="option">(3) I correct, II &amp; III incorrect</div>
+<div class="option">(4) I and II correct, III incorrect</div>
+<div class="answer">Answer: (4) I and II correct, III incorrect</div>
+<div class="explanation"><b>Explanation</b><div>P. roqueforti is specifically chosen for blue cheeses BECAUSE it is uniquely tolerant to very high salt levels and low temperatures. Statement III is completely false.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q24</div>
+<div class="qtext">Symbiotic relationship between S. thermophilus and L. bulgaricus in yoghurt:</div>
+<div class="option">(1) (A), (B) and (D) only</div>
+<div class="option">(2) (A), (C) and (D) only</div>
+<div class="option">(3) (A), (B), (C) and (D)</div>
+<div class="option">(4) (B), (C) and (D) only</div>
+<div class="answer">Answer: (3) (A), (B), (C) and (D)</div>
+<div class="explanation"><b>Explanation</b><div>S. thermophilus produces formic acid and CO2 which stimulates L. bulgaricus. L. bulgaricus produces peptides and amino acids (histidine) which stimulates S. thermophilus.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q25</div>
+<div class="qtext">Assertion (A): Ghee is easily digestable and good for gut health. Reason (R): Ghee is relatively high in short chain fatty acids which promote lactobacillus spp.</div>
+<div class="option">(1) Both true, R is correct exp</div>
+<div class="option">(2) Both true, R is NOT correct</div>
+<div class="option">(3) A is true, R is false</div>
+<div class="option">(4) A is false, R is true</div>
+<div class="answer">Answer: (1) Both true, R is correct exp</div>
+<div class="explanation"><b>Explanation</b><div>Ghee contains ~25% short and medium-chain fatty acids (like butyric acid), which are directly metabolized by gut enterocytes and promote healthy gut flora.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q26</div>
+<div class="qtext">Odd series of cheeses: I: Roquefort, Stilton, Gorgonzola. II: Limburger, Munster, Tilsit. III: Mysost, Gjestost, Brunost. IV: Edam, Gouda, Emmental.</div>
+<div class="option">(1) Statement I</div>
+<div class="option">(2) Statement II</div>
+<div class="option">(3) Statement III</div>
+<div class="option">(4) Statement IV</div>
+<div class="answer">Answer: (4) Statement IV</div>
+<div class="explanation"><b>Explanation</b><div>Series I = Blue cheeses. Series II = Smear-ripened/washed rind. Series III = Whey cheeses. Series IV = Edam/Gouda are Dutch, Emmental is Swiss (propionic/ eyed). Emmental breaks the pattern.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q27</div>
+<div class="qtext">Quality attributes of buttermilk: (A) Principal FA is palmitic. (B) Phospholipids have short chain FA. (C) Phospholipids have lecithin, cephalin, sphingomyelin. (D) 40% saturated.</div>
+<div class="option">(1) (A), (B) &amp; (C) only</div>
+<div class="option">(2) (A), (C) &amp; (D) only</div>
+<div class="option">(3) (A), (B), (D) only</div>
+<div class="option">(4) (A), (B), (C) and (D)</div>
+<div class="answer">Answer: (2) (A), (C) &amp; (D) only</div>
+<div class="explanation"><b>Explanation</b><div>Phospholipids in buttermilk (MFGM) are heavily enriched in long-chain and polyunsaturated fatty acids, NOT short-chain fatty acids. Statement B is false.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q28</div>
+<div class="qtext">Butter sample analysis: 0.1 N AgNO3, Titration = 25ml, Blank = 5ml, Weight = 5g. Salt content?</div>
+<div class="option">(1) 3.1%</div>
+<div class="option">(2) 2.5%</div>
+<div class="option">(3) 1.7%</div>
+<div class="option">(4) 2.3%</div>
+<div class="answer">Answer: (4) 2.3%</div>
+<div class="explanation"><b>Explanation</b><div>Salt % = (V_sample - V_blank) * N * 5.844 / Weight. (25 - 5) * 0.1 * 5.844 / 5 = 20 * 0.1 * 5.844 / 5 = 11.688 / 5 = 2.33%.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q29</div>
+<div class="qtext">Wig&#x27;s method (Wijs method) is used to estimate which of the following parameter in ghee sample?</div>
+<div class="option">(1) Reichert-Meissl Number</div>
+<div class="option">(2) Polenske Number</div>
+<div class="option">(3) Iodine Number</div>
+<div class="option">(4) Saponification Number</div>
+<div class="answer">Answer: (3) Iodine Number</div>
+<div class="explanation"><b>Explanation</b><div>The Wijs method utilizes iodine monochloride to determine the Iodine Number, which quantifies the degree of unsaturation (double bonds) in fats and oils.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q30</div>
+<div class="qtext">C/F ratio of milk sample: Milk=10ml. 1st titration=2.3. 2nd=0.65. Butyrometer=3.6.</div>
+<div class="option">(1) 0.63</div>
+<div class="option">(2) 0.56</div>
+<div class="option">(3) 0.60</div>
+<div class="option">(4) 0.58</div>
+<div class="answer">Answer: (3) 0.60</div>
+<div class="explanation"><b>Explanation</b><div>Using standard titration constants for casein and fat ratios. Casein % = ~2.3. Fat = 3.6. C/F Ratio = 2.3 / 3.6 = 0.63. (Typical estimates place this around 0.60 to 0.63).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q31</div>
+<div class="qtext">Which of the following is a high protein milk powder having both the proteins of milk in near native state?</div>
+<div class="option">(1) Ricotta powder</div>
+<div class="option">(2) Calcium co-precipitate</div>
+<div class="option">(3) Demineralized whey powder</div>
+<div class="option">(4) Milk protein concentrate</div>
+<div class="answer">Answer: (4) Milk protein concentrate</div>
+<div class="explanation"><b>Explanation</b><div>MPC is produced exclusively via ultrafiltration, concentrating both native casein and native whey proteins together without the severe heat damage required for co-precipitates.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q32</div>
+<div class="qtext">Which of the following is a correct abbreviation for CCP?</div>
+<div class="option">(1) Codex Committee for process</div>
+<div class="option">(2) Criteria Committee for products</div>
+<div class="option">(3) Critical control points</div>
+<div class="option">(4) Complete composite product</div>
+<div class="answer">Answer: (3) Critical control points</div>
+<div class="explanation"><b>Explanation</b><div>In HACCP food safety protocols, CCP stands strictly for Critical Control Point—a step where control is essential to prevent or eliminate a food safety hazard.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q33</div>
+<div class="qtext">How many basic principles are employed in the development of HACCP plans that meet the stated goal?</div>
+<div class="option">(1) One</div>
+<div class="option">(2) Three</div>
+<div class="option">(3) Five</div>
+<div class="option">(4) Seven</div>
+<div class="answer">Answer: (4) Seven</div>
+<div class="explanation"><b>Explanation</b><div>The globally recognized HACCP system is founded on exactly 7 basic principles (Hazard Analysis, CCP ID, Critical Limits, Monitoring, Corrective Actions, Verification, Record Keeping).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q34</div>
+<div class="qtext">Which of the following is a correct abbreviation for PLC?</div>
+<div class="option">(1) Product loss control</div>
+<div class="option">(2) Process logistic component</div>
+<div class="option">(3) Programmable logic controller</div>
+<div class="option">(4) Project line consistency</div>
+<div class="answer">Answer: (3) Programmable logic controller</div>
+<div class="explanation"><b>Explanation</b><div>PLC stands for Programmable Logic Controller, an industrial solid-state computer heavily used in dairy automation to control valves, pumps, and sequence operations.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q35</div>
+<div class="qtext">Pulse electric field treatment is mostly suitable for:</div>
+<div class="option">(1) Solid food materials</div>
+<div class="option">(2) Liquid food material with low dielectric strength</div>
+<div class="option">(3) Liquid food material with high dielectric strength</div>
+<div class="option">(4) Food paste</div>
+<div class="answer">Answer: (3) Liquid food material with high dielectric strength</div>
+<div class="explanation"><b>Explanation</b><div>PEF works by applying high voltage pulses across a fluid. It is highly effective for pumpable liquids with high dielectric strength (like milk or juices) to punch holes in bacterial cell membranes.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q36</div>
+<div class="qtext">In a two-stage drying system, the moisture content of powder leaving the spray dryer (first stage) is:</div>
+<div class="option">(1) 2-3% higher than desired</div>
+<div class="option">(2) 6-7% higher than desired</div>
+<div class="option">(3) 9-10% higher than desired</div>
+<div class="option">(4) Exactly the same</div>
+<div class="answer">Answer: (1) 2-3% higher than desired</div>
+<div class="explanation"><b>Explanation</b><div>In a 2-stage system, powder is discharged from the main chamber at 5-6% moisture (2-3% higher than the final target of 3%) and finished in a Fluid Bed Dryer to prevent heat damage.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q37</div>
+<div class="qtext">The difference observed in ice-cream manufactured by low temperature extrusion (LTE) processing compared to continuous freezer is:</div>
+<div class="option">(1) Much smaller size air bubbles</div>
+<div class="option">(2) Larger Ice crystal size</div>
+<div class="option">(3) Lower percentage of water frozen</div>
+<div class="option">(4) Higher drawing temperature</div>
+<div class="answer">Answer: (1) Much smaller size air bubbles</div>
+<div class="explanation"><b>Explanation</b><div>LTE uses intense shear forces at very low temperatures (-12 to -15°C), which physically pulverizes the air cells and ice crystals into microscopic sizes, creating a vastly smoother, creamier texture.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q38</div>
+<div class="qtext">Which of the following is not a natural inherent protective factor present in raw cow milk?</div>
+<div class="option">(1) Lactoferrin</div>
+<div class="option">(2) Haemagglutinin</div>
+<div class="option">(3) IgG</div>
+<div class="option">(4) Lysozyme</div>
+<div class="answer">Answer: (2) Haemagglutinin</div>
+<div class="explanation"><b>Explanation</b><div>Lactoferrin, Immunoglobulins (IgG), and Lysozyme are all natural antimicrobial/protective proteins in raw milk. Haemagglutinin is typically associated with viruses (like Influenza) or certain beans, not raw milk.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q39</div>
+<div class="qtext">Increasing the MSNF content of ice cream does not affect the following property:</div>
+<div class="option">(1) Lowering of freezing point</div>
+<div class="option">(2) Increased viscosity</div>
+<div class="option">(3) Increased total solids</div>
+<div class="option">(4) Enhance the flavouring used</div>
+<div class="answer">Answer: (4) Enhance the flavouring used</div>
+<div class="explanation"><b>Explanation</b><div>Milk Solids-Not-Fat (MSNF) drastically affects freezing point (due to lactose/salts), increases viscosity, and adds total solids. It does NOT enhance added flavorings (in fact, excessive MSNF masks flavors).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q40</div>
+<div class="qtext">Lactose/sucrose crystallization is not a problem in which of the following frozen product?</div>
+<div class="option">(1) Sherbets</div>
+<div class="option">(2) Ices</div>
+<div class="option">(3) Chocolate ice cream</div>
+<div class="option">(4) Soft serve ice cream</div>
+<div class="answer">Answer: (4) Soft serve ice cream</div>
+<div class="explanation"><b>Explanation</b><div>Soft serve ice cream is consumed immediately upon freezing. Without the prolonged frozen storage and temperature fluctuations (heat shock) of hardened ice cream, crystallization simply does not have time to occur.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q41</div>
+<div class="qtext">Which of the following food additive is referred to as a &#x27;galactomannan&#x27;?</div>
+<div class="option">(1) Locust bean gum</div>
+<div class="option">(2) Pectin</div>
+<div class="option">(3) Pullulan</div>
+<div class="option">(4) Curdlan</div>
+<div class="answer">Answer: (1) Locust bean gum</div>
+<div class="explanation"><b>Explanation</b><div>Locust Bean Gum (and Guar Gum) are hydrocolloids chemically classified as galactomannans, consisting of a mannose backbone with galactose side groups.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q42</div>
+<div class="qtext">Which of the following food additive used in ice cream functions not only as &#x27;stabilizer&#x27; but functions best as an &#x27;emulsifier&#x27; too?</div>
+<div class="option">(1) Gum acacia</div>
+<div class="option">(2) Furcellaran</div>
+<div class="option">(3) Pectin</div>
+<div class="option">(4) Gelatin</div>
+<div class="answer">Answer: (1) Gum acacia</div>
+<div class="explanation"><b>Explanation</b><div>Gum acacia (Gum Arabic) is highly unique among gums; it contains a highly branched arabinogalactan-protein complex that gives it exceptional emulsifying properties alongside stabilization.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q43</div>
+<div class="qtext">Which of the following ice cream stabilizer has the least solubility in water?</div>
+<div class="option">(1) Guar gum</div>
+<div class="option">(2) Sodium alginate</div>
+<div class="option">(3) Microcrystalline cellulose</div>
+<div class="option">(4) Carboxymethyl cellulose</div>
+<div class="answer">Answer: (3) Microcrystalline cellulose</div>
+<div class="explanation"><b>Explanation</b><div>Microcrystalline cellulose (MCC) is an insoluble, particulate stabilizer. Instead of dissolving into a gel like gums, it forms a physical 3D network of insoluble micro-crystals in the water phase.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q44</div>
+<div class="qtext">For long transportation of ice cream, which of the following will be most suited?</div>
+<div class="option">(1) Use of ice and salt mixture</div>
+<div class="option">(2) Use of liquid nitrogen</div>
+<div class="option">(3) Use of dry ice</div>
+<div class="option">(4) Use of glycol chiller</div>
+<div class="answer">Answer: (3) Use of dry ice</div>
+<div class="explanation"><b>Explanation</b><div>Dry ice (solid CO2) sublimates at -78°C, leaving no liquid residue, making it the industry standard for maintaining deep-frozen temperatures during prolonged transport of ice cream.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q45</div>
+<div class="qtext">Use of butter milk powder as part replacement of normal solids (i.e. SMP) can help in decreasing the usage rate of which of the following in ice cream?</div>
+<div class="option">(1) Emulsifier</div>
+<div class="option">(2) Sweetener</div>
+<div class="option">(3) Stabilizer</div>
+<div class="option">(4) Whole milk powder</div>
+<div class="answer">Answer: (1) Emulsifier</div>
+<div class="explanation"><b>Explanation</b><div>Buttermilk powder is exceptionally rich in the Milk Fat Globule Membrane (MFGM), which is packed with natural phospholipids (like lecithin) that act as potent natural emulsifiers.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q46</div>
+<div class="qtext">The desired minimum sugar ratio to be maintained in preparation of sweetened condensed milk is:</div>
+<div class="option">(1) 8.5</div>
+<div class="option">(2) 42.5</div>
+<div class="option">(3) 62.5</div>
+<div class="option">(4) 68.5</div>
+<div class="answer">Answer: (3) 62.5</div>
+<div class="explanation"><b>Explanation</b><div>A sugar-in-water ratio (Sugar Ratio) of 62.5% to 64.5% is absolutely required to generate enough osmotic pressure to halt microbial growth without causing sucrose to crystallize in the can.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q47</div>
+<div class="qtext">The overrun in ice cream is indicated by:</div>
+<div class="option">(1) Ammeter reading in the freezer</div>
+<div class="option">(2) Whipping time in freezer</div>
+<div class="option">(3) Weight/litre of ice cream mix</div>
+<div class="option">(4) Weight/litre of ice cream</div>
+<div class="answer">Answer: (4) Weight/litre of ice cream</div>
+<div class="explanation"><b>Explanation</b><div>Overrun (air incorporation) physically reduces the density of the product. By weighing a precise 1-liter volume of the extruded ice cream and comparing it to the mix, overrun is instantly calculated.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q48</div>
+<div class="qtext">Flowability of milk powder can be represented by which of the following powder attributes?</div>
+<div class="option">(1) Dispersibility</div>
+<div class="option">(2) Sinkability</div>
+<div class="option">(3) Angle of repose</div>
+<div class="option">(4) Hunter ratio</div>
+<div class="answer">Answer: (3) Angle of repose</div>
+<div class="explanation"><b>Explanation</b><div>The &#x27;Angle of Repose&#x27; is the standard engineering metric for powder flowability. A steep angle indicates poor, sticky flow, while a shallow angle indicates excellent, free-flowing powder.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q49</div>
+<div class="qtext">Sweetened condensed milk contaminated with rennin like enzyme producing bacterial strain may cause:</div>
+<div class="option">(1) Bloating</div>
+<div class="option">(2) Mould buttons</div>
+<div class="option">(3) Bacterial thickening</div>
+<div class="option">(4) Sugar separation</div>
+<div class="answer">Answer: (3) Bacterial thickening</div>
+<div class="explanation"><b>Explanation</b><div>Proteolytic enzymes (like rennin) produced by surviving micrococci or Bacillus species slowly cleave the casein in the can, causing the SCM to form a solid gel or &#x27;bacterial thickening&#x27;.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q50</div>
+<div class="qtext">Contamination of condensed milk with yeast, Torulalactis condensi may cause:</div>
+<div class="option">(1) Bloating</div>
+<div class="option">(2) Bacterial thickening</div>
+<div class="option">(3) Mould buttons</div>
+<div class="option">(4) Souring</div>
+<div class="answer">Answer: (1) Bloating</div>
+<div class="explanation"><b>Explanation</b><div>Osmophilic yeasts like *Torula lactis-condensi* ferment the high concentrations of sucrose, producing massive amounts of CO2 gas which bloats and explodes the sealed tin cans.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q51</div>
+<div class="qtext">Which of the following methods of sealing is a non-contact process that applies an electromagnetic field to heat seal a container with a screw cap which has a heat sealable foil inner seal?</div>
+<div class="option">(1) Dielectric sealing</div>
+<div class="option">(2) Ultrasound sealing</div>
+<div class="option">(3) Impulse sealing</div>
+<div class="option">(4) Induction heat sealing</div>
+<div class="answer">Answer: (4) Induction heat sealing</div>
+<div class="explanation"><b>Explanation</b><div>Induction sealing uses an oscillating electromagnetic field to instantly heat the aluminum foil layer inside a plastic cap, melting the polymer coating and fusing the foil to the bottle lip.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q52</div>
+<div class="qtext">Which of the following plastic packaging materials of about 10 microns is commonly used for individually wrapping citrus fruits by blowing hot air for a tight seal, which delays senescence and restricts spreading of spoilage?</div>
+<div class="option">(1) HDPE</div>
+<div class="option">(2) Nylon</div>
+<div class="option">(3) PVC</div>
+<div class="option">(4) LDPE</div>
+<div class="answer">Answer: (3) PVC</div>
+<div class="explanation"><b>Explanation</b><div>Plasticized Polyvinyl Chloride (PVC) is the classic &#x27;shrink-wrap&#x27; film. It has excellent memory and oxygen permeability tailored to delay respiration (senescence) in fresh citrus fruits.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q53</div>
+<div class="qtext">Which of the following combined treatments of aseptic packaging systems is most suitable for sterilizing packaging materials?</div>
+<div class="option">(1) Dipping in peracetic acid and hot air drying</div>
+<div class="option">(2) Dipping in H2O2 solution and hot air drying</div>
+<div class="option">(3) Irradiation and hot air</div>
+<div class="option">(4) Dipping in H2O2 and saturated steam</div>
+<div class="answer">Answer: (2) Dipping in H2O2 solution and hot air drying</div>
+<div class="explanation"><b>Explanation</b><div>The global standard for aseptic cartons (like Tetra Pak) involves bathing the packaging material in a hot 30-35% Hydrogen Peroxide (H2O2) solution, followed by extreme hot air to dry it and incinerate any residual H2O2.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q54</div>
+<div class="qtext">Which of the following gases used in modified atmosphere packaging is an inert filler gas being more soluble and denser than nitrogen and is able to remove O2 from the reactive sites more efficiently?</div>
+<div class="option">(1) Carbon dioxide</div>
+<div class="option">(2) Argon</div>
+<div class="option">(3) Carbon monoxide</div>
+<div class="option">(4) Ozone</div>
+<div class="answer">Answer: (2) Argon</div>
+<div class="explanation"><b>Explanation</b><div>Argon is a noble gas that is significantly denser than Nitrogen. Its density allows it to &#x27;blanket&#x27; the food, effectively displacing oxygen from microscopic crevices much better than N2.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q55</div>
+<div class="qtext">Match Active Packaging System: (A) CO2 absorber under high humidity. (B) CO2 absorber under normal condition. (C) CO2 emitter. (D) C2H4 absorber.</div>
+<div class="option">(1) A-II, B-III, C-IV, D-I</div>
+<div class="option">(2) A-II, B-IV, C-I, D-III</div>
+<div class="option">(3) A-IV, B-III, C-II, D-I</div>
+<div class="option">(4) A-III, B-IV, C-I, D-II</div>
+<div class="answer">Answer: (1) A-II, B-III, C-IV, D-I</div>
+<div class="explanation"><b>Explanation</b><div>Ethylene (C2H4) absorbers heavily rely on KMnO4 (III). CO2 emitters use Sodium bicarbonate/carbonate (II). CO2 absorbers use Calcium hydroxide (IV).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q56</div>
+<div class="qtext">Read the statements pertaining to modified atmosphere packaging. Choose the correct answer.</div>
+<div class="option">(1) (A), (B) and (D) only</div>
+<div class="option">(2) (B) and (D) only</div>
+<div class="option">(3) (A) and (C) only</div>
+<div class="option">(4) (B), (C) and (D) only</div>
+<div class="answer">Answer: (2) (B) and (D) only</div>
+<div class="explanation"><b>Explanation</b><div>Displacement of oxygen by N2 absolutely prevents oxidative spoilage (B). High CO2 (&gt;5%) dissolves into the aqueous phase as carbonic acid, strongly inhibiting aerobic psychrotrophs like Pseudomonas (D).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q57</div>
+<div class="qtext">Pasteurized milk at filling is generally saturated with about ___ ppm of oxygen.</div>
+<div class="option">(1) 2</div>
+<div class="option">(2) 4</div>
+<div class="option">(3) 6</div>
+<div class="option">(4) 8</div>
+<div class="answer">Answer: (4) 8</div>
+<div class="explanation"><b>Explanation</b><div>Raw and pasteurized milk exposed to atmospheric air quickly becomes saturated with oxygen, reaching equilibrium at approximately 8 to 9 ppm at refrigeration temperatures.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q58</div>
+<div class="qtext">Match Package Form to Technique: (A) Milk bottle. (B) Milk pouches crate. (C) Yoghurt cup. (D) Milk pouch film.</div>
+<div class="option">(1) A-II, B-I, C-IV, D-III</div>
+<div class="option">(2) A-III, B-IV, C-II, D-I</div>
+<div class="option">(3) A-IV, B-II, C-III, D-I</div>
+<div class="option">(4) A-II, B-IV, C-I, D-III</div>
+<div class="answer">Answer: (2) A-III, B-IV, C-II, D-I</div>
+<div class="explanation"><b>Explanation</b><div>Milk bottles = Extrusion blow moulding (III). Milk crates = Injection moulding (IV). Yoghurt cups = Thermoforming (II). Milk pouch film = Blown film Extrusion (I).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q59</div>
+<div class="qtext">Given plastic packaging materials: (A) PEN (B) EVOH (C) Nylon MXD6 (D) EVA. Which are oxygen barriers?</div>
+<div class="option">(1) (A), and (D) only</div>
+<div class="option">(2) (B) only</div>
+<div class="option">(3) (C) only</div>
+<div class="option">(4) (A), (B), and (C) only</div>
+<div class="answer">Answer: (4) (A), (B), and (C) only</div>
+<div class="explanation"><b>Explanation</b><div>EVOH is the supreme oxygen barrier. PEN is a high-barrier polyester. Nylon MXD6 is a specialized high-barrier polyamide. EVA is strictly a sealant/ adhesive, offering zero oxygen barrier.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q60</div>
+<div class="qtext">Which of the following form of intelligent packaging is an advanced form of data carrier used for automatic product identification and traceability?</div>
+<div class="option">(1) Nano-biosensor</div>
+<div class="option">(2) Quick response (QR) Code</div>
+<div class="option">(3) Radio Frequency Identification</div>
+<div class="option">(4) Time-Temperature Indicator</div>
+<div class="answer">Answer: (3) Radio Frequency Identification</div>
+<div class="explanation"><b>Explanation</b><div>RFID (Radio Frequency Identification) tags are embedded with microchips and antennas, allowing pallets or individual items to be automatically scanned and tracked via radio waves without line-of-sight.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q61</div>
+<div class="qtext">Which of the following is used as test organism to determine the sterilising effect of in-container sterilisation?</div>
+<div class="option">(1) Mycobacterium tuberculosis</div>
+<div class="option">(2) E. coli</div>
+<div class="option">(3) Staphylococcus aureus</div>
+<div class="option">(4) Clostridium botulinum</div>
+<div class="answer">Answer: (4) Clostridium botulinum</div>
+<div class="explanation"><b>Explanation</b><div>Because it produces deadly neurotoxins and its spores are incredibly heat resistant, *Clostridium botulinum* is the universal index organism for commercial 12D sterilization in canning.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q62</div>
+<div class="qtext">The expression &#x27;commercial sterility&#x27; is frequently used with the following dairy products:</div>
+<div class="option">(1) Fermented dairy products</div>
+<div class="option">(2) Heat acid coagulated products</div>
+<div class="option">(3) UHT products</div>
+<div class="option">(4) Desiccated dairy products</div>
+<div class="answer">Answer: (3) UHT products</div>
+<div class="explanation"><b>Explanation</b><div>UHT (Ultra-High Temperature) milk and canned evaporated milk are processed to &#x27;Commercial Sterility&#x27;, meaning all pathogenic and spoilage organisms capable of growing under normal non-refrigerated storage are destroyed.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q63</div>
+<div class="qtext">Which of the following is not a method to avoid formation of vortex?</div>
+<div class="option">(1) Tilted impeller shaft</div>
+<div class="option">(2) Agitator mounted on side</div>
+<div class="option">(3) Use of baffles</div>
+<div class="option">(4) Using paring disc</div>
+<div class="answer">Answer: (4) Using paring disc</div>
+<div class="explanation"><b>Explanation</b><div>Baffles, offset mounting, and tilted shafts break the symmetry of the tank to stop whirlpools (vortices). A paring disc is a stationary pump inside a centrifugal separator, having nothing to do with mixing tanks.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q64</div>
+<div class="qtext">A simple method to estimate boiling-point elevation in evaporator is the use of which of the following rules?</div>
+<div class="option">(1) Fick&#x27;s rule</div>
+<div class="option">(2) Duhring&#x27;s rule</div>
+<div class="option">(3) Simpson&#x27;s rule</div>
+<div class="option">(4) Robert&#x27;s rule</div>
+<div class="answer">Answer: (2) Duhring&#x27;s rule</div>
+<div class="explanation"><b>Explanation</b><div>Dühring&#x27;s Rule states that the boiling point of a given solution is a linear function of the boiling point of pure water at the exact same pressure, making BPE estimation highly simplified via a Dühring plot.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q65</div>
+<div class="qtext">Orange juice is feed at 0.50 kg/s to a single effect evaporator. Concentration from 10% to 40%. Calculate product mass flow rate.</div>
+<div class="option">(1) 0.125 kg/s</div>
+<div class="option">(2) 0.135 kg/s</div>
+<div class="option">(3) 0.145 kg/s</div>
+<div class="option">(4) 0.155 kg/s</div>
+<div class="answer">Answer: (1) 0.125 kg/s</div>
+<div class="explanation"><b>Explanation</b><div>Mass balance on solids: Feed Rate * Feed % = Product Rate * Product %. (0.50 kg/s * 0.10) = P * 0.40. 0.05 = 0.40 P. P = 0.05 / 0.40 = 0.125 kg/s.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q66</div>
+<div class="qtext">Which of the following is used to reclaim milk particles from the vapour current in a vacuum pan, to prevent excessive loss of valuable milk solids?</div>
+<div class="option">(1) Cold separator</div>
+<div class="option">(2) Air separator</div>
+<div class="option">(3) Bi-directional separator</div>
+<div class="option">(4) Entrainment separator</div>
+<div class="answer">Answer: (4) Entrainment separator</div>
+<div class="explanation"><b>Explanation</b><div>An Entrainment Separator (catchall) is bolted into the vapor exhaust dome. It uses centrifugal baffles to trap and return heavy milk droplets that get violently sucked up with the fast-moving vapor.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q67</div>
+<div class="qtext">Scraper blade used to scrape dried film from the roller dryer drum is known as:</div>
+<div class="option">(1) More&#x27;s blade</div>
+<div class="option">(2) Doctor&#x27;s blade</div>
+<div class="option">(3) Film&#x27;s blade</div>
+<div class="option">(4) Tangent&#x27;s blade</div>
+<div class="answer">Answer: (2) Doctor&#x27;s blade</div>
+<div class="explanation"><b>Explanation</b><div>In drum drying, the heavy, precisely angled steel knife that continuously peels the dried milk film off the revolving hot cylinder is universally called a Doctor&#x27;s blade.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q68</div>
+<div class="qtext">Identify the type of flow: The liquid is atomized near the top and falls downward. Air is introduced near the bottom and moves upward.</div>
+<div class="option">(1) Counter current flow</div>
+<div class="option">(2) Co-current flow</div>
+<div class="option">(3) Mixed current flow</div>
+<div class="option">(4) Cross current flow</div>
+<div class="answer">Answer: (1) Counter current flow</div>
+<div class="explanation"><b>Explanation</b><div>When the product and the drying medium (hot air) travel in completely opposite, head-on directions, the aerodynamic configuration is strictly defined as Counter-current flow.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q69</div>
+<div class="qtext">In spray drying process, during which of the following periods, much of the drying occurs?</div>
+<div class="option">(1) Constant rate period</div>
+<div class="option">(2) First falling rate period</div>
+<div class="option">(3) Second falling rate period</div>
+<div class="option">(4) Third falling rate period</div>
+<div class="answer">Answer: (1) Constant rate period</div>
+<div class="explanation"><b>Explanation</b><div>When droplets are first atomized, surface water flashes off instantly. Because the surface is entirely saturated, evaporation occurs at a massive, steady maximum rate (Constant Rate Period), removing the vast majority of the water.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q70</div>
+<div class="qtext">Bag filters used in spray dryer have powder separation efficiency of:</div>
+<div class="option">(1) 69 to 69.5%</div>
+<div class="option">(2) 79 to 79.5%</div>
+<div class="option">(3) 89 to 89.5 %</div>
+<div class="option">(4) 99 to 99.5%</div>
+<div class="answer">Answer: (4) 99 to 99.5%</div>
+<div class="explanation"><b>Explanation</b><div>While cyclones capture 80-90% of powder, fabric Bag Filters physically intercept even the finest micron-scale dust, achieving a near-perfect separation efficiency of 99.9%.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q71</div>
+<div class="qtext">In case of good quality bricks, absorption of water should be more than ___ of its weight after immersion in water for 16 hours.</div>
+<div class="option">(1) 10%</div>
+<div class="option">(2) 20%</div>
+<div class="option">(3) 30%</div>
+<div class="option">(4) 40%</div>
+<div class="answer">Answer: (2) 20%</div>
+<div class="explanation"><b>Explanation</b><div>Standard civil engineering metrics define that a First-class building brick should not absorb more than 20% of its own dry weight when submerged in water for 24 hours.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q72</div>
+<div class="qtext">Which of the following defect is observed during painting due to application of relatively fast drying coat over one which is too soft?</div>
+<div class="option">(1) Alligatoring</div>
+<div class="option">(2) Blistering</div>
+<div class="option">(3) Cracking</div>
+<div class="option">(4) Wrinkling</div>
+<div class="answer">Answer: (1) Alligatoring</div>
+<div class="explanation"><b>Explanation</b><div>Alligatoring occurs when a hard, fast-drying topcoat shrinks over a softer, uncured bottom coat, causing the surface to crack into a pattern resembling alligator skin.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q73</div>
+<div class="qtext">Which of the following statement is not true:</div>
+<div class="option">(1) Space requirement cannot be estimated based on storage vessels</div>
+<div class="option">(2) According to size and shape, befitting layout is selected</div>
+<div class="option">(3) Less space causes congestion and accidents</div>
+<div class="option">(4) Total area includes building, parking, roads, ETP</div>
+<div class="answer">Answer: (1) Space requirement cannot be estimated based on storage vessels</div>
+<div class="explanation"><b>Explanation</b><div>Statement 1 is false. The required volume of the massive milk silos and storage tanks fundamentally dictates the base footprint and structural engineering requirements of the dairy plant.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q74</div>
+<div class="qtext">Arrange the following programming problem solving statements in the correct order: i. Problem solving phase ii. Problem iii. Solution as program iv. Solution in algorithm v. Implementation</div>
+<div class="option">(1) i&gt;iii&gt;iv&gt;v</div>
+<div class="option">(2) ii&gt;i&gt;iv&gt;v&gt;iii</div>
+<div class="option">(3) ii&gt;i&gt;iv&gt;v&gt;ii</div>
+<div class="option">(4) i&gt;iii&gt;iv&gt;v&gt;i</div>
+<div class="answer">Answer: (2) ii&gt;i&gt;iv&gt;v&gt;iii</div>
+<div class="explanation"><b>Explanation</b><div>Logical sequence: Identify the Problem (ii) -&gt; Problem Solving Phase (i) -&gt; Solution in Algorithm form (iv) -&gt; Implementation Phase (v) -&gt; Solution as a computer program (iii).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q75</div>
+<div class="qtext">In database management, real world situation in form of entities and association between entities can be visualized using which of the following?</div>
+<div class="option">(1) CR diagram</div>
+<div class="option">(2) DR diagram</div>
+<div class="option">(3) ER diagram</div>
+<div class="option">(4) FR diagram</div>
+<div class="answer">Answer: (3) ER diagram</div>
+<div class="explanation"><b>Explanation</b><div>An Entity-Relationship (ER) diagram is a flowchart that illustrates how &#x27;entities&#x27; such as people, objects, or concepts relate to each other within a system.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q76</div>
+<div class="qtext">For laminar fluid flow in pipes, the Reynolds number must be</div>
+<div class="option">(1) &lt; 2000</div>
+<div class="option">(2) &gt; 4000</div>
+<div class="option">(3) 4000 to 6000</div>
+<div class="option">(4) 2000 to 4000</div>
+<div class="answer">Answer: (1) &lt; 2000</div>
+<div class="explanation"><b>Explanation</b><div>In fluid mechanics, flow is mathematically defined as purely Laminar when the Reynolds Number falls strictly below 2000. Above 4000 is fully turbulent.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q77</div>
+<div class="qtext">Incompressible flow is that type of flow in which ____ is constant for the fluid flow.</div>
+<div class="option">(1) Surface tension</div>
+<div class="option">(2) Density</div>
+<div class="option">(3) Temperature</div>
+<div class="option">(4) Thermal conductivity</div>
+<div class="answer">Answer: (2) Density</div>
+<div class="explanation"><b>Explanation</b><div>By definition, an incompressible fluid (like water or milk) cannot be compressed; therefore, its Volume and its Density (Mass/Volume) remain absolutely constant regardless of pressure.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q78</div>
+<div class="qtext">Which of the following is not a classification of venturimeters?</div>
+<div class="option">(1) Horizontal</div>
+<div class="option">(2) Vertical</div>
+<div class="option">(3) Right angle</div>
+<div class="option">(4) Inclined</div>
+<div class="answer">Answer: (3) Right angle</div>
+<div class="explanation"><b>Explanation</b><div>Venturi tubes rely on smooth, converging and diverging cones to create a pressure drop. A sharp &#x27;right angle&#x27; would cause massive flow separation and ruin the Bernoulli principle.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q79</div>
+<div class="qtext">Hydraulic press is based on which of the following?</div>
+<div class="option">(1) Bernoulli&#x27;s principle</div>
+<div class="option">(2) Archimedes principle</div>
+<div class="option">(3) Continuity principle</div>
+<div class="option">(4) Pascal law</div>
+<div class="answer">Answer: (4) Pascal law</div>
+<div class="explanation"><b>Explanation</b><div>Pascal&#x27;s Law states that pressure exerted anywhere in a confined incompressible fluid is transmitted equally in all directions, allowing small forces to lift massive weights.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q80</div>
+<div class="qtext">Which of the following is an example of Non Positive-Displacement Pump?</div>
+<div class="option">(1) Centrifugal pump</div>
+<div class="option">(2) Piston pump</div>
+<div class="option">(3) Gear pump</div>
+<div class="option">(4) Screw pump</div>
+<div class="answer">Answer: (1) Centrifugal pump</div>
+<div class="explanation"><b>Explanation</b><div>Piston, gear, and screw pumps physically trap a set volume of liquid and force it out (Positive Displacement). Centrifugal pumps use kinetic energy from a spinning impeller, making them Non-Positive Displacement.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q81</div>
+<div class="qtext">A 3 metre diameter cyclone handles an air flow rate of 35000 kg/hr. The average air temperature over the cyclone is 80°C. The barometer stands at 758 mm Hg. Calculate the pressure drop.</div>
+<div class="option">(1) 240 mm Hg</div>
+<div class="option">(2) 240 mm WG</div>
+<div class="option">(3) 120 mm WG</div>
+<div class="option">(4) 100 mm Hg</div>
+<div class="answer">Answer: (2) 240 mm WG</div>
+<div class="explanation"><b>Explanation</b><div>Based on standard aerodynamic cyclone pressure-drop calculations derived from velocity heads, industrial units operating at these high mass flow rates typically exhibit a pressure drop in the range of 200-250 mm Water Gauge (WG).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q82</div>
+<div class="qtext">A 100 mm plate type disc is atomizing 5 kg/min of skim milk at 15,000 rpm. What is the disc peripheral velocity?</div>
+<div class="option">(1) 87.5 m/s</div>
+<div class="option">(2) 54.4 m/s</div>
+<div class="option">(3) 15.4 m/s</div>
+<div class="option">(4) 78.5 m/s</div>
+<div class="answer">Answer: (4) 78.5 m/s</div>
+<div class="explanation"><b>Explanation</b><div>Velocity (v) = π * D * N / 60. v = 3.14159 * 0.1m * (15000/60). v = 3.14159 * 0.1 * 250 = 78.53 m/s.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q83</div>
+<div class="qtext">The minimum working space required around equipment in a dairy plant is</div>
+<div class="option">(1) 2 feet</div>
+<div class="option">(2) 6 feet</div>
+<div class="option">(3) 3 feet</div>
+<div class="option">(4) 5 feet</div>
+<div class="answer">Answer: (3) 3 feet</div>
+<div class="explanation"><b>Explanation</b><div>Dairy engineering guidelines and OSHA standards mandate a strict minimum clearance of 3 feet (approx 1 meter) around machinery to ensure safe operator movement and maintenance access.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q84</div>
+<div class="qtext">The following layout is NOT commonly practiced for dairy plant layouting</div>
+<div class="option">(1) Straight line type layout</div>
+<div class="option">(2) Z type layout</div>
+<div class="option">(3) U type layout</div>
+<div class="option">(4) T type layout</div>
+<div class="answer">Answer: (2) Z type layout</div>
+<div class="explanation"><b>Explanation</b><div>Straight line, U-shape, and T-shape are standard, highly efficient flow patterns for raw-in to finished-out routing. &#x27;Z&#x27; type leads to complex pipe routing, dead ends, and inefficient space use.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q85</div>
+<div class="qtext">Helical and ribbon type of agitators are used for mixing the material having viscosity in the range of</div>
+<div class="option">(1) 500-1000 Pa.s</div>
+<div class="option">(2) 100 pa.s</div>
+<div class="option">(3) 50-100 Pa.s</div>
+<div class="option">(4) &lt;3 pa.s</div>
+<div class="answer">Answer: (1) 500-1000 Pa.s</div>
+<div class="explanation"><b>Explanation</b><div>Ribbon blenders and helical impellers physically scrape the walls and force circulation in extremely thick, semi-solid, paste-like materials exhibiting massive viscosities up to 1000 Pascal-seconds.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q86</div>
+<div class="qtext">To place more records on data base file in dbaselII+, the command used is</div>
+<div class="option">(1) EDIT</div>
+<div class="option">(2) LIST</div>
+<div class="option">(3) APPEND</div>
+<div class="option">(4) ADD</div>
+<div class="answer">Answer: (3) APPEND</div>
+<div class="explanation"><b>Explanation</b><div>In legacy dBase III+ database management software, the specific command to add new, blank records to the bottom of an existing database file is APPEND.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q87</div>
+<div class="qtext">In Lotus 1-2-3 the spread sheet has</div>
+<div class="option">(1) 256 cell columns and 2,048 rows</div>
+<div class="option">(2) 16,384 columns and 1,048,576 rows</div>
+<div class="option">(3) 256 columns and 65,536 rows</div>
+<div class="option">(4) 256 columns and 256 rows</div>
+<div class="answer">Answer: (1) 256 cell columns and 2,048 rows</div>
+<div class="explanation"><b>Explanation</b><div>The classic DOS-based Lotus 1-2-3 Release 1.0 architecture was strictly limited to a grid of 256 columns (A to IV) and 2,048 rows.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q88</div>
+<div class="qtext">Statement I: Rising-film evaporators require large temp differential. Statement II: Falling-film can handle more viscous liquids.</div>
+<div class="option">(1) Statement I is true</div>
+<div class="option">(2) Statement II is true</div>
+<div class="option">(3) Both true</div>
+<div class="option">(4) Both false</div>
+<div class="answer">Answer: (3) Both true</div>
+<div class="explanation"><b>Explanation</b><div>Rising film needs a huge ΔT to generate enough violent boiling to lift the liquid. Falling film relies purely on gravity, meaning it can handle highly viscous dairy concentrates using very low ΔT.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q89</div>
+<div class="qtext">____ is useful to determine whether a product will gain or lose moisture under a given set of temp and RH conditions</div>
+<div class="option">(1) Critical moisture content</div>
+<div class="option">(2) Equilibrium moisture content</div>
+<div class="option">(3) Bound moisture content</div>
+<div class="option">(4) Free moisture content</div>
+<div class="answer">Answer: (2) Equilibrium moisture content</div>
+<div class="explanation"><b>Explanation</b><div>Equilibrium Moisture Content (EMC) defines the exact thermodynamic point where the food neither absorbs nor evaporates water into the surrounding air.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q90</div>
+<div class="qtext">How much weight reduction would result when a material is dried from 80% moisture to 50% moisture?</div>
+<div class="option">(1) 45%</div>
+<div class="option">(2) 55%</div>
+<div class="option">(3) 40%</div>
+<div class="option">(4) 60%</div>
+<div class="answer">Answer: (4) 60%</div>
+<div class="explanation"><b>Explanation</b><div>Assume 100g total. Solids = 20g. Water = 80g. Dry down to 50% moisture means Solids (20g) now equals 50% of the total mass. Therefore, total new mass = 40g. Weight reduction = 100g - 40g = 60g, which is a 60% reduction.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q91</div>
+<div class="qtext">Milk cans are generally fabricated from</div>
+<div class="option">(1) Copper</div>
+<div class="option">(2) Brass</div>
+<div class="option">(3) Aluminium</div>
+<div class="option">(4) Bronze</div>
+<div class="answer">Answer: (3) Aluminium</div>
+<div class="explanation"><b>Explanation</b><div>Because stainless steel is heavy and expensive, standard 40L milk cans used for village collection are fabricated from high-grade Aluminum alloy to ensure they are lightweight, rust-proof, and seamless.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q92</div>
+<div class="qtext">The difference in fat content between the top and bottom layers, expressed as a percentage of the top layer, is referred to as:</div>
+<div class="option">(1) Homogenisation accuracy</div>
+<div class="option">(2) Homogenisation index</div>
+<div class="option">(3) Homogenisation factor</div>
+<div class="option">(4) Homogenisation stability</div>
+<div class="answer">Answer: (2) Homogenisation index</div>
+<div class="explanation"><b>Explanation</b><div>Also known as the USPHS Index, the Homogenization Index strictly measures the mathematical difference in fat concentration between the top 10% and the remaining milk after 48 hours of static storage.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q93</div>
+<div class="qtext">Which of the following is NOT a mechanism of homogenization?</div>
+<div class="option">(1) Shearing action</div>
+<div class="option">(2) Deactivation</div>
+<div class="option">(3) Impact</div>
+<div class="option">(4) Cavitation</div>
+<div class="answer">Answer: (2) Deactivation</div>
+<div class="explanation"><b>Explanation</b><div>Fat globules are physically shattered by violent Shearing, explosive Cavitation, and high-velocity Impact against the retaining ring. &#x27;Deactivation&#x27; is not a mechanical homogenization mechanism.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q94</div>
+<div class="qtext">LTLT pasteurization can be easily carried out in a:</div>
+<div class="option">(1) Multi-purpose vat</div>
+<div class="option">(2) Single effect evaporator</div>
+<div class="option">(3) Scraped surface heat exchanger</div>
+<div class="option">(4) Steam injection UHT</div>
+<div class="answer">Answer: (1) Multi-purpose vat</div>
+<div class="explanation"><b>Explanation</b><div>Low Temperature Long Time (63°C for 30 min) is a batch process perfectly suited for a jacketed, stirred Multi-purpose pasteurization vat.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q95</div>
+<div class="qtext">Which of the following functions of food packaging is referred to as &#x27;Silent Salesman&#x27;?</div>
+<div class="option">(1) Protection</div>
+<div class="option">(2) Containment</div>
+<div class="option">(3) Convenience</div>
+<div class="option">(4) Communication</div>
+<div class="answer">Answer: (4) Communication</div>
+<div class="explanation"><b>Explanation</b><div>The Communication function (graphics, nutritional info, branding) sits on the retail shelf and &#x27;speaks&#x27; to the consumer, silently convincing them to purchase the product.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q96</div>
+<div class="qtext">Best homogenization will be achieved when: (P1 is stage 1, P2 is stage 2)</div>
+<div class="option">(1) P2/P1 = 0.2</div>
+<div class="option">(2) P2/P1 = 0.6</div>
+<div class="option">(3) P2/P1 = 1.0</div>
+<div class="option">(4) P2/P1 = 1.4</div>
+<div class="answer">Answer: (1) P2/P1 = 0.2</div>
+<div class="explanation"><b>Explanation</b><div>Industry standard practice dictates that the second stage pressure (P2) should be approximately 15% to 20% of the total first stage pressure (P1) to optimally break clusters. P2/P1 = 0.2.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q97</div>
+<div class="qtext">Type of pump used to generate high pressure in a homogenizer</div>
+<div class="option">(1) Centrifugal</div>
+<div class="option">(2) Screw</div>
+<div class="option">(3) Plunger type pump</div>
+<div class="option">(4) Diaphragm</div>
+<div class="answer">Answer: (3) Plunger type pump</div>
+<div class="explanation"><b>Explanation</b><div>To achieve massive 200+ bar pressures, a positive displacement, heavy- duty Plunger (or piston) pump is absolutely mandatory.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q98</div>
+<div class="qtext">Pressure gauge fluctuations in homogenizer may be caused by: I. Worn valves II. Insufficient feed III. Leaking plunger IV. Low fat</div>
+<div class="option">(1) Only I and II</div>
+<div class="option">(2) Only I and III</div>
+<div class="option">(3) Only I, II and III</div>
+<div class="option">(4) All</div>
+<div class="answer">Answer: (4) All</div>
+<div class="explanation"><b>Explanation</b><div>Worn valves fail to seat (I). Insufficient feed causes air locking (II). Leaking packings lose pressure on the stroke (III). Low fat content (IV) has absolutely no mechanical effect on the pump hydraulics.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q99</div>
+<div class="qtext">In case if pasteurization temperature is not attained, FDV diverts the flow of milk to which of the following section?</div>
+<div class="option">(1) Regeneration section</div>
+<div class="option">(2) Balance tank</div>
+<div class="option">(3) Raw milk silo</div>
+<div class="option">(4) Heating section</div>
+<div class="answer">Answer: (2) Balance tank</div>
+<div class="explanation"><b>Explanation</b><div>The Flow Diversion Valve (FDV) is a fail-safe. If milk is under-heated, the valve instantly shunts the raw milk all the way back to the raw milk Balance Tank (Float Tank) to be reprocessed.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q100</div>
+<div class="qtext">Plates of a pasteurizer are fabricated from:</div>
+<div class="option">(1) AISI 302</div>
+<div class="option">(2) AISI 304</div>
+<div class="option">(3) AISI 310</div>
+<div class="option">(4) AISI 316</div>
+<div class="answer">Answer: (4) AISI 316</div>
+<div class="explanation"><b>Explanation</b><div>Because the corrugated plates are incredibly thin (0.6mm) and constantly exposed to hot milk, chloride-rich water, and harsh CIP acids, they MUST be stamped from corrosion-resistant AISI 316 Stainless Steel.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q101</div>
+<div class="qtext">Which of the following is the principal MUFA present in butter?</div>
+<div class="option">(1) Marvalic acid</div>
+<div class="option">(2) Elaidic acid</div>
+<div class="option">(3) Vaccenic acid</div>
+<div class="option">(4) Oleic acid</div>
+<div class="answer">Answer: (4) Oleic acid</div>
+<div class="explanation"><b>Explanation</b><div>Oleic acid (C18:1) is the overwhelmingly dominant Mono-Unsaturated Fatty Acid (MUFA) in milk fat, constituting roughly 20-25% of the total lipid profile.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q102</div>
+<div class="qtext">Which type of flow is required in holding tube for uniform heat treatment?</div>
+<div class="option">(1) Laminar</div>
+<div class="option">(2) Streamline</div>
+<div class="option">(3) Turbulent</div>
+<div class="option">(4) Hyper laminar</div>
+<div class="answer">Answer: (3) Turbulent</div>
+<div class="explanation"><b>Explanation</b><div>If flow were laminar, the milk in the center of the tube would travel 2x faster than the milk at the walls, leading to under-processing. Turbulent flow ensures a flat velocity profile so all milk particles are held for the same exact time.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q103</div>
+<div class="qtext">Which type of milk transfer pump is used in a HTST pasteurizer?</div>
+<div class="option">(1) Screw pump</div>
+<div class="option">(2) Piston pump</div>
+<div class="option">(3) Peristaltic pump</div>
+<div class="option">(4) Centrifugal pump</div>
+<div class="answer">Answer: (4) Centrifugal pump</div>
+<div class="explanation"><b>Explanation</b><div>The standard sanitary centrifugal pump is universally used to smoothly and continuously push raw milk from the balance tank through the entire HTST plate pack.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q104</div>
+<div class="qtext">The major advantage of regeneration section is:</div>
+<div class="option">(1) reduced thermal conductivity</div>
+<div class="option">(2) reduced energy consumption</div>
+<div class="option">(3) reduced specific heat</div>
+<div class="option">(4) reduced flow velocity</div>
+<div class="answer">Answer: (2) reduced energy consumption</div>
+<div class="explanation"><b>Explanation</b><div>By allowing outgoing hot milk to pre-heat incoming cold milk, a regenerative section routinely saves 90% to 94% of the boiler steam and chilled water energy costs.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q105</div>
+<div class="qtext">Which of the following is the medium for heating raw milk in the regeneration section?</div>
+<div class="option">(1) Hot water</div>
+<div class="option">(2) Saturated steam</div>
+<div class="option">(3) Hot milk</div>
+<div class="option">(4) Super saturated steam</div>
+<div class="answer">Answer: (3) Hot milk</div>
+<div class="explanation"><b>Explanation</b><div>In the precise definition of &#x27;regeneration&#x27;, the hot, already-pasteurized milk flowing backward is used directly across the plates to heat the incoming raw milk.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q106</div>
+<div class="qtext">Conductive thermal resistance (R) offered by a wall of thickness L, area A and thermal conductivity K is given by</div>
+<div class="option">(1) R=LAK</div>
+<div class="option">(2) R=L/KA</div>
+<div class="option">(3) R=k/LA</div>
+<div class="option">(4) R=A/LK</div>
+<div class="answer">Answer: (2) R=L/KA</div>
+<div class="explanation"><b>Explanation</b><div>Based on Fourier&#x27;s Law of Heat Conduction (Q = kAΔT / L). By rearranging to the electrical analogy (Q = ΔT / R), the thermal resistance R mathematically equals L / (k*A).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q107</div>
+<div class="qtext">Which of the following equation is known as Newton&#x27;s law of cooling?</div>
+<div class="option">(1) Q=h/A(Tw-To)</div>
+<div class="option">(2) Q=k*A(Tw-To)/L</div>
+<div class="option">(3) Q=mCp(Tw-To)</div>
+<div class="option">(4) Q=h*A(Tw-To)</div>
+<div class="answer">Answer: (4) Q=h*A(Tw-To)</div>
+<div class="explanation"><b>Explanation</b><div>Newton&#x27;s Law of Cooling defines Convective heat transfer: The rate of heat loss is proportional to the surface Area (A), the film coefficient (h), and the temperature difference (ΔT). Option 4 (often written as Q=hAΔT) is the exact formula.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q108</div>
+<div class="qtext">____ states that the grinding energy for a given mass of material is proportional to the logarithm of reduction ratio.</div>
+<div class="option">(1) Kick&#x27;s law</div>
+<div class="option">(2) Bond&#x27;s law</div>
+<div class="option">(3) Rault&#x27;s law</div>
+<div class="option">(4) Rittinger&#x27;s law</div>
+<div class="answer">Answer: (1) Kick&#x27;s law</div>
+<div class="explanation"><b>Explanation</b><div>Kick&#x27;s Law assumes that the energy required to crush a material is proportional to the logarithmic ratio of the initial diameter to the final diameter (Reduction Ratio).</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q109</div>
+<div class="qtext">____ is equal to the product of the force and the perpendicular distance of the point, about which the moment is required and the line of action of the force.</div>
+<div class="option">(1) Moment of inertia</div>
+<div class="option">(2) Moment of mass</div>
+<div class="option">(3) Moment of force</div>
+<div class="option">(4) Moment of centre of gravity</div>
+<div class="answer">Answer: (3) Moment of force</div>
+<div class="explanation"><b>Explanation</b><div>In classical mechanics, the Moment of Force (or Torque) is defined absolutely as Force multiplied by the perpendicular lever-arm distance.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q110</div>
+<div class="qtext">Which of the following types of energy is possessed by a compressed spring?</div>
+<div class="option">(1) Kinetic energy</div>
+<div class="option">(2) Kinematic energy</div>
+<div class="option">(3) Retaliation energy</div>
+<div class="option">(4) Strain energy</div>
+<div class="answer">Answer: (4) Strain energy</div>
+<div class="explanation"><b>Explanation</b><div>When a solid material (like a steel spring) is deformed within its elastic limit, the mechanical work done upon it is stored internally in the molecular lattice as Elastic Strain Energy.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q111</div>
+<div class="qtext">As per FSSAI Standard, what is the maximum permissible limit of nisin used in paneer?</div>
+<div class="option">(1) 12.5 ppm</div>
+<div class="option">(2) 25 ppm</div>
+<div class="option">(3) 100 ppm</div>
+<div class="option">(4) 50 ppm</div>
+<div class="answer">Answer: (1) 12.5 ppm</div>
+<div class="explanation"><b>Explanation</b><div>FSSAI regulations permit the use of Nisin (a natural biological preservative) in Paneer specifically to inhibit Gram-positive spoilage organisms, capped at a strict maximum of 12.5 ppm.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q112</div>
+<div class="qtext">Which of the following gases is widely used in gas welding process?</div>
+<div class="option">(1) Carbon monooxide</div>
+<div class="option">(2) Acetylene</div>
+<div class="option">(3) Ammonia</div>
+<div class="option">(4) CFC</div>
+<div class="answer">Answer: (2) Acetylene</div>
+<div class="explanation"><b>Explanation</b><div>Oxy-Acetylene welding is the universal standard for gas welding. Acetylene gas (C2H2), when mixed with pure oxygen, burns at a colossal 3,200°C, easily melting steel.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q113</div>
+<div class="qtext">Which of the following instruments is used to determine the rennetability of the curd?</div>
+<div class="option">(1) Torsiometer</div>
+<div class="option">(2) Sectilometer</div>
+<div class="option">(3) Ball Compressor</div>
+<div class="option">(4) Buttomat</div>
+<div class="answer">Answer: (1) Torsiometer</div>
+<div class="explanation"><b>Explanation</b><div>A Torsiometer (often a vibrating reed or hot-wire viscometer/ torsiometer) accurately tracks the microscopic rheological changes in milk viscosity as the casein micelles aggregate, mapping the exact rennet coagulation time.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q114</div>
+<div class="qtext">According to the FSSAI standards, what is the maximum permissible limit of aspartame in Burfi?</div>
+<div class="option">(1) 100 ppm</div>
+<div class="option">(2) 200 ppm</div>
+<div class="option">(3) 300 ppm</div>
+<div class="option">(4) 500 ppm</div>
+<div class="answer">Answer: (2) 200 ppm</div>
+<div class="explanation"><b>Explanation</b><div>For sugar-free traditional sweets like Burfi, FSSAI permits the artificial sweetener Aspartame up to a maximum limit of 200 ppm.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q115</div>
+<div class="qtext">In a piezo electric device, when pressure is applied ____ is generated.</div>
+<div class="option">(1) Current</div>
+<div class="option">(2) Voltage</div>
+<div class="option">(3) Change in resistance</div>
+<div class="option">(4) pH</div>
+<div class="answer">Answer: (2) Voltage</div>
+<div class="explanation"><b>Explanation</b><div>The piezoelectric effect specifically occurs when certain crystals (like quartz) are mechanically squeezed, shifting their internal charge lattice and instantly generating a measurable electrical Voltage.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q116</div>
+<div class="qtext">Modulus of elasticity is also known as</div>
+<div class="option">(1) Bulk&#x27;s modulus</div>
+<div class="option">(2) Brik&#x27;s modulus</div>
+<div class="option">(3) Young&#x27;s modulus</div>
+<div class="option">(4) Tian&#x27;s modulus</div>
+<div class="answer">Answer: (3) Young&#x27;s modulus</div>
+<div class="explanation"><b>Explanation</b><div>Named after Thomas Young, the Modulus of Elasticity is universally referred to as Young&#x27;s Modulus (E), defining the ratio of tensile stress to tensile strain.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q117</div>
+<div class="qtext">Stefan Boltzmann Law is related to:</div>
+<div class="option">(1) Conductive heat transfer</div>
+<div class="option">(2) Boiling heat transfer</div>
+<div class="option">(3) Convective heat transfer</div>
+<div class="option">(4) Radiative heat transfer</div>
+<div class="answer">Answer: (4) Radiative heat transfer</div>
+<div class="explanation"><b>Explanation</b><div>The Stefan-Boltzmann Law (E = σT⁴) governs the physics of black-body Thermal Radiation, completely distinct from conduction or convection.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q118</div>
+<div class="qtext">Which of the following is used to increase heat transfer from the surface?</div>
+<div class="option">(1) Fins</div>
+<div class="option">(2) Thermistors</div>
+<div class="option">(3) Alternators</div>
+<div class="option">(4) Emitters</div>
+<div class="answer">Answer: (1) Fins</div>
+<div class="explanation"><b>Explanation</b><div>Fins are solid geometric extrusions (like the ridges on a motorcycle engine block) specifically engineered to massively increase the convective Surface Area of a hot object.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q119</div>
+<div class="qtext">When a section is subjected to two equal and opposite pull, the body is subjected to:</div>
+<div class="option">(1) Compressive stress</div>
+<div class="option">(2) Impact stress</div>
+<div class="option">(3) Tensile stress</div>
+<div class="option">(4) Torsional stress</div>
+<div class="answer">Answer: (3) Tensile stress</div>
+<div class="explanation"><b>Explanation</b><div>Pulling a material apart from both ends generates pure Tensile Stress (Tension), attempting to elongate the internal molecular bonds.</div></div>
+</article>
+<article class="question">
+<div class="qnum">Q120</div>
+<div class="qtext">The opposition that the magnetic circuit offers to magnetic flux is called</div>
+<div class="option">(1) Permeance</div>
+<div class="option">(2) Conductance</div>
+<div class="option">(3) Reluctance</div>
+<div class="option">(4) Transmittance</div>
+<div class="answer">Answer: (3) Reluctance</div>
+<div class="explanation"><b>Explanation</b><div>In magnetic circuitry, Reluctance is the exact analog to electrical Resistance. It represents how strongly the core material opposes the establishment of magnetic flux lines.</div></div>
+</article></div></section>
+</main>
+<footer><div class="container footer-row"><div><img class="small-logo" src="dairy-sphere-earth.png" alt="Dairy Sphere"><div>© 2026 Dairy Sphere • Educational platform for Dairy Technology.</div></div><div>Learn • Process • Innovate</div></div></footer>
+<script src="script.js"></script>
+</body></html>
