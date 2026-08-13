@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Zone • Dairy Sphere</title>
+<style>
+:root{
+  --bg:#021427;--panel:#061d33;--line:rgba(65,170,235,.22);
+  --text:#edf7ff;--muted:#9db3c5;--blue:#159df2;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--bg);color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;min-height:100vh;
+  overflow-x:hidden;position:relative;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;
+  background:
+    radial-gradient(circle at 18% 15%,rgba(21,157,242,.08),transparent 24%),
+    radial-gradient(circle at 82% 78%,rgba(21,157,242,.05),transparent 25%);
+}
+.star{
+  position:fixed;width:2px;height:2px;border-radius:50%;
+  background:#dff5ff;opacity:.45;pointer-events:none;
+  animation:fall linear infinite;z-index:0;
+}
+@keyframes fall{
+  0%{transform:translate3d(0,-12vh,0);opacity:0}
+  12%{opacity:.45}
+  80%{opacity:.28}
+  100%{transform:translate3d(45px,112vh,0);opacity:0}
+}
+nav{
+  height:62px;border-bottom:1px solid rgba(61,156,218,.18);
+  display:flex;align-items:center;padding:0 28px;gap:28px;
+  background:rgba(2,17,32,.88);position:relative;z-index:2;
+}
+.brand{font-weight:800;font-size:15px;color:#eef8ff}
+.brand span{color:var(--blue)}
+nav a{color:#b7c9d7;text-decoration:none;font-size:13px}
+nav a:hover{color:#fff}
+main{max-width:1040px;margin:0 auto;padding:70px 24px 90px;position:relative;z-index:1}
+.eyebrow{font-size:11px;letter-spacing:2px;color:#36b7ff;font-weight:800}
+h1{font-size:clamp(38px,7vw,62px);margin:10px 0 12px;line-height:1.04}
+h1 span{color:var(--blue)}
+.subtitle{color:var(--muted);font-size:16px;line-height:1.7;max-width:700px}
+.quiz-card{
+  margin-top:38px;border:1px solid var(--line);border-radius:22px;
+  background:linear-gradient(145deg,rgba(7,31,53,.9),rgba(3,20,36,.82));
+  padding:38px;box-shadow:0 18px 50px rgba(0,0,0,.18);
+  text-align:center;overflow:hidden;position:relative;
+}
+.quiz-number{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:58px;height:58px;padding:0 18px;border-radius:50px;
+  border:1px solid rgba(53,183,255,.35);
+  color:#57c2ff;background:rgba(15,105,157,.12);
+  font-weight:800;font-size:14px;letter-spacing:.7px;
+}
+.quiz-card h2{font-size:30px;margin:22px 0 10px}
+.coming{font-size:18px;color:#d8e8f4;margin:0 0 26px}
+.meta{
+  display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:12px
+}
+.meta div{
+  border:1px solid rgba(61,156,218,.18);background:rgba(1,15,28,.45);
+  border-radius:12px;padding:12px 18px;color:#aac0d0;font-size:13px
+}
+.meta strong{color:#fff;display:block;margin-bottom:4px}
+.note{
+  margin-top:30px;padding:18px 20px;border-left:3px solid var(--blue);
+  border-radius:12px;background:rgba(11,62,95,.24);
+  text-align:left;color:#c5d7e4;line-height:1.65
+}
+.note b{color:#fff}
+footer{
+  position:relative;z-index:1;border-top:1px solid rgba(61,156,218,.14);
+  padding:25px;text-align:center;color:#718b9d;font-size:12px
+}
+@media(max-width:600px){
+  nav{padding:0 16px;gap:16px;overflow:auto;white-space:nowrap}
+  main{padding:48px 18px 70px}
+  .quiz-card{padding:28px 18px}
+  .quiz-card h2{font-size:25px}
+}
+</style>
+</head>
+<body>
+<script>
+/* Minimal, slow, occasional falling stars — kept subtle to match Dairy Sphere. */
+[
+  [8,0,15],[23,0,22],[39,0,18],[57,0,25],[74,0,20],[89,0,27],[96,0,17]
+].forEach(([left,delay,duration])=>{
+  const s=document.createElement('span');
+  s.className='star';s.style.left=left+'%';
+  s.style.animationDelay=delay+'s';s.style.animationDuration=duration+'s';
+  document.body.appendChild(s);
+});
+</script>
+
+<nav>
+  <div class="brand">Dairy <span>Sphere</span></div>
+  <a href="index.html">Home</a>
+  <a href="library.html">Library</a>
+  <a href="lab.html">Virtual Lab</a>
+  <a href="equipment.html">Equipment Atlas</a>
+  <a href="founder.html">Founder</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <div class="eyebrow">DAIRY SPHERE • QUIZ ZONE</div>
+  <h1>Quiz <span>Zone</span></h1>
+  <p class="subtitle">
+    Test your Dairy Technology knowledge through focused, topic-wise quizzes
+    designed for regular practice and revision.
+  </p>
+
+  <section class="quiz-card">
+    <div class="quiz-number">QUIZ 01</div>
+    <h2>Dairy Technology Quiz No. 1</h2>
+    <p class="coming">50 questions • Coming Soon...</p>
+
+    <div class="meta">
+      <div><strong>50 Questions</strong>Full quiz</div>
+      <div><strong>Single Answer</strong>MCQ format</div>
+      <div><strong>Weekly</strong>New quiz every Monday</div>
+    </div>
+
+    <div class="note">
+      <b>Weekly Quiz Schedule</b><br>
+      A new Dairy Technology quiz will be released every <b>Monday</b>.
+      Keep checking the Quiz Zone for the next set of questions.
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Dairy Sphere • Learn · Process · Innovate</footer>
+</body>
+</html>
