@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#0b8ff4"/><stop offset="1" stop-color="#74d7ff"/></linearGradient></defs>
+<rect width="1200" height="520" rx="24" fill="#06192d"/>
+<text x="60" y="62" fill="#eef8ff" font-family="Arial" font-size="30" font-weight="700">Typical hygienic dairy product-line layout</text>
+<text x="60" y="94" fill="#9fb6c9" font-family="Arial" font-size="17">A simplified learning diagram — actual plant layouts depend on process, flow, CIP and equipment arrangement.</text>
+<g stroke="url(#g)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M170 300 H330 V220 H470 V300 H610 V220 H760 V300 H930"/>
+<path d="M330 300 V405 H610 V300"/>
+</g>
+<g fill="#09263f" stroke="#2caeff" stroke-width="3">
+<rect x="80" y="250" width="180" height="100" rx="16"/><rect x="390" y="170" width="160" height="100" rx="16"/>
+<rect x="680" y="170" width="160" height="100" rx="16"/><rect x="900" y="250" width="220" height="100" rx="16"/>
+<rect x="430" y="375" width="180" height="70" rx="14"/>
+</g>
+<g fill="#eef8ff" font-family="Arial" font-size="20" text-anchor="middle">
+<text x="170" y="292">Milk tank</text><text x="170" y="320">or silo</text>
+<text x="470" y="212">Pump</text><text x="470" y="240">P-101</text>
+<text x="760" y="212">Process</text><text x="760" y="240">equipment</text>
+<text x="1010" y="292">Next process /</text><text x="1010" y="320">filling</text>
+<text x="520" y="417">CIP / drain branch</text>
+</g>
+<g fill="#74d7ff" font-family="Arial" font-size="16">
+<text x="275" y="285">→ product flow</text><text x="535" y="195">→</text><text x="835" y="285">→</text>
+</g>
+<g stroke="#ffcc66" stroke-width="3" stroke-dasharray="7 7" fill="none">
+<path d="M170 460 H930"/><path d="M170 450 V470M930 450V470"/>
+</g>
+<text x="550" y="495" text-anchor="middle" fill="#ffcc66" font-family="Arial" font-size="16">Keep the product line drainable; avoid unnecessary low points and dead ends.</text>
+</svg>

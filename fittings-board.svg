@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620">
+<rect width="1200" height="620" rx="24" fill="#06192d"/>
+<text x="55" y="60" fill="#eef8ff" font-family="Arial" font-size="32" font-weight="700">Common sanitary pipe fittings</text>
+<text x="55" y="91" fill="#9fb6c9" font-family="Arial" font-size="17">Simplified symbols for learning and identification.</text>
+<g font-family="Arial" text-anchor="middle" fill="#eef8ff" font-size="18">
+<g transform="translate(90,145)"><path d="M40 70h110" stroke="#74d7ff" stroke-width="28" stroke-linecap="round"/><text x="95" y="125">Straight pipe</text></g>
+<g transform="translate(330,145)"><path d="M40 70h70a55 55 0 0 0 55-55" fill="none" stroke="#74d7ff" stroke-width="28" stroke-linecap="round"/><text x="110" y="125">Bend / elbow</text></g>
+<g transform="translate(590,145)"><path d="M35 70h120M95 70V135" stroke="#74d7ff" stroke-width="28" stroke-linecap="round"/><text x="95" y="175">Tee</text></g>
+<g transform="translate(830,145)"><path d="M35 50h50l70 40M35 110h50l70-40" stroke="#74d7ff" stroke-width="26" stroke-linecap="round"/><text x="105" y="175">Reducer</text></g>
+<g transform="translate(1000,145)"><circle cx="75" cy="80" r="40" fill="none" stroke="#74d7ff" stroke-width="10"/><path d="M15 80h120" stroke="#74d7ff" stroke-width="24"/><text x="75" y="145">Union</text></g>
+<g transform="translate(120,360)"><rect x="35" y="55" width="120" height="45" rx="6" fill="none" stroke="#74d7ff" stroke-width="7"/><circle cx="95" cy="77" r="13" fill="none" stroke="#ffcc66" stroke-width="5"/><text x="95" y="145">Sight glass</text></g>
+<g transform="translate(365,350)"><path d="M35 75h55M90 75v-40M90 75h65" stroke="#74d7ff" stroke-width="18"/><circle cx="90" cy="35" r="18" fill="#0b8ff4" stroke="#74d7ff" stroke-width="4"/><text x="95" y="145">Instrument bend</text></g>
+<g transform="translate(650,350)"><path d="M35 75h120" stroke="#74d7ff" stroke-width="22"/><path d="M85 45l20 30-20 30" fill="none" stroke="#ffcc66" stroke-width="6"/><text x="95" y="145">Sampling point</text></g>
+<g transform="translate(920,350)"><path d="M35 75h120" stroke="#74d7ff" stroke-width="22"/><path d="M75 50l40 50M115 50L75 100" stroke="#ffcc66" stroke-width="7"/><text x="95" y="145">Clamp / joint</text></g>
+</g>
+</svg>

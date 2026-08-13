@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 720">
+<defs><filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2"/></filter></defs>
+<rect width="620" height="720" rx="28" fill="#f5f0e7"/>
+<g fill="none" stroke="#24384a" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)">
+<path d="M185 285 Q175 175 310 115 Q445 175 432 315 Q420 420 310 448 Q205 418 185 285Z" stroke-width="5"/>
+<path d="M195 235 Q225 145 335 145 Q420 170 430 255" stroke-width="7"/>
+<path d="M230 270 Q250 248 275 270 M345 270 Q365 248 388 268" stroke-width="6"/>
+<path d="M278 270 Q290 315 275 340 Q310 360 350 337" stroke-width="5"/>
+<path d="M250 382 Q310 412 374 377" stroke-width="7"/>
+<path d="M212 320 Q235 370 255 382 M405 318 Q390 365 374 377" stroke-width="4"/>
+<path d="M185 435 Q125 500 100 650 M432 438 Q500 500 525 650" stroke-width="6"/>
+<path d="M230 450 Q310 505 390 450" stroke-width="8"/>
+<path d="M100 650 Q310 605 525 650" stroke-width="5"/>
+<path d="M215 220 Q250 190 300 200 M320 200 Q375 188 405 225" stroke-width="4"/>
+</g>
+<text x="310" y="680" text-anchor="middle" font-family="Georgia,serif" font-size="28" font-weight="700" fill="#123a5b">Dr. Verghese Kurien</text>
+<text x="310" y="708" text-anchor="middle" font-family="Arial" font-size="14" fill="#557080">Tribute sketch • Dairy Sphere</text>
+</svg>
