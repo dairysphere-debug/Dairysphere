@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650">
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#061b31"/><stop offset="1" stop-color="#020c18"/></linearGradient></defs>
+<rect width="1200" height="650" rx="28" fill="url(#bg)"/><g font-family="Arial,Helvetica,sans-serif">
+<text x="60" y="70" fill="#eaf6ff" font-size="30" font-weight="700">Pipe Slope &amp; Complete Drainage</text>
+<text x="60" y="103" fill="#8faec2" font-size="16">Continuous fall toward the designated low-point drain</text>
+<path d="M150 220 L980 430" fill="none" stroke="#b8c6cd" stroke-width="50" stroke-linecap="round"/><path d="M150 220 L980 430" fill="none" stroke="#263b49" stroke-width="4" stroke-linecap="round"/><path d="M190 230 L930 417" fill="none" stroke="#5bc7ff" stroke-width="4" stroke-dasharray="14 12"/>
+<circle cx="150" cy="220" r="11" fill="#159df2"/><text x="150" y="165" fill="#dcecf5" font-size="18" font-weight="700" text-anchor="middle">HIGH POINT</text>
+<circle cx="980" cy="430" r="11" fill="#159df2"/><path d="M980 430 V545" stroke="#b8c6cd" stroke-width="24" stroke-linecap="round"/><path d="M980 545 l-20 35 h40z" fill="#159df2"/><text x="980" y="620" fill="#dcecf5" font-size="18" font-weight="700" text-anchor="middle">LOW POINT • DRAIN</text>
+<path d="M540 318 L690 356" stroke="#42bfff" stroke-width="4"/><path d="M690 356 l-17-12 M690 356 l-13 17" stroke="#42bfff" stroke-width="4"/><text x="615" y="300" fill="#42bfff" font-size="20" font-weight="700" text-anchor="middle">DOWNWARD SLOPE</text>
+<text x="615" y="330" fill="#b6cad7" font-size="17" text-anchor="middle">Typical range: 0.3–0.5% where gravity drainage is required</text>
+<!-- trapped pocket warning -->
+<path d="M410 286 V365 Q410 390 435 390" fill="none" stroke="#b25c73" stroke-width="15"/><line x1="410" y1="260" x2="410" y2="350" stroke="#e67d94" stroke-width="2" stroke-dasharray="5 5"/><text x="410" y="235" fill="#e9a5b2" font-size="15" text-anchor="middle">Avoid unintended low pockets</text>
+<text x="60" y="585" fill="#8faec2" font-size="15">Design principle: provide a continuous fall to the drain; do not create isolated sections where liquid can remain trapped.</text>
+</g></svg>
