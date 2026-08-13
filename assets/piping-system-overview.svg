@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+<defs><linearGradient id="b" x1="0" x2="1"><stop stop-color="#041625"/><stop offset="1" stop-color="#071e31"/></linearGradient><linearGradient id="s" x1="0" x2="1"><stop stop-color="#5f7585"/><stop offset=".5" stop-color="#e2edf2"/><stop offset="1" stop-color="#5f7585"/></linearGradient></defs>
+<rect width="1200" height="600" rx="26" fill="url(#b)"/>
+<text x="55" y="55" fill="#eaf6ff" font-family="Arial" font-size="29" font-weight="700">Typical Sanitary Dairy Piping Arrangement</text>
+<text x="55" y="83" fill="#8da8ba" font-family="Arial" font-size="15">Product route, pump, heat-treatment section, valve routing and low-point drain</text>
+<g fill="#0a2639" stroke="#2b698d" stroke-width="2">
+<rect x="55" y="190" width="175" height="115" rx="18"/><rect x="300" y="190" width="175" height="115" rx="18"/>
+<rect x="545" y="170" width="205" height="155" rx="18"/><rect x="820" y="190" width="175" height="115" rx="18"/>
+</g>
+<g fill="#eaf6ff" font-family="Arial" text-anchor="middle">
+<text x="142" y="240" font-size="21" font-weight="700">Balance Tank</text><text x="142" y="267" font-size="14" fill="#9eb5c5">Product feed</text>
+<text x="387" y="240" font-size="21" font-weight="700">Pump</text><text x="387" y="267" font-size="14" fill="#9eb5c5">Controlled flow</text>
+<text x="647" y="225" font-size="21" font-weight="700">Heat Exchanger</text><text x="647" y="253" font-size="14" fill="#9eb5c5">Heating / cooling</text><text x="647" y="279" font-size="14" fill="#9eb5c5">Process section</text>
+<text x="907" y="240" font-size="21" font-weight="700">Product Tank</text><text x="907" y="267" font-size="14" fill="#9eb5c5">Receiving stage</text>
+</g>
+<g stroke="url(#s)" stroke-width="12" fill="none" stroke-linecap="round"><path d="M230 247H300"/><path d="M475 247H545"/><path d="M750 247H820"/></g>
+<g stroke="#159df2" stroke-width="4" fill="none"><path d="M600 420H180V305"/><path d="M600 420V325"/><path d="M600 420H1030V305"/></g>
+<g fill="#159df2"><circle cx="600" cy="420" r="8"/><circle cx="390" cy="247" r="8"/></g>
+<g fill="#b9d5e5" font-family="Arial"><text x="165" y="470" font-size="17">CIP / return routing</text><text x="560" y="455" font-size="17">Low-point drain / drainable route</text><text x="365" y="215" font-size="14">Flow</text></g>
+<path d="M540 247l-14-9v18zM810 247l-14-9v18z" fill="#159df2"/>
+<rect x="1030" y="370" width="110" height="55" rx="10" fill="#08273c" stroke="#2b698d"/><text x="1085" y="404" fill="#b9d5e5" font-family="Arial" font-size="14" text-anchor="middle">Drain</text>
+</svg>
