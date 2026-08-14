@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pipes & Fittings | Dairy Sphere</title>
+<link rel="stylesheet" href="space-pages.css">
+<style>
+/* Page-scoped styles: intentionally prefixed to avoid collisions with site-wide .grid/.card rules */
+.pf-page{max-width:1180px;margin:0 auto;padding:34px 22px 90px}
+.pf-hero{padding:28px 0 24px}
+.pf-kicker{font-size:11px;letter-spacing:2px;color:#42bfff;font-weight:800}
+.pf-hero h1{font-size:clamp(38px,7vw,68px);line-height:1.04;margin:10px 0 14px;color:#eef8ff}
+.pf-hero h1 span{color:#159df2}
+.pf-lead{max-width:920px;color:#a9bdcc;line-height:1.8;font-size:16px}
+.pf-nav{display:flex;gap:8px;overflow-x:auto;padding:10px 0 16px;position:sticky;top:60px;z-index:5;background:rgba(2,16,29,.94);backdrop-filter:blur(10px);scrollbar-width:none}
+.pf-nav::-webkit-scrollbar{display:none}
+.pf-nav a{white-space:nowrap;text-decoration:none;color:#a9bfd0;border:1px solid rgba(61,156,218,.22);border-radius:999px;padding:9px 13px;font-size:11px}
+.pf-nav a:hover{color:#fff;border-color:#159df2}
+.pf-section{padding:42px 0;border-bottom:1px solid rgba(61,156,218,.13)}
+.pf-section h2{font-size:30px;line-height:1.2;margin:5px 0 12px;color:#eef8ff}
+.pf-section h3{font-size:19px;color:#54c1ff;margin:25px 0 8px}
+.pf-section p,.pf-section li{color:#b7c9d5;line-height:1.78}
+.pf-section ul,.pf-section ol{padding-left:22px}
+.pf-num{color:#42bfff;font-size:11px;letter-spacing:1.7px;font-weight:800}
+.pf-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0}
+.pf-card{padding:19px;border:1px solid rgba(61,156,218,.18);border-radius:15px;background:linear-gradient(145deg,rgba(7,31,51,.82),rgba(3,20,34,.76));box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.pf-card strong{display:block;color:#eaf6ff;margin-bottom:8px;font-size:15px}
+.pf-card p{font-size:13px;margin:0}
+.pf-card small{display:block;color:#6f91a8;margin-top:9px;line-height:1.55}
+.pf-figure{margin:23px 0}
+.pf-figure img{display:block;width:100%;max-height:520px;object-fit:contain;border-radius:17px;border:1px solid rgba(61,156,218,.2);background:#041625;padding:6px}
+.pf-figure figcaption{color:#7892a3;font-size:11px;margin-top:8px;line-height:1.5}
+.pf-callout{border-left:3px solid #159df2;padding:15px 18px;margin:19px 0;background:rgba(10,62,95,.23);border-radius:10px;color:#c9d9e4;line-height:1.75}
+.pf-formula{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;border:1px solid rgba(61,156,218,.2);background:#031522;border-radius:12px;padding:15px;color:#79ceff;margin:14px 0;overflow:auto}
+.pf-table-wrap{overflow-x:auto;margin:18px 0}
+.pf-table{width:100%;border-collapse:collapse;min-width:720px}
+.pf-table th,.pf-table td{padding:11px 12px;border-bottom:1px solid rgba(61,156,218,.13);text-align:left;color:#b8cad6;font-size:13px;vertical-align:top}
+.pf-table th{color:#eaf6ff;background:rgba(11,52,78,.38)}
+.pf-tag{display:inline-block;border:1px solid rgba(66,191,255,.22);border-radius:999px;padding:4px 8px;color:#70caff;font-size:10px;margin:3px 3px 0 0}
+.pf-two{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:start}
+.pf-doublewall{display:block;width:100%;min-width:0}
+.pf-doublewall .pf-figure{width:100%;min-width:0;overflow:hidden}
+.pf-doublewall .pf-figure img{width:100%;max-width:100%;height:auto;max-height:520px;object-fit:contain;object-position:center;box-sizing:border-box}
+.pf-note{font-size:12px;color:#8299a9}
+.pf-highlight{color:#e9f7ff;font-weight:700}
+@media(max-width:850px){.pf-grid{grid-template-columns:1fr 1fr}.pf-two{grid-template-columns:1fr}}
+@media(max-width:560px){.pf-page{padding:25px 16px 65px}.pf-grid{grid-template-columns:1fr}.pf-section{padding:32px 0}.pf-section h2{font-size:25px}.pf-hero h1{font-size:43px}}
+</style>
+</head>
+<body>
+<div class="space-vignette" aria-hidden="true"></div>
+<div class="space-stars" aria-hidden="true">
+<i style="left:8%;--drift:14px;animation-duration:17s;animation-delay:-7s"></i>
+<i style="left:28%;--drift:-11px;animation-duration:22s;animation-delay:-15s"></i>
+<i style="left:51%;--drift:16px;animation-duration:19s;animation-delay:-10s"></i>
+<i style="left:74%;--drift:-13px;animation-duration:24s;animation-delay:-19s"></i>
+<i style="left:91%;--drift:10px;animation-duration:18s;animation-delay:-12s"></i>
+</div>
+
+<header class="nav">
+<a class="brand" href="index.html"><img src="dairy-sphere-earth.png" alt=""><span>Dairy <b>Sphere</b></span></a>
+<nav>
+<a href="index.html">Home</a>
+<a href="library.html">Library</a>
+<a href="lab.html">Virtual Lab</a>
+<a class="active" href="equipment.html">Equipment Atlas</a>
+<a href="founder.html">Founder</a>
+</nav>
+<a class="contact" href="mailto:Dairysphere@gmail.com">Contact ↗</a>
+</header>
+
+<main class="pf-page">
+<section class="pf-hero">
+<div class="pf-kicker">EQUIPMENT ATLAS • PROCESS PIPING</div>
+<h1>Pipes <span>&amp;</span> Fittings</h1>
+<p class="pf-lead">A structured guide to hygienic dairy process piping: pipe materials and finishes, sanitary connections, fittings, valves, gaskets, sizing, flow velocity, pressure loss, slope and drainage, supports, instrumentation, CIP routing and piping documentation.</p>
+</section>
+
+<nav class="pf-nav">
+<a href="#overview">Overview</a><a href="#materials">Materials</a><a href="#tubing">Tubing</a><a href="#hygiene">Hygienic Design</a>
+<a href="#sizing">Sizing</a><a href="#slope">Slope &amp; Drainage</a><a href="#fittings">Fittings</a><a href="#connections">Connections</a>
+<a href="#valves">Valves</a><a href="#gaskets">Gaskets</a><a href="#supports">Supports</a><a href="#instruments">Instruments</a>
+<a href="#cip">CIP</a><a href="#pid">P&amp;ID</a><a href="#numbers">Quick Numbers</a><a href="#checklist">Checklist</a>
+</nav>
+
+<section id="overview" class="pf-section">
+<div class="pf-num">01 • OVERVIEW</div>
+<h2>What Is Dairy Process Piping?</h2>
+<p>Dairy process piping is the network that moves milk, cream, cultured products, water and cleaning solutions between reception, storage, separation, standardization, homogenization, heat treatment, fermentation, filling and other process operations. The piping is part of the process system itself: its diameter, route, valves, joints, slope and surface finish influence flow, cleaning, product losses and hygienic performance.</p>
+<figure class="pf-figure">
+<img src="assets/piping-system-overview.svg" alt="Typical hygienic dairy process piping arrangement">
+<figcaption>Typical product piping arrangement showing process equipment, sanitary valves, an instrument point, supports and a low-point drain.</figcaption>
+</figure>
+<div class="pf-grid">
+<div class="pf-card"><strong>Product lines</strong><p>Transport milk and milk products between process equipment while limiting contamination, air incorporation and product hold-up.</p></div>
+<div class="pf-card"><strong>CIP lines</strong><p>Carry cleaning and sanitising solutions through defined circuits at the required flow, temperature, concentration and contact time.</p></div>
+<div class="pf-card"><strong>Utility lines</strong><p>Serve water, steam, condensate, compressed air, chilled water and other plant services. These require their own material, pressure and safety considerations.</p></div>
+</div>
+</section>
+
+<section id="materials" class="pf-section">
+<div class="pf-num">02 • MATERIALS &amp; SURFACE FINISH</div>
+<h2>Stainless Steel for Hygienic Service</h2>
+<p>Stainless steel is the principal material for sanitary product-contact piping because it combines corrosion resistance, mechanical strength, cleanability and compatibility with hygienic fabrication. AISI 304/304L is widely used for general dairy service; AISI 316/316L is selected where increased corrosion resistance is desirable, particularly under more demanding chemical or chloride conditions.</p>
+<div class="pf-grid">
+<div class="pf-card"><strong>AISI 304 / 304L</strong><p>Common sanitary grade for milk lines, fittings, tanks and general process construction.</p><span class="pf-tag">General dairy service</span><span class="pf-tag">Corrosion resistant</span></div>
+<div class="pf-card"><strong>AISI 316 / 316L</strong><p>Higher corrosion resistance than 304, useful for demanding cleaning environments and selected process applications.</p><span class="pf-tag">Higher resistance</span><span class="pf-tag">Hygienic fabrication</span></div>
+<div class="pf-card"><strong>Internal finish</strong><p>A smooth internal surface reduces soil retention and supports effective cleaning. A commonly specified hygienic finish is around <span class="pf-highlight">Ra ≤ 0.8 µm</span> for many hygienic applications; electropolishing is used for selected services.</p><span class="pf-tag">Smooth bore</span><span class="pf-tag">Cleanability</span></div>
+</div>
+<div class="pf-callout"><strong>Important:</strong> Surface roughness is only one part of hygienic design. A very smooth pipe can still be difficult to clean if the layout contains dead legs, trapped air, poor drainage, unsuitable valves or badly finished welds.</div>
+<div class="pf-grid">
+<div class="pf-card"><strong>What does Ra mean?</strong><p><span class="pf-highlight">Ra = arithmetic average surface roughness</span>. It is a numerical measure, expressed in micrometres (µm), of the average absolute deviation of a measured surface profile from its mean line over the evaluation length. Lower Ra means a smoother measured surface.</p></div>
+<div class="pf-card"><strong>Ra ≤ 0.8 µm</strong><p>This value is widely encountered as a hygienic internal-finish specification. It is a <em>surface-finish criterion</em>, not a guarantee that the whole piping system is hygienically designed.</p></div>
+<div class="pf-card"><strong>Weld quality matters</strong><p>Internal weld beads, crevices, pits, scratches and poor alignment can create soil-retention sites even when the nominal tube finish is smooth.</p></div>
+</div>
+</section>
+
+<section id="tubing" class="pf-section">
+<div class="pf-num">03 • TUBING &amp; SPECIAL PIPE ARRANGEMENTS</div>
+<h2>Sanitary Tubing and Double-Wall Systems</h2>
+<p>Sanitary tubing may be supplied as seamless or welded tube manufactured for hygienic process service. The selected tube must match the process pressure, temperature, mechanical loading, cleaning conditions and required surface finish.</p>
+<div class="pf-doublewall">
+<div>
+<h3>Insulated / double-walled piping</h3>
+<p>Double-wall or insulated arrangements are used where temperature control is important. Insulation reduces heat loss in hot services and heat gain in chilled services. It can also reduce external condensation on cold lines when the insulation system is properly designed and sealed.</p>
+<h3>Jacketed services</h3>
+<p>Jacketed piping or equipment provides a controlled heating or cooling medium around the process boundary. The exact arrangement depends on whether the service is steam, hot water, chilled water or another approved utility.</p>
+</div>
+<figure class="pf-figure">
+<img src="assets/double-wall-piping.svg" alt="Insulated double wall sanitary pipe cross section">
+<figcaption>Conceptual double-wall/insulated arrangement: process tube, insulation and protective outer layer.</figcaption>
+</figure>
+</div>
+</section>
+
+<section id="hygiene" class="pf-section">
+<div class="pf-num">04 • HYGIENIC DESIGN</div>
+<h2>Designing a Pipe That Can Be Cleaned</h2>
+<p>Hygienic piping should be designed as a complete system rather than as a collection of individual pipes. The objective is to prevent soil accumulation, permit effective CIP, minimise product retention and allow inspection and maintenance.</p>
+<div class="pf-grid">
+<div class="pf-card"><strong>Smooth product-contact surface</strong><p>Use suitable stainless steel and properly finished welds and joints.</p></div>
+<div class="pf-card"><strong>Drainability</strong><p>Where gravity drainage is required, route the line with a continuous fall toward a designated drain point.</p></div>
+<div class="pf-card"><strong>Minimal dead legs</strong><p>Avoid unnecessary blind branches and stagnant pockets. Instrument connections should be hygienically designed.</p></div>
+<div class="pf-card"><strong>Cleanable valves</strong><p>Select valve geometry and seat arrangements appropriate for product and CIP service.</p></div>
+<div class="pf-card"><strong>Correct joint design</strong><p>Use hygienic welds or sanitary detachable connections with properly seated gaskets.</p></div>
+<div class="pf-card"><strong>Accessibility</strong><p>Valves, sample points, instruments and dismantling points should be reachable for operation and maintenance.</p></div>
+</div>
+</section>
+
+<section id="sizing" class="pf-section">
+<div class="pf-num">05 • PIPE SIZING &amp; FLOW</div>
+<h2>How Is Pipe Size Selected?</h2>
+<p>Pipe diameter is selected from the required flow rate and acceptable operating conditions. A practical design checks velocity, pressure drop, pump capability, product characteristics, CIP requirements, available tube sizes, installation cost and the consequences of oversizing or undersizing.</p>
+<h3>Continuity equation</h3>
+<div class="pf-formula">Q = A × v &nbsp;&nbsp;&nbsp;&nbsp; A = πD² / 4 &nbsp;&nbsp;&nbsp;&nbsp; therefore &nbsp;&nbsp; v = 4Q / (πD²)</div>
+<p>Here <span class="pf-highlight">Q</span> is volumetric flow rate, <span class="pf-highlight">A</span> is internal cross-sectional area, <span class="pf-highlight">v</span> is average velocity and <span class="pf-highlight">D</span> is internal pipe diameter.</p>
+<div class="pf-table-wrap">
+<table class="pf-table">
+<tr><th>Flow example</th><th>Approx. internal diameter</th><th>Approx. velocity</th><th>Use</th></tr>
+<tr><td>20,000 L/h</td><td>76 mm</td><td>≈ 1.23 m/s</td><td>Illustrates a lower-velocity larger line</td></tr>
+<tr><td>20,000 L/h</td><td>51 mm</td><td>≈ 2.72 m/s</td><td>Illustrates the velocity increase caused by a smaller bore</td></tr>
+</table>
+</div>
+<p class="pf-note">These examples are for understanding the diameter–velocity relationship. The final selected size must be checked against the actual tube ID, product, pressure loss, pump and process/CIP requirements.</p>
+<div class="pf-table-wrap">
+<table class="pf-table">
+<tr><th>Important number</th><th>Meaning / use</th></tr>
+<tr><td>Ra ≤ 0.8 µm</td><td>Common hygienic internal surface-finish target/specification for many sanitary applications.</td></tr>
+<tr><td>0.3–0.5% slope</td><td>Common practical range for drainable hygienic runs where a continuous gravity fall is required — approximately 3–5 mm fall per metre.</td></tr>
+<tr><td>20,000 L/h</td><td>Example flow used to demonstrate the effect of pipe diameter on velocity.</td></tr>
+<tr><td>76 mm vs 51 mm ID</td><td>Illustrates why reducing diameter increases velocity substantially at the same flow.</td></tr>
+<tr><td>25 / 38 / 51 / 63.5 / 76 / 101.6 mm</td><td>Examples of tube outside diameters encountered in sanitary process installations; the actual available size series depends on the selected piping standard.</td></tr>
+</table>
+</div>
+<h3>Nominal size is not automatically the flow diameter</h3>
+<p>Sanitary tube is commonly specified using an outside diameter or nominal designation. Hydraulic calculations require the <span class="pf-highlight">actual internal diameter</span>. Wall thickness and the selected tube standard therefore matter.</p>
+<h3>Velocity and pressure loss</h3>
+<p>Increasing velocity generally increases frictional pressure loss. Excessive velocity may also increase shear, air entrainment or product disturbance in sensitive products. A very large pipe reduces velocity but increases capital cost and can make the line less efficient to clean if CIP flow is not properly considered.</p>
+</section>
+
+<section id="slope" class="pf-section">
+<div class="pf-num">06 • SLOPE &amp; DRAINAGE</div>
+<h2>Pipe Slope: Where It Matters and Why</h2>
+<p>A pipe is sloped when its route is intentionally arranged so liquid can move by gravity toward a drain. The key concept is <span class="pf-highlight">continuous fall</span>. A line can look generally sloped but still retain liquid if it contains an unintended low pocket between two higher points.</p>
+<figure class="pf-figure">
+<img src="assets/pipe-slope-drainage.svg" alt="Correct continuous pipe slope and incorrect low pocket drainage">
+<figcaption>Drainability concept: a continuous fall reaches the drain; an unintended low pocket can retain liquid even when the overall route appears sloped.</figcaption>
+</figure>
+<div class="pf-grid">
+<div class="pf-card"><strong>Continuous fall</strong><p>Maintain a consistent downward route toward the selected low-point drain where gravity drainage is required.</p></div>
+<div class="pf-card"><strong>Low-point drain</strong><p>Place the drain at the true low point so residual product or cleaning liquid has a defined exit path.</p></div>
+<div class="pf-card"><strong>Avoid inverse slopes</strong><p>A short rise followed by a fall can create a trapped pocket that prevents complete drainage.</p></div>
+</div>
+<div class="pf-callout"><strong>Typical practice:</strong> Around 0.3–0.5% slope (approximately 3–5 mm per metre) is commonly used for drainable hygienic runs where the installation standard and process arrangement call for it. The required value should be established for the actual system rather than treated as a universal rule.</div>
+<h3>Does every milk pipe need a slope?</h3>
+<p><strong>No.</strong> Slope is not a blanket requirement for every pipe in a dairy plant. It is especially important for lines that must be gravity-drainable. Other lines may have process-specific routing, hydraulic, holding-time, equipment or structural requirements. The correct question is: <em>Does this particular line need complete gravity drainage, and where is its intended drain point?</em></p>
+</section>
+
+<section id="fittings" class="pf-section">
+<div class="pf-num">07 • SANITARY PIPE FITTINGS</div>
+<h2>Elbows, Tees, Reducers and Routing Fittings</h2>
+<p>Fittings change direction, create branches, change diameter or provide access to process equipment. In hygienic service, internal geometry and cleanability are as important as the external connection.</p>
+<figure class="pf-figure">
+<img src="assets/sanitary-fittings-board.svg" alt="Sanitary elbows tees reducers and routing fittings">
+<figcaption>Common sanitary fitting concepts used for hygienic process routing.</figcaption>
+</figure>
+<div class="pf-grid">
+<div class="pf-card"><strong>45° and 90° sanitary elbows</strong><p>Used for direction changes. Smooth-radius elbows help reduce abrupt changes in flow direction and facilitate cleaning.</p></div>
+<div class="pf-card"><strong>Equal and reducing tees</strong><p>Used for branching and distribution. Branches should be arranged to avoid unnecessary stagnant volumes.</p></div>
+<div class="pf-card"><strong>Concentric reducer</strong><p>Provides a symmetrical diameter transition and is commonly convenient in vertical arrangements where drainage and air-pocket behaviour permit.</p></div>
+<div class="pf-card"><strong>Eccentric reducer</strong><p>Useful in horizontal lines where the orientation can be selected to control liquid drainage or air accumulation. The flat side is oriented according to the service requirement, not by a universal rule.</p></div>
+<div class="pf-card"><strong>Cross and Y-piece</strong><p>Provide multiple flow directions where the process layout requires them. Hygienic design should still avoid unnecessary dead zones.</p></div>
+<div class="pf-card"><strong>Flow diverter panel</strong><p>A manual or automated matrix of hygienic connections can route product between different processing circuits. The selected arrangement must make the intended flow path clear and cleanable.</p></div>
+</div>
+</section>
+
+<section id="connections" class="pf-section">
+<div class="pf-num">08 • SANITARY CONNECTIONS</div>
+<h2>Tri-Clamp, SMS, DIN, RJT and IDF Arrangements</h2>
+<p>Sanitary connections are selected according to the plant's piping standard, equipment interfaces, operating conditions and maintenance philosophy. The connection must provide a reliable seal while remaining suitable for cleaning and inspection.</p>
+<div class="pf-table-wrap">
+<table class="pf-table">
+<tr><th>Connection</th><th>Main idea</th><th>Typical advantage</th></tr>
+<tr><td>Tri-Clamp / clamp ferrule</td><td>Ferrules are brought together and sealed with a hygienic gasket and clamp.</td><td>Fast dismantling and convenient maintenance/CIP circuit changes.</td></tr>
+<tr><td>SMS union</td><td>Sanitary threaded union using a nut, liner/male component and gasket.</td><td>Common hygienic union arrangement in dairy service.</td></tr>
+<tr><td>DIN 11851</td><td>Threaded hygienic union system with a sanitary sealing arrangement.</td><td>Robust detachable connection for hygienic process piping.</td></tr>
+<tr><td>RJT</td><td>Ring-joint type sanitary union.</td><td>Heavy-duty detachable connection used in some dairy installations.</td></tr>
+<tr><td>IDF</td><td>International Dairy Federation hygienic connection concept.</td><td>Designed around hygienic dairy service and cleanability.</td></tr>
+</table>
+</div>
+<div class="pf-callout"><strong>Connection hygiene:</strong> A sanitary connection is only as good as its assembly. Correct ferrule alignment, gasket selection, gasket condition, clamp/union tightening and cleanability of the joint are all important.</div>
+</section>
+
+<section id="valves" class="pf-section">
+<div class="pf-num">09 • DAIRY VALVES &amp; CONTROL</div>
+<h2>Valves That Control the Process</h2>
+<figure class="pf-figure">
+<img src="assets/sanitary-valves-system.svg" alt="Sanitary dairy valves and process control components">
+<figcaption>Valve functions commonly encountered in dairy process piping: isolation, routing, non-return, diversion and pressure protection.</figcaption>
+</figure>
+<div class="pf-grid">
+<div class="pf-card"><strong>Butterfly valve</strong><p>Compact quarter-turn isolation valve widely used on hygienic lines. It is suitable for many on/off duties but is not automatically the best choice for fine flow control.</p></div>
+<div class="pf-card"><strong>Single-seat pneumatic valve</strong><p>Automated valve used for hygienic routing, isolation and controlled process sequences.</p></div>
+<div class="pf-card"><strong>Mixproof / double-seat valve</strong><p>Allows two compatible process circuits to be controlled with separation between media, reducing the risk of cross-contamination during complex routing.</p></div>
+<div class="pf-card"><strong>Flow diversion valve (FDV)</strong><p>In a pasteurizer, the diversion system sends milk away from the forward-flow path when the required pasteurization condition is not satisfied.</p></div>
+<div class="pf-card"><strong>Check / non-return valve</strong><p>Permits flow mainly in one direction and helps prevent reverse flow that could disturb process or CIP circuits.</p></div>
+<div class="pf-card"><strong>Pressure relief / safety valve</strong><p>Protects equipment or piping from dangerous overpressure when correctly selected, installed and maintained.</p></div>
+<div class="pf-card"><strong>Sample valve</strong><p>Provides a hygienic point for collecting representative samples. Special arrangements may be used where flame sterilization or aseptic sampling is required.</p></div>
+</div>
+</section>
+
+<section id="gaskets" class="pf-section">
+<div class="pf-num">10 • SEALS &amp; GASKETS</div>
+<h2>Choosing the Correct Gasket</h2>
+<p>The gasket is a process-contact component, not merely a mechanical accessory. Its temperature range, chemical compatibility, compression, mechanical properties and product-contact suitability must match the service.</p>
+<div class="pf-grid">
+<div class="pf-card"><strong>EPDM</strong><p>Common hygienic elastomer for hot water, many cleaning solutions and general dairy service.</p><small><b>Representative range:</b> about −40 to +135°C; some sanitary compounds are specified up to about +150°C.</small><span class="pf-tag">Hot water</span><span class="pf-tag">CIP</span></div>
+<div class="pf-card"><strong>PTFE</strong><p>Excellent chemical resistance and high-temperature capability. Often selected where elastomer compatibility is limiting.</p><small><b>Representative range:</b> about −23 to +149°C for one common sanitary PTFE specification; reinforced/special PTFE grades can be rated higher.</small><span class="pf-tag">Chemical resistance</span><span class="pf-tag">High temperature</span></div>
+<div class="pf-card"><strong>FKM / Viton</strong><p>Useful for selected high-temperature and oil/fat-related services, but hot-water/steam compatibility must be checked carefully for the actual compound.</p><small><b>Representative range:</b> about −26 to +191°C in one sanitary FKM specification.</small><span class="pf-tag">Oil/fat service</span><span class="pf-tag">High temperature</span></div>
+<div class="pf-card"><strong>Silicone</strong><p>Flexible food-contact elastomer used in selected hygienic applications. Temperature and chemical compatibility must still be verified.</p><small><b>Representative range:</b> about −45 to +204°C for common peroxide-cured sanitary silicone specifications.</small><span class="pf-tag">Flexible</span><span class="pf-tag">Wide temperature range</span></div>
+</div>
+<div class="pf-callout"><strong>Never select a gasket by name alone.</strong> Check the actual gasket grade, temperature, pressure, cleaning chemicals, product compatibility and manufacturer limits before installation.</div>
+<div class="pf-callout"><strong>Temperature note:</strong> The ranges above are representative manufacturer-published ranges, not universal limits. A gasket's allowable temperature can change with compound formulation, pressure, chemical exposure, compression and service duration. Always use the exact manufacturer's datasheet for the installed gasket.</div>
+</section>
+
+<section id="supports" class="pf-section">
+<div class="pf-num">11 • SUPPORTS &amp; INSTALLATION</div>
+<h2>Keeping the Designed Route in Place</h2>
+<p>Pipe supports maintain elevation, slope and alignment while limiting vibration and movement. Supports must also account for thermal expansion, equipment nozzle loads and the weight of the pipe when filled.</p>
+<ul>
+<li>Support long straight runs at suitable intervals according to tube size, material and loading.</li>
+<li>Provide support near valves, fittings and other concentrated loads.</li>
+<li>Maintain the intended slope after the line is fully installed and loaded.</li>
+<li>Allow for thermal expansion and contraction in hot and cold services.</li>
+<li>Avoid transferring excessive loads to pumps, heat exchangers or tank nozzles.</li>
+<li>Use hygienic support arrangements that do not create unnecessary soil or water traps.</li>
+</ul>
+</section>
+
+<section id="instruments" class="pf-section">
+<div class="pf-num">12 • INSTRUMENTATION</div>
+<h2>Pressure, Temperature, Flow and Sampling Points</h2>
+<p>Instruments should be located where they measure a representative process condition and where the connection can be cleaned, inspected and maintained.</p>
+<div class="pf-grid">
+<div class="pf-card"><strong>Pressure gauge / transmitter</strong><p>Monitors line pressure and can help identify pump, restriction, valve or process abnormalities.</p></div>
+<div class="pf-card"><strong>Temperature sensor</strong><p>Measures product or utility temperature. In thermal processes, its location and response time can be critical.</p></div>
+<div class="pf-card"><strong>Flow meter</strong><p>Measures flow through the process line. The selected technology must suit the fluid, conductivity, accuracy and cleaning conditions.</p></div>
+<div class="pf-card"><strong>Pressure switch</strong><p>Provides a switching signal at a defined pressure and can be used for equipment protection or control logic.</p></div>
+<div class="pf-card"><strong>Sample point</strong><p>Should provide a representative sample while maintaining hygienic integrity and safe operator access.</p></div>
+<div class="pf-card"><strong>Valve position feedback</strong><p>Confirms the commanded position of automated valves and supports sequence control and fault detection.</p></div>
+</div>
+</section>
+
+<section id="cip" class="pf-section">
+<div class="pf-num">13 • CIP PIPING</div>
+<h2>Designing Lines for Cleaning-in-Place</h2>
+<p>CIP is not simply a matter of sending cleaning liquid through any available pipe. The circuit must be arranged so the required cleaning solution reaches all relevant product-contact surfaces with adequate flow, temperature, chemical concentration and contact time.</p>
+<div class="pf-grid">
+<div class="pf-card"><strong>Flow</strong><p>The line must provide the hydraulic conditions required to clean the internal surface and fittings.</p></div>
+<div class="pf-card"><strong>Temperature</strong><p>Cleaning temperature is selected according to the soil, chemical and equipment limitations.</p></div>
+<div class="pf-card"><strong>Chemical concentration</strong><p>Detergent or sanitiser concentration must remain within the validated operating range.</p></div>
+<div class="pf-card"><strong>Contact time</strong><p>The cleaning cycle must provide sufficient exposure for the selected chemistry and process soil.</p></div>
+<div class="pf-card"><strong>Drainability</strong><p>After the cycle, residual cleaning solution should not remain trapped in sections intended to drain.</p></div>
+<div class="pf-card"><strong>Separation</strong><p>Valve matrices and routing logic must prevent unintended mixing of product, cleaning chemicals and utilities.</p></div>
+</div>
+</section>
+
+<section id="pid" class="pf-section">
+<div class="pf-num">14 • PIPING DOCUMENTATION</div>
+<h2>P&amp;ID, Isometrics and Line Identification</h2>
+<p>A P&amp;ID communicates the functional relationship between equipment, piping, valves and instruments. A piping isometric shows physical routing, dimensions, fittings, elevations and connection information. Together they allow the process concept and the physical installation to be understood.</p>
+<div class="pf-two">
+<div>
+<h3>P&amp;ID should make clear</h3>
+<ul>
+<li>Equipment connections and process direction</li>
+<li>Major valves and control valves</li>
+<li>Instruments and measurement points</li>
+<li>Product, CIP and utility routing</li>
+<li>Important flow/diversion paths</li>
+</ul>
+</div>
+<div>
+<h3>Isometric should make clear</h3>
+<ul>
+<li>Pipe route and elevation</li>
+<li>Fittings and joint locations</li>
+<li>Supports and drains</li>
+<li>Connection points</li>
+<li>Dimensions needed for fabrication/installation</li>
+</ul>
+</div>
+</div>
+<div class="pf-callout"><strong>Easy way to remember:</strong> A P&amp;ID explains <em>what is connected and controlled</em>; an isometric explains <em>how the piping is physically routed</em>.</div>
+</section>
+
+<section id="numbers" class="pf-section">
+<div class="pf-num">15 • QUICK REFERENCE NUMBERS</div>
+<h2>Important Numbers at a Glance</h2>
+<div class="pf-grid">
+<div class="pf-card"><strong>Ra ≤ 0.8 µm</strong><p>Common hygienic internal surface-finish specification.</p></div>
+<div class="pf-card"><strong>0.3–0.5% slope</strong><p>About 3–5 mm fall per metre for many drainable hygienic runs, where specified by the design.</p></div>
+<div class="pf-card"><strong>20,000 L/h</strong><p>Reference flow used in the sizing example on this page.</p></div>
+<div class="pf-card"><strong>76 mm ID → ≈1.23 m/s</strong><p>Example velocity at 20,000 L/h.</p></div>
+<div class="pf-card"><strong>51 mm ID → ≈2.72 m/s</strong><p>Example velocity at the same 20,000 L/h.</p></div>
+<div class="pf-card"><strong>−40 to +135°C EPDM</strong><p>Representative sanitary EPDM range; exact compound limits vary.</p></div>
+<div class="pf-card"><strong>−23 to +149°C PTFE</strong><p>Representative sanitary PTFE specification; specialty grades may differ.</p></div>
+<div class="pf-card"><strong>−26 to +191°C FKM</strong><p>Representative sanitary FKM specification; chemical compatibility still controls selection.</p></div>
+<div class="pf-card"><strong>−45 to +204°C Silicone</strong><p>Representative sanitary silicone specification; exact grade matters.</p></div>
+</div>
+<p class="pf-note">Temperature ranges are representative values from sanitary gasket manufacturer literature and are included for learning. They should never replace the exact product datasheet or validated plant specification.</p>
+</section>
+
+<section id="checklist" class="pf-section">
+<div class="pf-num">16 • DESIGN CHECKLIST</div>
+<h2>Before Accepting a Dairy Product Line</h2>
+<div class="pf-grid">
+<div class="pf-card"><strong>Material</strong><p>Correct stainless grade, finish and compatibility with product and cleaning conditions.</p></div>
+<div class="pf-card"><strong>Hydraulics</strong><p>Diameter, velocity, pressure loss and pump capability are suitable.</p></div>
+<div class="pf-card"><strong>Hygiene</strong><p>Minimal dead legs, smooth joints, cleanable valves and accessible components.</p></div>
+<div class="pf-card"><strong>Drainage</strong><p>Drainable portions have continuous fall and no unintended low pockets.</p></div>
+<div class="pf-card"><strong>Connections</strong><p>Correct ferrules, unions, clamps and gaskets are installed and aligned.</p></div>
+<div class="pf-card"><strong>Maintenance</strong><p>Valves, instruments, sample points and dismantling locations are accessible.</p></div>
+</div>
+<p class="pf-note">This page is intended as a structured learning guide for dairy process piping. Actual plant design must follow the applicable engineering specification, equipment manufacturer's requirements and validated hygienic/process design criteria.</p>
+</section>
+</main>
+
+<footer>© 2026 Dairy Sphere • Learn • Process • Innovate</footer>
+</body>
+</html>
