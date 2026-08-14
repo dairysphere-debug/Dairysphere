@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#082b47"/><stop offset="1" stop-color="#031426"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="1200" height="620" rx="28" fill="url(#g)" stroke="#145681" stroke-width="3"/>
+<text x="60" y="65" fill="#f2f6fb" font-size="30" font-family="Arial" font-weight="700">HTST Milk Pasteurization Flow</text>
+<text x="60" y="100" fill="#9fb4c7" font-size="17" font-family="Arial">Product path • heat recovery • pasteurization • holding • diversion • cooling</text>
+<g font-family="Arial" font-size="18" text-anchor="middle">
+<g fill="#06233a" stroke="#1b9cf0" stroke-width="2">
+<rect x="50" y="210" width="135" height="90" rx="15"/><rect x="220" y="210" width="135" height="90" rx="15"/>
+<rect x="390" y="210" width="160" height="90" rx="15"/><rect x="585" y="210" width="135" height="90" rx="15"/>
+<rect x="755" y="210" width="120" height="90" rx="15"/><rect x="910" y="210" width="135" height="90" rx="15"/>
+</g>
+<g fill="#f2f6fb"><text x="117" y="248">Balance</text><text x="117" y="275">Tank</text><text x="287" y="248">Feed</text><text x="287" y="275">Pump</text><text x="470" y="248">Regenerator</text><text x="470" y="275">PHE</text><text x="652" y="248">Heating</text><text x="652" y="275">Section</text><text x="815" y="248">Holding</text><text x="815" y="275">Tube</text><text x="977" y="248">FDV</text><text x="977" y="275">Control</text></g></g>
+<path d="M185 255H220M355 255H390M550 255H585M720 255H755M875 255H910" stroke="#27a9ff" stroke-width="8" fill="none" filter="url(#glow)"/>
+<polygon points="212,255 198,247 198,263" fill="#27a9ff"/><polygon points="382,255 368,247 368,263" fill="#27a9ff"/><polygon points="577,255 563,247 563,263" fill="#27a9ff"/><polygon points="747,255 733,247 733,263" fill="#27a9ff"/><polygon points="902,255 888,247 888,263" fill="#27a9ff"/>
+<path d="M1045 255 H1135 V410 H118 V410 V300" stroke="#29b6ff" stroke-width="7" fill="none"/>
+<polygon points="118,300 110,316 126,316" fill="#29b6ff"/>
+<text x="1090" y="395" fill="#8fd5ff" font-size="17" font-family="Arial">Forward flow → regeneration → cooling → storage</text>
+<path d="M977 300 V500 H117 V300" stroke="#ff9d5c" stroke-width="5" stroke-dasharray="12 10" fill="none"/>
+<text x="560" y="530" fill="#ffb27a" font-size="18" font-family="Arial" text-anchor="middle">DIVERTED FLOW: under-temperature milk returns to the balance tank</text>
+<g font-family="Arial"><rect x="430" y="355" width="340" height="55" rx="12" fill="#031a2d" stroke="#24516f"/><text x="600" y="390" fill="#dce9f4" font-size="17" text-anchor="middle">Typical HTST reference: 72°C for 15 s</text></g>
+</svg>
