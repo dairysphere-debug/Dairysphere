@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<rect width="1200" height="700" rx="28" fill="#041625"/>
+<text x="55" y="55" fill="#eaf6ff" font-family="Arial" font-size="29" font-weight="700">Sanitary Fittings</text>
+<text x="55" y="83" fill="#8da8ba" font-family="Arial" font-size="15">Direction changes, branches and diameter transitions</text>
+<g fill="#0a2639" stroke="#2b698d" stroke-width="2">
+<rect x="45" y="120" width="350" height="245" rx="18"/><rect x="425" y="120" width="350" height="245" rx="18"/><rect x="805" y="120" width="350" height="245" rx="18"/>
+<rect x="45" y="400" width="350" height="245" rx="18"/><rect x="425" y="400" width="350" height="245" rx="18"/><rect x="805" y="400" width="350" height="245" rx="18"/>
+</g>
+<g fill="#eaf6ff" font-family="Arial" text-anchor="middle" font-size="19" font-weight="700">
+<text x="220" y="160">45° / 90° Elbow</text><text x="600" y="160">Sanitary Tee</text><text x="980" y="160">Reducer</text>
+<text x="220" y="440">Eccentric Reducer</text><text x="600" y="440">Y-Piece / Branch</text><text x="980" y="440">Flow Diverter Concept</text>
+</g>
+<g stroke="#dce8ed" stroke-width="16" fill="none" stroke-linecap="round">
+<path d="M120 270h110v-70"/><path d="M500 260h190"/><path d="M595 260v70"/>
+<path d="M850 260h150"/><path d="M1000 260h70" stroke-width="28"/>
+<path d="M120 550h180"/><path d="M500 550h120l90-80"/><path d="M500 550h120l90 80"/>
+</g>
+<g stroke="#159df2" stroke-width="8" fill="none" stroke-linecap="round">
+<path d="M850 260h150"/><path d="M850 275h150" stroke-width="3"/>
+<path d="M865 525h200"/><path d="M865 565h200"/>
+</g>
+<g fill="#9fdcff" font-family="Arial" font-size="14" text-anchor="middle">
+<text x="220" y="315">Smooth-radius direction change</text>
+<text x="595" y="345">Branch without unnecessary dead volume</text>
+<text x="960" y="315">Symmetrical transition</text>
+<text x="220" y="595">Orientation selected for drainage / air control</text>
+<text x="600" y="625">Multiple routing directions</text>
+<text x="980" y="625">Matrix / selector routing</text>
+</g>
+</svg>
