@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cream Separator | Dairy Sphere</title>
+<meta name="description" content="Dairy Sphere equipment atlas — detailed student-friendly guide to cream separators, centrifugal separation, disc stacks, components, Stokes' law and separation efficiency.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="dairy-sphere-mark.png" alt="Dairy Sphere logo">
+      <div><strong>Dairy Sphere</strong><span>LEARN • PROCESS • INNOVATE</span></div>
+    </a>
+    <nav class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="library.html">Library</a>
+      <a href="lab.html">Virtual Lab</a>
+      <a href="equipment.html" class="active">Equipment Atlas</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="founder.html">Founder</a>
+    </nav>
+    <a class="btn" href="founder.html#contact">Contact ↗</a>
+  </div>
+</header>
+
+<main class="fade">
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">EQUIPMENT ATLAS • MECHANICAL SEPARATION</span>
+    <h1>Cream Separator</h1>
+    <p>A high-speed centrifugal machine that separates milk into a fat-rich cream phase and a low-fat skim-milk phase. Explore the bowl, disc stack, flow path, outlet systems, Stokes' law and practical separation calculations.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
+      <span class="btn secondary">Centrifugal Separation</span><span class="btn secondary">Disc Stack</span><span class="btn secondary">Cream</span><span class="btn secondary">Skim Milk</span><span class="btn secondary">Stokes' Law</span><span class="btn secondary">Efficiency</span>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel" style="display:grid;grid-template-columns:minmax(0,1.05fr) minmax(280px,.75fr);gap:28px;align-items:center">
+    <div>
+      <span class="eyebrow">WHAT THE EQUIPMENT DOES</span>
+      <h2>Milk → Cream + Skim Milk</h2>
+      <p style="color:#9fb6c9;line-height:1.75">Milk contains fat globules dispersed in an aqueous continuous phase. A cream separator uses a rapidly rotating bowl to create a centrifugal field much stronger than gravity. Because the fat globules are less dense than the surrounding milk, they migrate toward the axis of rotation while the denser skim-milk phase moves toward the bowl wall.</p>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:20px 0">
+        <span class="btn secondary">Whole milk</span><b style="color:#74d7ff">→</b><span class="btn secondary">Disc bowl</span><b style="color:#74d7ff">→</b><span class="btn secondary">Cream</span><span style="color:#74d7ff;font-weight:800">+</span><span class="btn secondary">Skim milk</span>
+      </div>
+      <div class="panel" style="padding:18px;border-radius:16px;background:rgba(36,168,255,.06)"><strong style="color:#74d7ff">The key idea:</strong> density difference + high rotational speed + closely spaced discs make separation fast and continuous.</div>
+    </div>
+    <figure style="margin:0;display:flex;justify-content:center;align-items:center;background:rgba(0,0,0,.12);border-radius:18px;padding:18px;min-width:0">
+      <img src="assets/cream-separator-machine.png" alt="Cream separator machine" style="display:block;width:auto;max-width:100%;height:auto;max-height:430px;object-fit:contain">
+    </figure>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>Quick Process Reference</h2>
+    <div class="stats" style="margin-top:18px">
+      <div class="stat"><div><b>Warm milk</b><div style="color:#9fb6c9;font-size:.85rem;margin-top:5px">Lower viscosity helps fat-globule movement.</div></div></div>
+      <div class="stat"><div><b>High speed</b><div style="color:#9fb6c9;font-size:.85rem;margin-top:5px">Creates the centrifugal field.</div></div></div>
+      <div class="stat"><div><b>Disc stack</b><div style="color:#9fb6c9;font-size:.85rem;margin-top:5px">Shortens the separation distance.</div></div></div>
+      <div class="stat"><div><b>Two outlets</b><div style="color:#9fb6c9;font-size:.85rem;margin-top:5px">Cream and skim milk leave separately.</div></div></div>
+    </div>
+    <div style="margin-top:18px;padding:16px 18px;border-left:3px solid #f5c94a;background:rgba(245,201,74,.07);border-radius:10px;color:#b9c9d6;line-height:1.65"><strong style="color:#f5d56b">Temperature note:</strong> warm separation is commonly carried out around the practical warm-separation range because reducing milk viscosity helps fat globules move through the disc channels. The exact operating condition depends on separator design and the validated process.</div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>01 · What Is a Cream Separator?</h2>
+    <p style="color:#b7c8d5;line-height:1.8">A cream separator is a centrifugal separation machine designed to divide milk into two liquid phases: a fat-rich cream stream and a low-fat skim-milk stream. The separation is not simply a matter of “heavy liquid going down.” Inside the rotating bowl, the effective force field is directed radially outward. The denser continuous phase therefore moves outward, while the less-dense fat globules migrate inward.</p>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px">
+      <div class="panel" style="padding:20px"><h3>Why centrifugal force?</h3><p style="color:#9fb6c9;line-height:1.7">Gravity is too weak to separate finely dispersed fat globules rapidly in a continuous industrial process. Rotation greatly increases the driving force and allows the separator to work continuously.</p></div>
+      <div class="panel" style="padding:20px"><h3>Why a disc stack?</h3><p style="color:#9fb6c9;line-height:1.7">The disc stack divides the bowl into many narrow channels. A fat globule then has only a short distance to travel before reaching the appropriate phase region.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>02 · Working Principle — Step by Step</h2>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px">
+      <div class="panel" style="padding:19px"><h3>1. Milk enters the bowl</h3><p style="color:#9fb6c9;line-height:1.7">Milk enters through the feed arrangement and is guided toward the distributor. The distributor brings the incoming liquid close to bowl speed before the main separation zone.</p></div>
+      <div class="panel" style="padding:19px"><h3>2. Flow enters the disc stack</h3><p style="color:#9fb6c9;line-height:1.7">Milk is distributed through openings and enters the narrow spaces between conical discs. These channels create a large effective separation area.</p></div>
+      <div class="panel" style="padding:19px"><h3>3. Centrifugal field acts on both phases</h3><p style="color:#9fb6c9;line-height:1.7">Rotation produces a radial acceleration. The denser milk phase is driven toward the bowl periphery, while the less-dense fat globules migrate toward the axis.</p></div>
+      <div class="panel" style="padding:19px"><h3>4. The phases move in opposite directions</h3><p style="color:#9fb6c9;line-height:1.7">Within each disc channel, skim milk moves outward and cream moves inward. Repeated separation through many channels progressively enriches the cream stream.</p></div>
+      <div class="panel" style="padding:19px"><h3>5. Separated liquids collect</h3><p style="color:#9fb6c9;line-height:1.7">The two phases reach their respective collection passages. The machine then removes them through separate outlet arrangements.</p></div>
+      <div class="panel" style="padding:19px"><h3>6. Solids migrate outward</h3><p style="color:#9fb6c9;line-height:1.7">Dense suspended particles, including sediment and cellular material, move toward the bowl periphery where they can accumulate or be discharged in a self-cleaning design.</p></div>
+    </div>
+    <figure style="margin:24px 0 0;padding:18px;border-radius:18px;background:rgba(255,255,255,.035);border:1px solid rgba(116,215,255,.12);text-align:center">
+      <img src="assets/cream-separator-flow-highlighted.png" alt="Cream separator flow diagram showing whole milk, cream and skim milk" style="display:block;width:auto;max-width:100%;height:auto;max-height:720px;margin:auto;object-fit:contain">
+      <figcaption style="color:#91a8b9;margin-top:12px;line-height:1.5">Flow through the disc bowl: whole milk enters the centre, cream migrates inward and skim milk migrates outward.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>03 · What Happens Inside the Disc Stack?</h2>
+    <p style="color:#b7c8d5;line-height:1.8">The disc stack creates a large number of thin separation channels. Milk enters these channels through distribution openings located away from the outer edge of the stack. Once the milk has been brought into rapid rotation, the density difference between fat globules and the continuous skim-milk phase causes the two phases to migrate in opposite radial directions.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px">
+      <div class="panel" style="padding:18px"><h3>1 · Milk enters the channels</h3><p style="color:#9fb6c9;line-height:1.65">Distribution openings spread the incoming milk between neighbouring conical discs so that the separation zone is used uniformly.</p></div>
+      <div class="panel" style="padding:18px"><h3>2 · Fat moves inward</h3><p style="color:#9fb6c9;line-height:1.65">Fat globules have lower density than the surrounding skim-milk phase, so the centrifugal field drives them toward the axis of rotation.</p></div>
+      <div class="panel" style="padding:18px"><h3>3 · Skim milk moves outward</h3><p style="color:#9fb6c9;line-height:1.65">The denser continuous phase migrates toward the bowl periphery. Dense suspended solids also move outward and can accumulate in the sediment region.</p></div>
+    </div>
+    <div class="panel" style="margin-top:18px;padding:20px;background:rgba(36,168,255,.045)">
+      <h3>The separation path, in simple words</h3>
+      <p style="color:#b7c8d5;line-height:1.8;margin-bottom:8px">Think of one narrow space between two discs. The milk is continuously rotating. Within that small space, fat globules travel toward the centre while the skim-milk phase travels toward the outside. Because there are many closely spaced discs, the fat globules do not need to cross a large distance before reaching the cream-side region.</p>
+      <p style="color:#b7c8d5;line-height:1.8;margin:0">After migration, the cream-rich and skim-milk-rich layers are guided toward their respective collection passages and discharged separately.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px">
+      <div class="panel" style="padding:18px"><h3>Why distribution holes matter</h3><p style="color:#9fb6c9;line-height:1.65">If milk is not distributed evenly, some disc channels can carry more product than others. Uniform feeding helps maintain a stable separation pattern throughout the bowl.</p></div>
+      <div class="panel" style="padding:18px"><h3>Why small fat globules are harder to recover</h3><p style="color:#9fb6c9;line-height:1.65">Very small globules migrate more slowly through the liquid. At a fixed throughput, some may leave with the skim milk before completing their migration to the cream side.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>04 · Components — Detailed</h2>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px">
+      <div>
+        <h3>Separator bowl assembly</h3>
+        <ul style="color:#b7c8d5;line-height:1.75;padding-left:22px">
+          <li><strong>Bowl body:</strong> rotating lower body containing the separation zone.</li>
+          <li><strong>Bowl hood:</strong> upper enclosure that closes the bowl and guides product flow.</li>
+          <li><strong>Locking arrangement:</strong> secures the bowl components during high-speed operation.</li>
+          <li><strong>Distributor:</strong> receives incoming milk and spreads it uniformly into the disc stack.</li>
+          <li><strong>Disc stack:</strong> closely spaced conical discs that form the separation channels.</li>
+          <li><strong>Distribution openings:</strong> passages that help feed milk evenly into the disc channels.</li>
+          <li><strong>Sediment space:</strong> peripheral region where dense solids accumulate.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Drive, inlet and outlet system</h3>
+        <ul style="color:#b7c8d5;line-height:1.75;padding-left:22px">
+          <li><strong>Spindle:</strong> supports and rotates the bowl at high speed.</li>
+          <li><strong>Drive gear / worm gear:</strong> transfers motor power to the spindle.</li>
+          <li><strong>Electric motor:</strong> supplies mechanical power.</li>
+          <li><strong>Clutch / drive coupling:</strong> allows controlled transmission of drive power.</li>
+          <li><strong>Milk inlet:</strong> receives the feed stream.</li>
+          <li><strong>Cream outlet:</strong> removes the low-density, fat-rich phase.</li>
+          <li><strong>Skim-milk outlet:</strong> removes the denser continuous phase.</li>
+          <li><strong>Outlet device:</strong> paring disc or internal pump arrangement depending on machine design.</li>
+        </ul>
+      </div>
+    </div>
+    <figure style="margin:24px auto 0;max-width:900px;padding:16px;border-radius:18px;background:rgba(255,255,255,.035);border:1px solid rgba(116,215,255,.12);text-align:center">
+      <img src="assets/separator-components.jpg" alt="Detailed cream separator components" style="display:block;width:auto;max-width:100%;height:auto;max-height:700px;margin:auto;object-fit:contain">
+      <figcaption style="color:#91a8b9;margin-top:10px">Detailed view of the separator body, bowl, drive and product connections.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>05 · Disc Stack — Why It Matters</h2>
+    <p style="color:#b7c8d5;line-height:1.8">A separator without closely spaced discs would require a much longer migration distance for fat globules. The disc stack solves this by dividing the liquid into many shallow layers. A globule only needs to move a short distance before reaching the cream-side region of a channel.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px">
+      <div class="panel" style="padding:18px"><h3>Large effective area</h3><p style="color:#9fb6c9;line-height:1.65">Many discs provide a large total separation area within a compact bowl.</p></div>
+      <div class="panel" style="padding:18px"><h3>Short migration path</h3><p style="color:#9fb6c9;line-height:1.65">Thin channels reduce the distance fat globules must travel.</p></div>
+      <div class="panel" style="padding:18px"><h3>Uniform distribution</h3><p style="color:#9fb6c9;line-height:1.65">Distribution openings help feed the channels consistently.</p></div>
+    </div>
+    <figure style="margin:24px auto 0;max-width:700px;padding:16px;border-radius:18px;background:rgba(255,255,255,.035);text-align:center">
+      <img src="assets/separator-working-bottom.jpg" alt="Cream separator disc bowl working arrangement" style="display:block;width:auto;max-width:100%;height:auto;max-height:650px;margin:auto;object-fit:contain">
+      <figcaption style="color:#91a8b9;margin-top:10px">A cross-sectional view helps visualize the milk path through the disc stack.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>06 · Separation Performance — What Changes the Result?</h2>
+    <p style="color:#b7c8d5;line-height:1.8">A separator does not recover exactly the same amount of fat under every condition. Performance is influenced by the size distribution of fat globules, milk viscosity, throughput, disc geometry, rotational conditions, temperature and the cleanliness of the bowl.</p>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px">
+      <div class="panel" style="padding:18px"><h3>Throughput</h3><p style="color:#9fb6c9;line-height:1.65">Reducing flow gives globules more residence time in the separation zone and generally improves the opportunity for small globules to migrate.</p></div>
+      <div class="panel" style="padding:18px"><h3>Milk viscosity</h3><p style="color:#9fb6c9;line-height:1.65">Lower viscosity offers less resistance to globule movement. This is one reason warm milk is easier to separate than cold, highly viscous milk.</p></div>
+      <div class="panel" style="padding:18px"><h3>Fat-globule size</h3><p style="color:#9fb6c9;line-height:1.65">Larger globules migrate more readily than very small globules. Milk containing many fine globules therefore presents a greater separation challenge.</p></div>
+      <div class="panel" style="padding:18px"><h3>Clean bowl and discs</h3><p style="color:#9fb6c9;line-height:1.65">Deposits in the bowl or disc passages can disturb flow and reduce effective separation. Regular cleaning and correct reassembly are essential.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>07 · Stokes' Law — The Physics Behind Fat-Globule Migration</h2>
+    <p style="color:#b7c8d5;line-height:1.8">Stokes' law describes the terminal settling or migration velocity of a small spherical particle moving through a viscous fluid when the flow around the particle is in the creeping-flow regime. In a cream separator, the same idea can be applied to a fat globule, but the ordinary gravitational acceleration is replaced by the much larger radial acceleration created by rotation.</p>
+    <div class="panel" style="margin-top:20px;padding:22px;background:rgba(36,168,255,.06);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:1.05rem;overflow:auto">
+      <div style="color:#74d7ff;font-weight:800;margin-bottom:10px">Stokes' law under a centrifugal field</div>
+      <div style="font-size:1.2rem">v = d² (ρ<sub>m</sub> − ρ<sub>f</sub>) ω² r / (18 μ)</div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px">
+      <div class="panel" style="padding:18px"><h3>What the terms mean</h3><ul style="color:#b7c8d5;line-height:1.7;padding-left:20px"><li><strong>v</strong> = migration velocity of the fat globule</li><li><strong>d</strong> = fat-globule diameter</li><li><strong>ρ<sub>m</sub></strong> = density of the continuous milk phase</li><li><strong>ρ<sub>f</sub></strong> = density of the fat globule</li><li><strong>ω</strong> = angular velocity of the bowl</li><li><strong>r</strong> = radial position in the bowl</li><li><strong>μ</strong> = dynamic viscosity of the continuous phase</li></ul></div>
+      <div class="panel" style="padding:18px"><h3>Understand it physically</h3><ul style="color:#b7c8d5;line-height:1.7;padding-left:20px"><li>Larger globules migrate much faster because velocity varies with <strong>d²</strong>.</li><li>A larger density difference increases the driving force.</li><li>Higher rotational speed strongly increases migration because the term contains <strong>ω²</strong>.</li><li>Higher viscosity resists movement, so warming milk helps by reducing viscosity.</li><li>The equation is a simplified physics model; a real separator also depends on disc geometry, flow rate, turbulence, globule distribution and machine design.</li></ul></div>
+    </div>
+    <div style="margin-top:18px;padding:17px;border-left:3px solid #74d7ff;background:rgba(116,215,255,.06);color:#b7c8d5;line-height:1.7"><strong style="color:#74d7ff">Exam connection:</strong> Stokes' law explains why the separator works better when fat globules are sufficiently large, the milk is less viscous, and the centrifugal field is strong.</div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>07 · Why Warm Milk Is Used for Separation</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px">
+      <div class="panel" style="padding:18px"><h3>Lower viscosity</h3><p style="color:#9fb6c9;line-height:1.7">As milk warms, viscosity decreases. Lower resistance allows fat globules to move more readily through the narrow disc channels.</p></div>
+      <div class="panel" style="padding:18px"><h3>Better migration</h3><p style="color:#9fb6c9;line-height:1.7">Because migration velocity is inversely related to viscosity in the Stokes-type expression, warmer milk supports faster separation.</p></div>
+      <div class="panel" style="padding:18px"><h3>Process balance</h3><p style="color:#9fb6c9;line-height:1.7">The objective is not maximum temperature. The process must balance separation performance, product quality and equipment-material limitations.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>08 · Top Feed and Bottom Feed Arrangements</h2>
+    <p style="color:#b7c8d5;line-height:1.8">Different separator constructions introduce milk into the bowl in different ways. In every design, the important requirement is controlled distribution of the incoming milk into the separation zone without disturbing the established flow pattern.</p>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:20px">
+      <div><h3>Top-feed arrangement</h3><p style="color:#9fb6c9;line-height:1.7">Milk is introduced through the upper feed path and guided toward the distributor and disc stack. Proper distribution prevents uneven loading of the separation channels.</p><figure style="margin:15px 0 0;padding:14px;border-radius:16px;background:rgba(255,255,255,.035);text-align:center"><img src="assets/separator-top-feed.jpg" alt="Top feed cream separator arrangement" style="display:block;width:auto;max-width:100%;height:auto;max-height:600px;margin:auto;object-fit:contain"><figcaption style="color:#91a8b9;margin-top:9px">Top-feed product path.</figcaption></figure></div>
+      <div><h3>Bottom-feed arrangement</h3><p style="color:#9fb6c9;line-height:1.7">The feed path can also approach the bowl from below. The distributor still has the same fundamental task: bring the product up to bowl speed and distribute it evenly into the separation channels.</p><div class="panel" style="margin-top:15px;padding:18px;background:rgba(36,168,255,.05)"><strong style="color:#74d7ff">Bottom-feed idea:</strong><p style="color:#9fb6c9;line-height:1.7;margin:8px 0 0">The feed approaches the lower part of the bowl and is guided by the distributor into the disc stack. The exact internal path depends on separator construction.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>09 · Open, Semi-open and Hermetic Separators</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px">
+      <div class="panel" style="padding:20px"><h3>Open</h3><p style="color:#9fb6c9;line-height:1.7">The product side has greater exposure to the surrounding atmosphere. The arrangement is simple but less suited to modern closed hygienic processing.</p></div>
+      <div class="panel" style="padding:20px"><h3>Semi-open / paring disc</h3><p style="color:#9fb6c9;line-height:1.7">Separated liquid is recovered by a stationary paring device whose immersed rim picks up rotating liquid and converts part of its kinetic energy into outlet pressure.</p></div>
+      <div class="panel" style="padding:20px"><h3>Hermetic</h3><p style="color:#9fb6c9;line-height:1.7">The bowl remains filled during operation and product is moved through internal passages and pumps. This keeps the product path closed and reduces air contact.</p></div>
+    </div>
+    <figure style="margin:24px auto 0;max-width:600px;padding:16px;border-radius:18px;background:rgba(255,255,255,.035);text-align:center"><img src="assets/paring-disc-outlet.jpg" alt="Paring disc outlet arrangement" style="display:block;width:auto;max-width:100%;height:auto;max-height:500px;margin:auto;object-fit:contain"><figcaption style="color:#91a8b9;margin-top:10px">Paring-disc outlet arrangement.</figcaption></figure>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>10 · Paring Disc — How It Recovers the Separated Liquid</h2>
+    <p style="color:#b7c8d5;line-height:1.8">In a semi-open separator, the separated liquid is still rotating with the bowl. A stationary paring disc is immersed in that rotating liquid. The rotating liquid enters the passage in the paring device, and the change in flow direction converts part of the liquid's kinetic energy into pressure that can drive the product into the downstream line.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px">
+      <div class="panel" style="padding:18px"><h3>Rotating liquid</h3><p style="color:#9fb6c9;line-height:1.65">The liquid reaches the outlet region while retaining high tangential velocity.</p></div>
+      <div class="panel" style="padding:18px"><h3>Stationary device</h3><p style="color:#9fb6c9;line-height:1.65">The paring disc does not rotate with the bowl; its immersed rim receives the moving liquid.</p></div>
+      <div class="panel" style="padding:18px"><h3>Pressure recovery</h3><p style="color:#9fb6c9;line-height:1.65">The internal passage converts part of the rotational kinetic energy into useful discharge pressure.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>11 · Cream Separator Efficiency — Calculation</h2>
+    <p style="color:#b7c8d5;line-height:1.8">A practical way to judge separation is to determine how much of the fat entering with the whole milk is recovered in the cream instead of remaining in the skim milk.</p>
+    <div class="panel" style="margin-top:18px;padding:22px;background:rgba(36,168,255,.06);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;overflow:auto">
+      <div style="font-size:1rem;line-height:2">Fat entering = Q<sub>m</sub> × F<sub>m</sub> / 100</div>
+      <div style="font-size:1rem;line-height:2">Fat remaining in skim = Q<sub>s</sub> × F<sub>s</sub> / 100</div>
+      <div style="font-size:1rem;line-height:2">Fat recovered in cream = Fat entering − Fat remaining in skim</div>
+      <hr style="border:0;border-top:1px solid rgba(116,215,255,.2);margin:12px 0">
+      <div style="font-size:1.15rem;color:#74d7ff;font-weight:800;line-height:2">η = [(Q<sub>m</sub>F<sub>m</sub> − Q<sub>s</sub>F<sub>s</sub>) / (Q<sub>m</sub>F<sub>m</sub>)] × 100</div>
+    </div>
+    <p style="color:#9fb6c9;line-height:1.7;margin-top:14px"><strong>Where:</strong> Q<sub>m</sub> = whole-milk flow rate, F<sub>m</sub> = whole-milk fat %, Q<sub>s</sub> = skim-milk flow rate, and F<sub>s</sub> = skim-milk fat %.</p>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:18px">
+      <div class="panel" style="padding:20px"><h3>Worked example</h3><p style="color:#9fb6c9;line-height:1.7">Suppose the separator receives <strong>10,000 kg/h</strong> milk at <strong>4.0% fat</strong> and produces <strong>9,000 kg/h</strong> skim milk at <strong>0.05% fat</strong>.</p><div style="font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#d9ecfa;line-height:1.8">Fat in = 10,000 × 4 / 100 = 400 kg/h<br>Fat in skim = 9,000 × 0.05 / 100 = 4.5 kg/h<br>Fat recovered = 400 − 4.5 = 395.5 kg/h<br>η = (395.5 / 400) × 100 = <strong>98.875%</strong></div></div>
+      <div class="panel" style="padding:20px"><h3>What the result tells you</h3><ul style="color:#9fb6c9;line-height:1.7;padding-left:20px"><li>Lower residual fat in skim milk generally indicates better fat separation.</li><li>Efficiency is a mass-balance calculation, so flow rates matter.</li><li>A very low skim-fat value alone should not be interpreted without considering throughput and feed composition.</li><li>Real performance also depends on temperature, bowl speed, disc condition, feed distribution and outlet settings.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>12 · Cream Flow and Fat Standardisation</h2>
+    <p style="color:#b7c8d5;line-height:1.8">The separator creates cream and skim milk, but their flow rates also determine the final cream concentration. A regulating valve on the cream side changes how much liquid accompanies the recovered fat. In a standardisation system, measured cream and skim flows can be combined in a controlled way to obtain the desired milk composition.</p>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.8fr);gap:22px;align-items:center;margin-top:18px">
+      <div>
+        <div class="panel" style="padding:20px;background:rgba(36,168,255,.06);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:1.05rem">Q<sub>m</sub>F<sub>m</sub> = Q<sub>c</sub>F<sub>c</sub> + Q<sub>s</sub>F<sub>s</sub></div>
+        <ul style="color:#9fb6c9;line-height:1.75;padding-left:20px"><li>Increasing cream flow generally lowers cream-fat concentration because more liquid accompanies the recovered fat.</li><li>Reducing cream flow generally concentrates the cream stream.</li><li>Stable outlet pressure and consistent feed conditions improve control.</li><li>Automatic systems can use flow and composition measurements to adjust valves continuously.</li></ul>
+      </div>
+      <figure style="margin:0;padding:14px;border-radius:18px;background:rgba(255,255,255,.035);text-align:center"><img src="assets/separator-standardization.jpg" alt="Cream flow and milk standardisation arrangement" style="display:block;width:auto;max-width:100%;height:auto;max-height:500px;margin:auto;object-fit:contain"><figcaption style="color:#91a8b9;margin-top:9px">Cream-flow and standardisation arrangement.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>13 · Factors That Control Separation Performance</h2>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px">
+      <div class="panel" style="padding:18px"><h3>Milk temperature</h3><p style="color:#9fb6c9;line-height:1.65">Viscosity changes with temperature, which directly affects fat-globule migration.</p></div>
+      <div class="panel" style="padding:18px"><h3>Fat-globule size</h3><p style="color:#9fb6c9;line-height:1.65">Larger globules migrate more readily according to the Stokes-type relationship.</p></div>
+      <div class="panel" style="padding:18px"><h3>Feed rate</h3><p style="color:#9fb6c9;line-height:1.65">Excessive throughput reduces the effective residence time available for separation.</p></div>
+      <div class="panel" style="padding:18px"><h3>Bowl speed</h3><p style="color:#9fb6c9;line-height:1.65">The centrifugal field depends strongly on rotational speed, but the machine must remain within its design limits.</p></div>
+      <div class="panel" style="padding:18px"><h3>Disc condition</h3><p style="color:#9fb6c9;line-height:1.65">Incorrect spacing, deposits or damage can disturb the narrow separation channels.</p></div>
+      <div class="panel" style="padding:18px"><h3>Outlet adjustment</h3><p style="color:#9fb6c9;line-height:1.65">Cream and skim outlet conditions affect phase discharge and cream concentration.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>14 · Solids, Cleaning and Maintenance</h2>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px">
+      <div class="panel" style="padding:20px"><h3>Solids collection</h3><p style="color:#9fb6c9;line-height:1.7">Dense suspended material moves toward the bowl periphery and accumulates in the sediment region.</p></div>
+      <div class="panel" style="padding:20px"><h3>Self-cleaning bowl</h3><p style="color:#9fb6c9;line-height:1.7">In self-cleaning designs, accumulated solids can be discharged through an operating mechanism without full manual dismantling.</p></div>
+      <div class="panel" style="padding:20px"><h3>Manual cleaning</h3><p style="color:#9fb6c9;line-height:1.7">Correct dismantling, inspection and cleaning of the bowl and disc stack are essential for hygienic operation and consistent separation.</p></div>
+    </div>
+    <div style="margin-top:20px;padding:17px;border-left:3px solid #74d7ff;background:rgba(116,215,255,.06);color:#b7c8d5;line-height:1.7"><strong style="color:#74d7ff">Remember:</strong> a cream separator is a precision high-speed machine. Bowl assembly, locking, lubrication, vibration control and operating limits must always follow the equipment's approved procedure.</div>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>15 · Cream Separator in a Dairy Plant</h2>
+    <p style="color:#b7c8d5;line-height:1.8">In a modern milk-processing line, separation may be integrated with standardisation. Whole milk enters the separator, cream is recovered as a concentrated fat stream, and skim milk continues as the main low-fat stream. The two streams can then be recombined in controlled proportions to produce a target milk composition.</p>
+    <figure style="margin:22px auto 0;max-width:900px;padding:16px;border-radius:18px;background:rgba(255,255,255,.035);text-align:center"><img src="assets/industrial-separators.jpg" alt="Industrial cream separators in a dairy plant" style="display:block;width:auto;max-width:100%;height:auto;max-height:560px;margin:auto;object-fit:contain"><figcaption style="color:#91a8b9;margin-top:10px">Industrial centrifugal separators installed in a dairy processing area.</figcaption></figure>
+  </div>
+</section>
+
+<section class="container section">
+  <div class="panel">
+    <h2>16 · Student Quick Revision</h2>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px">
+      <div class="panel" style="padding:18px"><strong>Principle</strong><p style="color:#9fb6c9;line-height:1.6">Centrifugal separation based mainly on the density difference between fat globules and the continuous milk phase.</p></div>
+      <div class="panel" style="padding:18px"><strong>Direction</strong><p style="color:#9fb6c9;line-height:1.6">Cream moves inward toward the axis; skim milk moves outward toward the bowl periphery.</p></div>
+      <div class="panel" style="padding:18px"><strong>Disc stack</strong><p style="color:#9fb6c9;line-height:1.6">Creates many narrow channels and short migration distances.</p></div>
+      <div class="panel" style="padding:18px"><strong>Stokes relation</strong><p style="color:#9fb6c9;line-height:1.6">Migration velocity increases with globule diameter squared and centrifugal acceleration, and decreases with viscosity.</p></div>
+      <div class="panel" style="padding:18px"><strong>Efficiency</strong><p style="color:#9fb6c9;line-height:1.6">Compare fat entering with fat remaining in the skim stream.</p></div>
+      <div class="panel" style="padding:18px"><strong>Performance</strong><p style="color:#9fb6c9;line-height:1.6">Temperature, throughput, bowl speed, disc condition, feed distribution and outlet adjustment all matter.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><img class="small-logo" src="dairy-sphere-logo-transparent.png" alt="Dairy Sphere"><div>© 2026 Dairy Sphere • Educational platform for Dairy Technology.</div></div>
+    <div>Learn • Process • Innovate</div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
