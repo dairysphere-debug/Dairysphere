@@ -1,13 +1,31 @@
-Dairy Sphere — Milk Pasteurizer (Fixed)
+Dairy Sphere — UPDATED Equipment Atlas package
 
-Use equipment-pasteurizer.html as the page file.
-Keep all listed assets in the same folder as the HTML file.
+UPDATED MAIN FILE:
+- equipment.html
+  The existing Equipment Atlas is preserved and now includes the Spray Dryer
+  card/link so the new Spray Dryer page is reachable from the main atlas.
 
-Changes in this version:
-- Uses the uploaded Dairy Sphere earth/milk logo.
-- Keeps the supplied pasteurizer/PHE/FDV images.
-- Removes the "supplied video", "supplied notes" and ON/OFF explanatory text.
-- Video is a processed MP4 with the white studio background removed and the machine composited onto the Dairy Sphere dark page background.
-- Animation is controlled only by the switch.
-- Adds the requested temperature progression: ~45°C after Regeneration 1 for cream separation; ~65°C after Regeneration 3 for homogenization; final heating then reaches the validated pasteurization condition.
-- Expands the holding-tube explanation and gives the complete 10,000 L/h calculation, resulting in approximately 26.5 m.
+NEW / REPLACEABLE EQUIPMENT PAGES:
+- equipment-pumps.html
+- equipment-butter-making.html
+- equipment-farm-cooling.html
+- equipment-evaporator.html
+- equipment-process-control.html
+- equipment-deaerator.html
+- equipment-membrane-filtration.html
+- equipment-butter-churner.html
+- equipment-milk-tanks-silos.html
+- equipment-spray-dryer.html
+- equipment-ro.html
+- equipment-nanofiltration.html
+- equipment-ultrafiltration.html
+- equipment-microfiltration.html
+
+NOT INCLUDED / NOT CHANGED:
+- equipment-homogenizer.html
+- equipment-pasteurizer.html
+- pipes-fittings.html
+- equipment-separator.html
+
+Replace the updated equipment.html and the included equipment pages in the
+same website folder. Keep the four existing excluded pages as they are.
