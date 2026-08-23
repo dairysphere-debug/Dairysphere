@@ -1,31 +1,9 @@
-Dairy Sphere — UPDATED Equipment Atlas package
+Dairy Sphere — Pumps Section
 
-UPDATED MAIN FILE:
-- equipment.html
-  The existing Equipment Atlas is preserved and now includes the Spray Dryer
-  card/link so the new Spray Dryer page is reachable from the main atlas.
+Files:
+- equipment-pumps.html — complete redesigned Pumps page in the existing Dairy Sphere theme
+- pump-parts-numbered.jpg — numbered centrifugal pump parts image
+- pump-machine-transparent.png — pump cutaway with black background removed
 
-NEW / REPLACEABLE EQUIPMENT PAGES:
-- equipment-pumps.html
-- equipment-butter-making.html
-- equipment-farm-cooling.html
-- equipment-evaporator.html
-- equipment-process-control.html
-- equipment-deaerator.html
-- equipment-membrane-filtration.html
-- equipment-butter-churner.html
-- equipment-milk-tanks-silos.html
-- equipment-spray-dryer.html
-- equipment-ro.html
-- equipment-nanofiltration.html
-- equipment-ultrafiltration.html
-- equipment-microfiltration.html
-
-NOT INCLUDED / NOT CHANGED:
-- equipment-homogenizer.html
-- equipment-pasteurizer.html
-- pipes-fittings.html
-- equipment-separator.html
-
-Replace the updated equipment.html and the included equipment pages in the
-same website folder. Keep the four existing excluded pages as they are.
+Replace the existing equipment-pumps.html with the included file and keep both image files in the same website folder.
+The main Equipment Atlas already links to equipment-pumps.html.
