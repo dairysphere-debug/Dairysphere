@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Batch Composition Calculator | Dairy Sphere</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+:root{--ds-navy:#10283d;--ds-deep:#071b2b;--ds-blue:#168bd2;--ds-cyan:#61d4ee;--ds-text:#eaf4fa;--ds-muted:#9db7c8}
+*{box-sizing:border-box}.batch-page{max-width:1120px;margin:auto}.batch-card{background:linear-gradient(145deg,rgba(7,31,58,.97),rgba(3,17,34,.98));border:1px solid rgba(116,215,255,.18);border-radius:20px;padding:22px;box-shadow:0 18px 45px #0003;color:var(--ds-text)}.batch-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.batch-page h2{font-size:18px;margin:0 0 14px}.eyebrow-small{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--ds-cyan);margin:0 0 8px}.muted{color:var(--ds-muted);font-size:13px;line-height:1.6}.table-wrap{overflow-x:auto}.ingredients{width:100%;min-width:650px;border-collapse:collapse}.ingredients th{text-align:left;font-size:11px;color:#a9c6d8;padding:9px 6px;border-bottom:1px solid #ffffff22}.ingredients td{padding:7px 5px;border-bottom:1px solid #ffffff10}.ingredients input{width:100%;min-width:65px;padding:9px 7px;background:#ffffff0c;border:1px solid #ffffff24;border-radius:8px;color:#fff}.ingredients input:focus{outline:1px solid var(--ds-cyan);border-color:var(--ds-cyan)}.ingredients .name{min-width:125px}.ingredients .computed{font-variant-numeric:tabular-nums;color:#d8f1ff;font-size:13px;white-space:nowrap}.action-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.secondary-btn{background:#ffffff0b;border:1px solid #ffffff24;color:#eaf4fa;border-radius:10px;padding:10px 13px;cursor:pointer}.secondary-btn:hover{border-color:var(--ds-cyan)}.metric-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.metric{background:#ffffff08;border:1px solid #ffffff15;border-radius:12px;padding:14px}.metric span{display:block;color:var(--ds-muted);font-size:12px;margin-bottom:5px}.metric strong{font-size:21px;font-variant-numeric:tabular-nums}.status{margin-top:13px;padding:11px 13px;background:#61d4ee0d;border-left:3px solid var(--ds-cyan);border-radius:0 9px 9px 0;color:#cde7f4;font-size:13px}.formula-note{margin-top:14px;padding:12px 14px;border:1px solid #ffffff15;border-radius:11px;background:#ffffff05}.danger-note{border-left:3px solid #f3bf68}.remove{border:1px solid #ffffff20;background:#ffffff08;color:#d9e9f3;border-radius:7px;padding:6px 9px;cursor:pointer}.top-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:16px}.top-fields label{display:block;font-size:12px;color:#a9c6d8;margin-bottom:6px}.top-fields input{width:100%;padding:10px;border-radius:9px;border:1px solid #ffffff24;background:#ffffff0b;color:#fff}
+@media(max-width:760px){.batch-grid{grid-template-columns:1fr}.batch-card{padding:15px}.top-fields{grid-template-columns:1fr}.metric strong{font-size:18px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="container nav"><a class="brand" href="index.html"><img src="dairy-sphere-earth.png" alt="Dairy Sphere"><div><strong>Dairy Sphere</strong><span>LEARN • PROCESS • INNOVATE</span></div></a><nav class="navlinks"><a href="index.html">Home</a><a href="library.html">Library</a><a class="active" href="lab.html">Virtual Lab</a><a href="equipment.html">Equipment Atlas</a><a href="founder.html">Founder</a></nav><a class="btn" href="founder.html#contact">Contact ↗</a></div></header>
+<main class="fade">
+<section class="page-hero"><div class="container"><span class="eyebrow">DAIRY CALCULATORS • BATCH COMPOSITION</span><h1>Batch Composition Calculator</h1><p>Enter ingredient quantity, fat and SNF. Calculate kg fat, kg SNF, total quantity and final mixture composition.</p></div></section>
+<section class="container section batch-page">
+<div class="batch-card">
+<p class="eyebrow-small">01 / Ingredient inputs</p>
+<div class="top-fields">
+<div><label for="targetQty">Optional target batch quantity (kg)</label><input id="targetQty" type="number" min="0" step="any" placeholder="e.g. 500"></div>
+<div><label for="targetFat">Optional target fat (%)</label><input id="targetFat" type="number" min="0" max="100" step="any" placeholder="e.g. 3.0"></div>
+<div><label for="targetSnf">Optional target SNF (%)</label><input id="targetSnf" type="number" min="0" max="100" step="any" placeholder="e.g. 8.5"></div>
+</div>
+<p class="muted">Add each ingredient used in the batch. Leave quantity or composition blank only if that ingredient is not being used.</p>
+<div class="table-wrap"><table class="ingredients"><thead><tr><th>Ingredient</th><th>Quantity (kg)</th><th>Fat (%)</th><th>SNF (%)</th><th>KG Fat</th><th>KG SNF</th><th></th></tr></thead><tbody id="ingredientRows"></tbody><tfoot><tr><th colspan="1">TOTAL</th><th id="totalQty">0.000</th><th>Actual %</th><th></th><th id="totalFatKg">0.000</th><th id="totalSnfKg">0.000</th><th></th></tr></tfoot></table></div>
+<div class="action-row"><button class="btn" type="button" id="calculate">Calculate ↗</button><button class="secondary-btn" type="button" id="addIngredient">+ Add ingredient</button><button class="secondary-btn" type="button" id="example">Load example</button><button class="secondary-btn" type="button" id="reset">Reset</button></div>
+<div id="status" class="status" role="status" aria-live="polite">Enter ingredient values, then select Calculate.</div>
+</div>
+<div class="batch-grid" style="margin-top:16px">
+<div class="batch-card"><p class="eyebrow-small">02 / Final batch results</p><div class="metric-grid"><div class="metric"><span>Total quantity</span><strong id="resultQty">—</strong></div><div class="metric"><span>Actual fat</span><strong id="resultFat">—</strong></div><div class="metric"><span>Actual SNF</span><strong id="resultSnf">—</strong></div><div class="metric"><span>Total solids (fat + SNF)</span><strong id="resultSolids">—</strong></div></div></div>
+<div class="batch-card"><p class="eyebrow-small">03 / Target check</p><div id="targetCheck" class="muted">Enter optional target values above to compare them with your calculated batch.</div><div class="formula-note"><strong>Formulas used</strong><p class="muted" style="margin-bottom:0">KG Fat = Quantity × Fat (%) ÷ 100<br>KG SNF = Quantity × SNF (%) ÷ 100<br>Actual Fat (%) = Total KG Fat ÷ Total Quantity × 100<br>Actual SNF (%) = Total KG SNF ÷ Total Quantity × 100</p></div></div>
+</div>
+<div class="formula-note danger-note"><strong>Formula note from your Excel</strong><p class="muted" style="margin-bottom:0">Some cells in the uploaded workbook multiply quantity directly by the entered fat/SNF number without dividing by 100. For percentage inputs, that gives a result 100 times too high. This simple calculator uses the standard percentage-based mass-balance formulas shown above; it does not reproduce that apparent spreadsheet error.</p></div>
+</section></main>
+<footer><div class="container footer-row"><div><img class="small-logo" src="dairy-sphere-earth.png" alt="Dairy Sphere"><div>© 2026 Dairy Sphere • Educational platform for Dairy Technology.</div></div><div>Learn • Process • Innovate</div></div></footer>
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id), rows=$('ingredientRows');
+const fmt=n=>Number.isFinite(n)?n.toFixed(3):'—';
+function addRow(name='',qty='',fat='',snf=''){
+ const tr=document.createElement('tr');
+ tr.innerHTML='<td><input class="name" aria-label="Ingredient name" placeholder="e.g. RMST 1"></td><td><input class="qty" aria-label="Quantity in kg" type="number" min="0" step="any" placeholder="kg"></td><td><input class="fat" aria-label="Fat percentage" type="number" min="0" max="100" step="any" placeholder="%"></td><td><input class="snf" aria-label="SNF percentage" type="number" min="0" max="100" step="any" placeholder="%"></td><td class="computed fatkg">0.000</td><td class="computed snfkg">0.000</td><td><button class="remove" type="button" aria-label="Remove ingredient">×</button></td>';
+ rows.appendChild(tr);tr.querySelector('.name').value=name;tr.querySelector('.qty').value=qty;tr.querySelector('.fat').value=fat;tr.querySelector('.snf').value=snf;updateRow(tr);return tr;
+}
+function val(el){return el.value.trim()===''?null:Number(el.value)}
+function updateRow(tr){const q=val(tr.querySelector('.qty'))||0,f=val(tr.querySelector('.fat'))||0,s=val(tr.querySelector('.snf'))||0;tr.querySelector('.fatkg').textContent=fmt(q*f/100);tr.querySelector('.snfkg').textContent=fmt(q*s/100)}
+function calculate(){
+ const data=[...rows.querySelectorAll('tr')].map(tr=>({tr,name:tr.querySelector('.name').value.trim(),q:val(tr.querySelector('.qty')),f:val(tr.querySelector('.fat')),s:val(tr.querySelector('.snf'))})).filter(x=>x.name||x.q!==null||x.f!==null||x.s!==null);
+ if(!data.length){$('status').textContent='Add at least one ingredient and enter its values.';return}
+ for(const x of data){if(x.q===null||x.f===null||x.s===null||![x.q,x.f,x.s].every(Number.isFinite)||x.q<0||x.f<0||x.f>100||x.s<0||x.s>100){$('status').textContent='Please enter a valid non-negative quantity and Fat/SNF percentages from 0 to 100 for every used ingredient.';return}}
+ let q=0,fkg=0,skg=0;data.forEach(x=>{q+=x.q;fkg+=x.q*x.f/100;skg+=x.q*x.s/100});
+ const fat=q?fkg/q*100:0,snf=q?skg/q*100:0,solids=fat+snf;
+ $('totalQty').textContent=fmt(q);$('totalFatKg').textContent=fmt(fkg);$('totalSnfKg').textContent=fmt(skg);
+ $('resultQty').textContent=fmt(q)+' kg';$('resultFat').textContent=fmt(fat)+' %';$('resultSnf').textContent=fmt(snf)+' %';$('resultSolids').textContent=fmt(solids)+' %';
+ const checks=[];
+ [['Target quantity',$('targetQty'),q,'kg',0.005],['Target fat',$('targetFat'),fat,'%',0.01],['Target SNF',$('targetSnf'),snf,'%',0.01]].forEach(([label,el,actual,unit,tol])=>{const target=val(el);if(target!==null){if(!Number.isFinite(target)||target<0||(unit==='%'&&target>100)){checks.push(label+': enter a valid target.')}else{checks.push(label+': target '+fmt(target)+unit+', actual '+fmt(actual)+unit+' — '+(Math.abs(actual-target)<=tol?'MATCH':'DIFFERENCE '+fmt(actual-target)+unit));}}});
+ $('targetCheck').textContent=checks.length?checks.join(' | '):'No target values entered. Enter a target quantity, fat or SNF above to compare.';
+ $('status').textContent='Calculation complete. All totals are based on ingredient mass and percentage composition.';
+}
+rows.addEventListener('input',e=>{if(e.target.matches('input'))updateRow(e.target.closest('tr'))});
+rows.addEventListener('click',e=>{if(e.target.classList.contains('remove')){e.target.closest('tr').remove();}});
+$('calculate').addEventListener('click',calculate);$('addIngredient').addEventListener('click',()=>addRow());
+$('example').addEventListener('click',()=>{rows.innerHTML='';addRow('RMST 1',450,4.9,8.66);addRow('RMST 2',320,0.5,8.66);$('targetQty').value=770;$('targetFat').value='';$('targetSnf').value='';calculate()});
+$('reset').addEventListener('click',()=>{rows.innerHTML='';['targetQty','targetFat','targetSnf'].forEach(id=>$(id).value='');addRow();addRow();['totalQty','totalFatKg','totalSnfKg'].forEach(id=>$(id).textContent='0.000');['resultQty','resultFat','resultSnf','resultSolids'].forEach(id=>$(id).textContent='—');$('targetCheck').textContent='Enter optional target values above to compare them with your calculated batch.';$('status').textContent='Enter ingredient values, then select Calculate.'});
+addRow('RMST 1');addRow('RMST 2');
+})();
+</script>
+</body></html>
